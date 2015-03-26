@@ -1,3 +1,5 @@
+require 'active_support/all'
+
 require_relative "badgeapi/version"
 require_relative "badgeapi/badge"
 require_relative "badgeapi/collection"

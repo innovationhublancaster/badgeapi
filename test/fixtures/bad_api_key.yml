@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gamification-api.dev/badges.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="foo"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Www-Authenticate:
+      - Token realm="Application"
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - cf3e890e-3c56-49c0-9d6c-c85e048ee453
+      X-Runtime:
+      - '0.383985'
+      Date:
+      - Thu, 26 Mar 2015 13:56:12 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":"Bad API Key"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 13:56:12 GMT
+recorded_with: VCR 2.9.3

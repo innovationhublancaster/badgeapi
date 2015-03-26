@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gamification-api.dev/badges/27.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c7f19faeb9514cfbbf3ecc8b71486366"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9669bd26-647c-406a-910d-166ab976243b
+      X-Runtime:
+      - '0.009195'
+      Date:
+      - Thu, 26 Mar 2015 14:33:22 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":"No Record Found"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 14:33:22 GMT
+recorded_with: VCR 2.9.3

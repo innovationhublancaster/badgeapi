@@ -20,7 +20,11 @@ module Badgeapi
 			connection.token_auth(Badgeapi.api_key)
 			response = connection.get("#{Badgeapi.api_url}/collections/#{id}.json")
 			attributes = JSON.parse(response.body)
-			new(attributes)
+			if attributes.include?("error")
+				raise Exception.new(attributes['error'])
+			else
+				new(attributes)
+			end
 		end
 
 		def self.all
@@ -28,7 +32,11 @@ module Badgeapi
 			connection.token_auth(Badgeapi.api_key)
 			response = connection.get("#{Badgeapi.api_url}/collections.json")
 			attributes = JSON.parse(response.body)
-			attributes.map { |attributes| new(attributes) }
+			if attributes.include?("error")
+				raise Exception.new(attributes['error'])
+			else
+				attributes.map { |attributes| new(attributes) }
+			end
 		end
 
 	end

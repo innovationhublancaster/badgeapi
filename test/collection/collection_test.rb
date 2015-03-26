@@ -34,4 +34,11 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert result.first.kind_of?(Badgeapi::Collection)
 		end
 	end
+
+	def test_collections_raise_errors
+		VCR.use_cassette('collection_error') do
+			Badgeapi.api_key= 'c7f19faeb9514cfbbf3ecc8b71486366'
+			assert_raises(Exception) { Badgeapi::Collection.find(27) }
+		end
+	end
 end
