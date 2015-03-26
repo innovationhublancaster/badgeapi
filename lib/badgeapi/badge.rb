@@ -2,8 +2,6 @@
 require 'faraday'
 require 'json'
 
-# BADGE_API_KEY = "c7f19faeb9514cfbbf3ecc8b71486366"
-
 module Badgeapi
 	class Badge
 
