@@ -2,12 +2,15 @@
 require './test/test_helper'
 
 class BadgeapiCollectionTest < MiniTest::Test
+
 	def test_exists
 		assert Badgeapi::Collection
 	end
 
 	def test_it_returns_back_a_single_collection
 		VCR.use_cassette('one_collection') do
+			Badgeapi.api_key = "c7f19faeb9514cfbbf3ecc8b71486366"
+
 			collection = Badgeapi::Collection.find(1)
 			assert_equal Badgeapi::Collection, collection.class
 
@@ -19,6 +22,8 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 	def test_it_returns_back_a_all_badges
 		VCR.use_cassette('all_collection') do
+			Badgeapi.api_key = "c7f19faeb9514cfbbf3ecc8b71486366"
+
 			result = Badgeapi::Collection.all
 
 			# Make sure we got all the badges

@@ -1,7 +1,24 @@
 require_relative "badgeapi/version"
 require_relative "badgeapi/badge"
 require_relative "badgeapi/collection"
+require_relative "badgeapi/configuration"
 
 module Badgeapi
-  # Your code goes here...
+
+	@api_base = 'http://gamification-api.dev'
+	@api_key
+
+	class << self
+		attr_accessor :api_key, :api_base
+	end
+
+	def self.api_url
+		@api_base
+	end
+
+
+	def self.api_key
+		@api_key
+	end
+
 end

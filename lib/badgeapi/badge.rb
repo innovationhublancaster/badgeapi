@@ -2,8 +2,7 @@
 require 'faraday'
 require 'json'
 
-API_URL = "http://gamification-api.dev"
-BADGE_API_KEY = "c7f19faeb9514cfbbf3ecc8b71486366"
+# BADGE_API_KEY = "c7f19faeb9514cfbbf3ecc8b71486366"
 
 module Badgeapi
 	class Badge
@@ -26,16 +25,16 @@ module Badgeapi
 
 		def self.find(id)
 			connection = Faraday.new()
-			connection.token_auth(BADGE_API_KEY)
-			response = connection.get("#{API_URL}/badges/#{id}.json")
+			connection.token_auth(Badgeapi.api_key)
+			response = connection.get("#{Badgeapi.api_url}/badges/#{id}.json")
 			attributes = JSON.parse(response.body)
 			new(attributes)
 		end
 
 		def self.all
 			connection = Faraday.new()
-			connection.token_auth(BADGE_API_KEY)
-			response = connection.get("#{API_URL}/badges.json")
+			connection.token_auth(Badgeapi.api_key)
+			response = connection.get("#{Badgeapi.api_url}/badges.json")
 			attributes = JSON.parse(response.body)
 			attributes.map { |attributes| new(attributes) }
 		end
