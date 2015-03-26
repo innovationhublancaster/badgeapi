@@ -11,8 +11,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 			badge = Badgeapi::Badge.find(1)
 			assert_equal Badgeapi::Badge, badge.class
 
-
-			#{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-25T13:28:44.161Z","updated_at":"2015-03-25T13:28:44.161Z"}
 			assert_equal 1, badge.id
 			assert_equal "Book Worm", badge.name
 			assert_equal "Description?", badge.description
