@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/collections/1.json
+    uri: http://gamification-api.dev/badges?limit=1
     body:
       encoding: US-ASCII
       string: ''
@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"508edf2cf6925fb261b18ff21f2d07cf"'
+      - '"16425768a0634029d9ec58ce9a6923c4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ce345456-3967-469e-923d-6b4ce12f89cc
+      - c64a4ad4-2621-41b4-a731-7e20cc877041
       X-Runtime:
-      - '0.010922'
+      - '0.043562'
       Date:
-      - Fri, 27 Mar 2015 11:36:55 GMT
+      - Fri, 27 Mar 2015 11:46:43 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-27T10:53:26.782Z","updated_at":"2015-03-27T10:53:26.782Z"}'
+      string: '[{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-27T10:53:26.809Z","updated_at":"2015-03-27T10:53:26.809Z"}]'
     http_version: 
-  recorded_at: Fri, 27 Mar 2015 11:36:55 GMT
+  recorded_at: Fri, 27 Mar 2015 11:46:43 GMT
 recorded_with: VCR 2.9.3

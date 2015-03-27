@@ -18,7 +18,7 @@ module Badgeapi
 		def self.find(id)
 			connection = Faraday.new()
 			connection.token_auth(Badgeapi.api_key)
-			response = connection.get("#{Badgeapi.api_url}/collections/#{id}.json")
+			response = connection.get "#{Badgeapi.api_url}/collections/#{id}.json"
 			attributes = JSON.parse(response.body)
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
@@ -27,10 +27,10 @@ module Badgeapi
 			end
 		end
 
-		def self.all
+		def self.all params = {}
 			connection = Faraday.new()
 			connection.token_auth(Badgeapi.api_key)
-			response = connection.get("#{Badgeapi.api_url}/collections.json")
+			response = connection.get "#{Badgeapi.api_url}/collections.json", params
 			attributes = JSON.parse(response.body)
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])

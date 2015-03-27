@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/badges.json
+    uri: http://gamification-api.dev/badges
     body:
       encoding: US-ASCII
       string: ''
@@ -33,16 +33,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - cf3e890e-3c56-49c0-9d6c-c85e048ee453
+      - 91a77301-99ec-40ff-bd91-44f82b175376
       X-Runtime:
-      - '0.383985'
+      - '0.005120'
       Date:
-      - Thu, 26 Mar 2015 13:56:12 GMT
+      - Fri, 27 Mar 2015 11:36:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"Bad API Key"}'
     http_version: 
-  recorded_at: Thu, 26 Mar 2015 13:56:12 GMT
+  recorded_at: Fri, 27 Mar 2015 11:36:39 GMT
 recorded_with: VCR 2.9.3

@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Token token="c7f19faeb9514cfbbf3ecc8b71486366"
+      - Token token="c1616687d0fc420d85c8590357d1ab29"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -31,16 +31,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e18a192b-9d07-4631-80e6-33d78a3f2d03
+      - cc8329fe-e3b2-480e-8560-d87197147e39
       X-Runtime:
-      - '0.004011'
+      - '0.004441'
       Date:
-      - Thu, 26 Mar 2015 14:35:09 GMT
+      - Fri, 27 Mar 2015 11:36:55 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"No Record Found"}'
     http_version: 
-  recorded_at: Thu, 26 Mar 2015 14:35:09 GMT
+  recorded_at: Fri, 27 Mar 2015 11:36:55 GMT
 recorded_with: VCR 2.9.3

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gamification-api.dev/badges?collection_id=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c1616687d0fc420d85c8590357d1ab29"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"567ce42ac78bead6a66ea0bfa9be4ee2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fd922abb-5b9a-4c2a-889f-7e1a4d7c2524
+      X-Runtime:
+      - '0.006969'
+      Date:
+      - Fri, 27 Mar 2015 11:36:48 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"id":5,"name":"You Trim Trailed!","description":"Description?","requirements":"Complete
+        one lap of the trim trail","hint":"Have to used the trim trail?","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-27T10:53:26.821Z","updated_at":"2015-03-27T10:53:26.821Z"},{"id":6,"name":"Marathon
+        Man","description":"Description?","requirements":"Complete 10 laps of the
+        trim trail over any time","hint":"Keep going...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-27T10:53:26.824Z","updated_at":"2015-03-27T10:53:26.824Z"}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 11:36:48 GMT
+recorded_with: VCR 2.9.3
