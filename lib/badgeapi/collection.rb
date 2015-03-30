@@ -1,19 +1,15 @@
 #lib/badgeapi/collection.rb
-require 'faraday'
-require 'json'
 
 module Badgeapi
-	class Collection
+	class Collection < BadgeapiObject
 
-		attr_reader :id, :name, :description, :created_at, :updated_at
-
-		def initialize(attributes)
-			@id = attributes["id"]
-			@name = attributes["name"]
-			@description = attributes["description"]
-			@created_at = attributes["created_at"]
-			@updated_at = attributes["updated_at"]
-		end
+		define_attribute_methods %w(
+			id
+		 	name
+		 	description
+		 	created_at
+		 	updated_at
+		)
 
 		def self.find(id)
 			connection = Faraday.new()
@@ -23,8 +19,9 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				new(attributes)
+				from_response(attributes)
 			end
+
 		end
 
 		def self.all params = {}
@@ -35,7 +32,7 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				attributes.map { |attributes| new(attributes) }
+				attributes.map { |attributes| from_response(attributes) }
 			end
 		end
 
@@ -50,7 +47,7 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				new(attributes)
+				from_response(attributes)
 			end
 		end
 
@@ -65,7 +62,7 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				new(attributes)
+				from_response(attributes)
 			end
 		end
 

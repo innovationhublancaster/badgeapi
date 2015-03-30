@@ -1,5 +1,8 @@
 require 'active_support/all'
+require 'faraday'
+require 'json'
 
+require_relative "badgeapi/badgeapi_object"
 require_relative "badgeapi/version"
 require_relative "badgeapi/badge"
 require_relative "badgeapi/collection"

@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Token token="c1616687d0fc420d85c8590357d1ab29"
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"ff6e5fdc4959f4c1e74dfcf78a7d59f7"'
+      - '"51d9c82fd67c9c967facad3b23a0d1eb"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2e8556d4-5593-4b82-8d24-a18ad439df97
+      - 842d9469-1c74-4ff5-aba4-7bb0e2acb0b8
       X-Runtime:
-      - '0.016821'
+      - '0.027115'
       Date:
-      - Fri, 27 Mar 2015 11:48:28 GMT
+      - Mon, 30 Mar 2015 20:44:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-27T10:53:26.782Z","updated_at":"2015-03-27T10:53:26.782Z"}]'
+        related to library data","created_at":"2015-03-30T14:59:37.612Z","updated_at":"2015-03-30T14:59:37.612Z"}]'
     http_version: 
-  recorded_at: Fri, 27 Mar 2015 11:48:28 GMT
+  recorded_at: Mon, 30 Mar 2015 20:44:39 GMT
 recorded_with: VCR 2.9.3

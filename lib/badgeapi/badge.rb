@@ -1,25 +1,21 @@
 #lib/badgeapi/badge.rb
-require 'faraday'
-require 'json'
-
 module Badgeapi
-	class Badge
+	class Badge < BadgeapiObject
 
-		attr_reader :id, :name, :description, :requirements, :hint, :image, :recipient_id, :issuer_id, :collection_id, :issued_at, :created_at, :updated_at
-
-		def initialize(attributes)
-			@id = attributes["id"]
-			@name = attributes["name"]
-			@description = attributes["description"]
-			@requirements = attributes["requirements"]
-			@hint = attributes["hint"]
-			@image = attributes["image"]
-			@recipient_id = attributes["recipient_id"]
-			@collection_id = attributes["collection_id"]
-			@issued_at = attributes["issued_at"]
-			@created_at = attributes["created_at"]
-			@updated_at = attributes["updated_at"]
-		end
+		define_attribute_methods %w(
+			id
+		 	name
+		 	description
+		 	requirements
+		 	hint
+		 	image
+		 	recipient_id
+		 	collection_id
+			issuer_id
+		 	issued_at
+		 	created_at
+		 	updated_at
+		)
 
 		def self.find(id)
 			connection = Faraday.new()
@@ -29,7 +25,7 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				new(attributes)
+				from_response(attributes)
 			end
 		end
 
@@ -43,7 +39,7 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				attributes.map { |attributes| new(attributes) }
+				attributes.map { |attributes| from_response(attributes) }
 			end
 		end
 
@@ -58,8 +54,12 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				new(attributes)
+				from_response(attributes)
 			end
+		end
+
+		def self.save params={}
+
 		end
 
 		def self.destroy(id)
@@ -73,7 +73,7 @@ module Badgeapi
 			if attributes.include?("error")
 				raise Exception.new(attributes['error'])
 			else
-				new(attributes)
+				from_response(attributes)
 			end
 		end
 

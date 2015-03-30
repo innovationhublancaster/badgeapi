@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
 	spec.authors 			= ["Tom Skarbek Wazynski"]
 	spec.email 				= ["wazynski@gmail.com"]
 	spec.summary 			= %q{Allows you to connect to Lancaster University Badge API to manipulate badges, issue badges and display badges.}
+	spec.description 			= %q{Allows you to connect to Lancaster University Badge API to manipulate badges, issue badges and display badges.}
 	spec.homepage			= "http://innovationhub.lancaster.ac.uk"
 	spec.license 			= "MIT"
 
