@@ -3,6 +3,9 @@ require './test/test_helper'
 
 class BadgeapiBadgeTest < MiniTest::Test
 
+	def self.test_order
+		:alpha
+	end
 
 	def test_exists
 		assert Badgeapi::Badge
@@ -73,4 +76,104 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_raises(Exception) { Badgeapi::Badge.find(27) }
 		end
 	end
+
+	def test_create_a_new_badge
+		VCR.use_cassette('create_badge') do
+
+			Badgeapi.api_key = 'c1616687d0fc420d85c8590357d1ab29'
+
+			badge = Badgeapi::Badge.create(
+				name: "Create Badge Test",
+				description: "This is a new badge",
+				requirements: "You need to love the Badge API",
+				hint: "Love us..",
+				image: "http://example.org/badge.png",
+				collection_id: 1
+			)
+
+			assert_equal Badgeapi::Badge, badge.class
+			assert_equal "Create Badge Test", badge.name
+			assert_equal "This is a new badge", badge.description
+			assert_equal "You need to love the Badge API", badge.requirements
+			assert_equal "Love us..", badge.hint
+			assert_equal "http://example.org/badge.png", badge.image
+			assert_equal 1, badge.collection_id
+
+			Badgeapi::Badge.destroy(badge.id)
+		end
+	end
+
+	def test_create_new_badge_failure
+		VCR.use_cassette('create_new_badge_failure') do
+
+			Badgeapi.api_key = 'c1616687d0fc420d85c8590357d1ab29'
+
+			badge = Badgeapi::Badge.create(
+				name: "Create Badge Test Destroy",
+				description: "This is a new badge",
+				requirements: "You need to love the Badge API",
+				hint: "Love us..",
+				image: "http://example.org/badge.png",
+				collection_id: 1
+			)
+
+			assert_raises(Exception) {
+				Badgeapi::Badge.create(
+					name: "Create Badge Test Destroy",
+					description: "This is a new badge",
+					requirements: "You need to love the Badge API",
+					hint: "Love us..",
+					image: "http://example.org/badge.png",
+					collection_id: 1
+				)
+			}
+
+			Badgeapi::Badge.destroy(badge.id)
+		end
+	end
+
+	def test_badge_destroy
+		VCR.use_cassette('destroy_badge') do
+
+			Badgeapi.api_key= 'c1616687d0fc420d85c8590357d1ab29'
+
+			badge = Badgeapi::Badge.create(
+				name: "Create Badge for Destroy",
+				description: "This is a new badge",
+				requirements: "You need to love the Badge API",
+				hint: "Love us..",
+				image: "http://example.org/badge.png",
+				collection_id: 1
+			)
+
+			destroyed_badge = Badgeapi::Badge.destroy(badge.id)
+
+			assert_equal Badgeapi::Badge, destroyed_badge.class
+
+			assert_raises(Exception) { Badgeapi::Badge.find(destroyed_badge.id) }
+		end
+	end
+
+	def test_badge_destroy_error
+		VCR.use_cassette('destroy_badge_error') do
+
+			Badgeapi.api_key= 'c1616687d0fc420d85c8590357d1ab29'
+
+			badge = Badgeapi::Badge.create(
+				name: "Create Badge for Destroy",
+				description: "This is a new badge",
+				requirements: "You need to love the Badge API",
+				hint: "Love us..",
+				image: "http://example.org/badge.png",
+				collection_id: 1
+			)
+
+			destroyed_badge = Badgeapi::Badge.destroy(badge.id)
+
+			assert_raises(Exception) { Badgeapi::Badge.destroy(badge.id) }
+		end
+	end
+
+
+
 end

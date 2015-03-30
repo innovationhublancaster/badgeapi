@@ -39,5 +39,35 @@ module Badgeapi
 			end
 		end
 
+		def self.create params={}
+			connection = Faraday.new()
+			connection.token_auth(Badgeapi.api_key)
+
+			response = connection.post "#{Badgeapi.api_url}/collections", {collection: params}
+
+			attributes = JSON.parse(response.body)
+
+			if attributes.include?("error")
+				raise Exception.new(attributes['error'])
+			else
+				new(attributes)
+			end
+		end
+
+		def self.destroy(id)
+			connection = Faraday.new()
+			connection.token_auth(Badgeapi.api_key)
+
+			response = connection.delete "#{Badgeapi.api_url}/collections/#{id}"
+
+			attributes = JSON.parse(response.body)
+
+			if attributes.include?("error")
+				raise Exception.new(attributes['error'])
+			else
+				new(attributes)
+			end
+		end
+
 	end
 end
