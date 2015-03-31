@@ -46,14 +46,6 @@ module Badgeapi
 				connection.token_auth(Badgeapi.api_key)
 
 				from_response connection.get "#{Badgeapi.api_url}/#{collection_path}", params
-
-				# attributes = JSON.parse(response.body)
-				#
-				# if attributes.include?("error")
-				# 	raise Exception.new(attributes['error'])
-				# else
-				# 	attributes.map { |attributes| map_json_to_object(attributes) }
-				# end
 			end
 
 			def create params={}
@@ -63,12 +55,11 @@ module Badgeapi
 				from_response connection.post "#{Badgeapi.api_url}/#{collection_path}", member_name => params
 			end
 
-			def save
-				abort('here')
+			def update id, params = {}
 				connection = Faraday.new()
 				connection.token_auth(Badgeapi.api_key)
 
-				from_response connection.patch "#{Badgeapi.api_url}/#{collection_path}/#{id}", to_json
+				from_response connection.patch "#{Badgeapi.api_url}/#{collection_path}/#{id}", member_name => params
 			end
 
 			def destroy(id)
@@ -79,21 +70,18 @@ module Badgeapi
 			end
 		end
 
-		def except(*keys)
-			abort "here"
-			dup.except!(*keys)
-		end
-
-		def except!(*keys)
-			keys.each { |key| delete(key) }
-			self
+		def inspect
+			id_as_string = (self.respond_to?(:id) && !self.id.nil?) ? " id=#{self.id}" : ""
+			"#<#{self.class}:0x#{self.object_id.to_s(16)}#{id_as_string}> JSON: " + self.to_json
 		end
 
 		def save
 			connection = Faraday.new()
 			connection.token_auth(Badgeapi.api_key)
 
+			# Remove params that cannot be saved as they are not permitted through strong_params on api
 			params = JSON.parse(self.to_json)
+
 			params.delete("id")
 			params.delete("created_at")
 			params.delete("updated_at")

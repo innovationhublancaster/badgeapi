@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bead537e-8b72-46da-92b0-8d6fecdaf5e3
+      - 754971f5-aed0-4d1b-809a-38f3dac51fea
       X-Runtime:
-      - '0.003782'
+      - '0.016717'
       Date:
-      - Tue, 31 Mar 2015 14:28:15 GMT
+      - Tue, 31 Mar 2015 15:01:55 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '[{"id":1,"name":"Library","description":"All of the badges available
         related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T14:07:13.505Z"}]'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 14:28:15 GMT
+  recorded_at: Tue, 31 Mar 2015 15:01:55 GMT
 recorded_with: VCR 2.9.3

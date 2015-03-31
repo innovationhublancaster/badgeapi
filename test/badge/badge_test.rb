@@ -218,6 +218,38 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
+	def test_update_badge_via_update
+		VCR.use_cassette('update_badge_via_update', :record => :all) do
 
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			badge = Badgeapi::Badge.create(
+					name: "Create Badge for update",
+					description: "This is a new badge",
+					requirements: "You need to love the Badge API",
+					hint: "Love us..",
+					image: "http://example.org/badge.png",
+					collection_id: 1
+			)
+
+			updated_badge = Badgeapi::Badge.update(badge.id,
+					name: "Updated Badge",
+					description: "Updated Description",
+					requirements: "Updated Requirements",
+					hint: "Updated Hint",
+					image: "Updated Image",
+					collection_id: 2
+			)
+
+			assert_equal "Updated Badge", updated_badge.name
+			assert_equal "Updated Description", updated_badge.description
+			assert_equal "Updated Requirements", updated_badge.requirements
+			assert_equal "Updated Hint", updated_badge.hint
+			assert_equal "Updated Image", updated_badge.image
+			assert_equal 2, updated_badge.collection_id
+
+			Badgeapi::Badge.destroy(badge.id)
+		end
+	end
 
 end

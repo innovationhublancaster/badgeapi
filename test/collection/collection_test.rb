@@ -166,4 +166,26 @@ class BadgeapiCollectionTest < MiniTest::Test
 			Badgeapi::Collection.destroy(collection.id)
 		end
 	end
+
+	def test_update_collection_via_update
+		VCR.use_cassette('update_collection_via_update', :record => :all) do
+
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			collection = Badgeapi::Collection.create(
+				name: "Create Collection for update",
+				description: "This is a new collection",
+			)
+
+			updated_collection = Badgeapi::Collection.update(collection.id,
+				name: "Updated Badge",
+				description: "Updated Description",
+			)
+
+			assert_equal "Updated Badge", updated_collection.name
+			assert_equal "Updated Description", updated_collection.description
+
+			Badgeapi::Collection.destroy(collection.id)
+		end
+	end
 end

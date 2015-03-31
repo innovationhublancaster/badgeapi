@@ -29,30 +29,30 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - http://gamification-api.dev/badges/24
+      - http://gamification-api.dev/badges/38
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"cb87a2dff0bda753e85f5fb58a17980f"'
+      - '"e9d1e1a24c48a532d4f2624e96df4419"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 530df486-6e3c-419e-8457-09631257338f
+      - 26e073bd-422a-4b5e-a25f-cd9f5adf95e6
       X-Runtime:
-      - '0.013005'
+      - '0.017482'
       Date:
-      - Tue, 31 Mar 2015 14:28:12 GMT
+      - Tue, 31 Mar 2015 15:01:51 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":24,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T14:28:12.927Z","updated_at":"2015-03-31T14:28:12.927Z"}'
+      string: '{"id":38,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T15:01:51.396Z","updated_at":"2015-03-31T15:01:51.396Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 14:28:12 GMT
+  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/badges/24
+    uri: http://gamification-api.dev/badges/38
     body:
       encoding: US-ASCII
       string: ''
@@ -81,17 +81,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e16a431b-65fe-4129-8d80-31340ec0f4a4
+      - ab028179-1bde-4348-b907-20d7b2d15859
       X-Runtime:
-      - '0.005146'
+      - '0.011738'
       Date:
-      - Tue, 31 Mar 2015 14:28:12 GMT
+      - Tue, 31 Mar 2015 15:01:51 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":24,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T14:28:12.927Z","updated_at":"2015-03-31T14:28:12.927Z"}'
+      string: '{"id":38,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T15:01:51.396Z","updated_at":"2015-03-31T15:01:51.396Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 14:28:12 GMT
+  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
 recorded_with: VCR 2.9.3
