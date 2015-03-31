@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      - Token token="c9cde524238644fa93393159e5e9ad87"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,22 +29,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d02686dec9ba5048cc7da52079f33aae"'
+      - '"b58e961470281f0239d13c63a4fed25e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 98156b6d-ba44-4f76-9978-9908c0849ae9
+      - e3d537c5-010a-43f3-84db-86db970e1727
       X-Runtime:
-      - '0.003594'
+      - '0.003775'
       Date:
-      - Tue, 31 Mar 2015 13:43:38 GMT
+      - Tue, 31 Mar 2015 14:28:16 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-30T14:59:37.612Z","updated_at":"2015-03-30T14:59:37.612Z"},{"id":2,"name":"Trim
-        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-03-30T14:59:37.618Z","updated_at":"2015-03-30T14:59:37.618Z"}]'
+        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T14:07:13.505Z"},{"id":2,"name":"Trim
+        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-03-31T14:07:13.511Z","updated_at":"2015-03-31T14:07:13.511Z"}]'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 13:43:38 GMT
+  recorded_at: Tue, 31 Mar 2015 14:28:16 GMT
 recorded_with: VCR 2.9.3

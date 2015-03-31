@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      - Token token="c9cde524238644fa93393159e5e9ad87"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"af57dd89436b02567fcdec221bdb68e7"'
+      - '"7754d8449bfe1b8fc88019b963ef02c4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 09914c37-134a-4fed-b505-8d45412a2a15
+      - 5d44b363-399c-4624-be45-5391047f10c7
       X-Runtime:
-      - '0.003828'
+      - '0.004581'
       Date:
-      - Tue, 31 Mar 2015 13:41:42 GMT
+      - Tue, 31 Mar 2015 14:28:13 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-30T14:59:37.633Z","updated_at":"2015-03-30T14:59:37.633Z"}'
+        out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T14:07:13.526Z","updated_at":"2015-03-31T14:07:13.526Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 13:41:42 GMT
+  recorded_at: Tue, 31 Mar 2015 14:28:13 GMT
 recorded_with: VCR 2.9.3

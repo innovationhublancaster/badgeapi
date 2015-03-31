@@ -21,7 +21,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 	def test_it_returns_back_a_single_collection
 		VCR.use_cassette('one_collection', :record => :all) do
-			Badgeapi.api_key = "86340fbfc17b4032b07592037dcc5e0b"
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
 
 			collection = Badgeapi::Collection.find(1)
 			assert_equal Badgeapi::Collection, collection.class
@@ -34,7 +34,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 	def test_it_returns_back_all_collections
 		VCR.use_cassette('all_collection', :record => :all) do
-			Badgeapi.api_key = "86340fbfc17b4032b07592037dcc5e0b"
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
 
 			result = Badgeapi::Collection.all
 
@@ -49,7 +49,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 	def test_all_limit
 		VCR.use_cassette('all_collection_limit', :record => :all) do
-			Badgeapi.api_key = "86340fbfc17b4032b07592037dcc5e0b"
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
 
 			result = Badgeapi::Collection.all(limit: 1)
 
@@ -64,7 +64,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 	def test_collections_raise_errors
 		VCR.use_cassette('collection_error', :record => :all) do
-			Badgeapi.api_key= '86340fbfc17b4032b07592037dcc5e0b'
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 			assert_raises(Exception) { Badgeapi::Collection.find(27) }
 		end
 	end
@@ -72,7 +72,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	def test_create_a_new_collection
 		VCR.use_cassette('create_collection', :record => :all) do
 
-			Badgeapi.api_key = '86340fbfc17b4032b07592037dcc5e0b'
+			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
 
 			collection = Badgeapi::Collection.create(
 				name: "Create Collection Test",
@@ -90,7 +90,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	def test_create_new_collection_failure
 		VCR.use_cassette('create_new_collection_failure', :record => :all) do
 
-			Badgeapi.api_key = '86340fbfc17b4032b07592037dcc5e0b'
+			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
 
 			collection = Badgeapi::Collection.create(
 				name: "Create Collection Test Destroy",
@@ -111,7 +111,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	def test_collection_destroy
 		VCR.use_cassette('destroy_collection', :record => :all) do
 
-			Badgeapi.api_key = '86340fbfc17b4032b07592037dcc5e0b'
+			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
 
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for Destroy",
@@ -130,7 +130,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	def test_collection_destroy_error
 		VCR.use_cassette('destroy_collection_error', :record => :all) do
 
-			Badgeapi.api_key = '86340fbfc17b4032b07592037dcc5e0b'
+			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
 
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for Destroy",
@@ -146,7 +146,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	def test_update_collection
 		VCR.use_cassette('update_collection', :record => :all) do
 
-			Badgeapi.api_key= '86340fbfc17b4032b07592037dcc5e0b'
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for update",
