@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/7
+    uri: http://gamification-api.dev/collections/19
     body:
       encoding: US-ASCII
       string: ''
@@ -31,22 +31,66 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 8c2c324f-50dd-49f2-8f39-ed7150a8cf78
+      - 8a1aded6-37de-43e1-8a40-c6d8c489902b
       X-Runtime:
-      - '0.006987'
+      - '0.007103'
       Date:
-      - Mon, 30 Mar 2015 20:44:39 GMT
+      - Tue, 31 Mar 2015 10:12:51 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":7,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-03-30T20:44:39.314Z","updated_at":"2015-03-30T20:44:39.314Z"}'
+      string: '{"id":19,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T10:12:51.060Z","updated_at":"2015-03-31T10:12:51.060Z"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 20:44:39 GMT
+  recorded_at: Tue, 31 Mar 2015 10:12:51 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d1de81b3-cd13-4027-986c-f911a8545539
+      X-Runtime:
+      - '0.006706'
+      Date:
+      - Tue, 31 Mar 2015 10:13:28 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":23,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T10:13:28.207Z","updated_at":"2015-03-31T10:13:28.207Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 10:13:28 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/collections/7.json
+    uri: http://gamification-api.dev/collections/23
     body:
       encoding: US-ASCII
       string: ''
@@ -75,18 +119,105 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - df73234e-6aad-446e-902f-c22b0aa5b42d
+      - e579a952-bc14-4dc1-815c-4ec60838f4c1
       X-Runtime:
-      - '0.003663'
+      - '0.003775'
       Date:
-      - Mon, 30 Mar 2015 20:44:39 GMT
+      - Tue, 31 Mar 2015 10:13:28 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"No Record Found"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 20:44:39 GMT
+  recorded_at: Tue, 31 Mar 2015 10:13:28 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 13503571-253b-4780-8071-1ba0fc5e0d80
+      X-Runtime:
+      - '0.006378'
+      Date:
+      - Tue, 31 Mar 2015 10:13:57 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":27,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T10:13:57.868Z","updated_at":"2015-03-31T10:13:57.868Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 10:13:57 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/collections/27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 300ee499-2799-4a0d-aa33-51348a5e6658
+      X-Runtime:
+      - '0.003794'
+      Date:
+      - Tue, 31 Mar 2015 10:13:57 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":"No Record Found"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 10:13:57 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/collections
@@ -116,30 +247,30 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - http://gamification-api.dev/collections/11
+      - http://gamification-api.dev/collections/31
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"7f15620bdf5f4146903566cd755b25a4"'
+      - '"3051f705f01d0f0cc5108d7967746f6c"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7c16fe99-99a2-4ed4-a070-912a3132f63e
+      - 4cbffb45-f355-44e5-b74f-13a0f9f28b02
       X-Runtime:
-      - '0.009935'
+      - '0.070024'
       Date:
-      - Tue, 31 Mar 2015 09:20:58 GMT
+      - Tue, 31 Mar 2015 10:47:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":11,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-03-31T09:20:58.642Z","updated_at":"2015-03-31T09:20:58.642Z"}'
+      string: '{"id":31,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T10:47:39.702Z","updated_at":"2015-03-31T10:47:39.702Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 09:20:58 GMT
+  recorded_at: Tue, 31 Mar 2015 10:47:39 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/11
+    uri: http://gamification-api.dev/collections/31
     body:
       encoding: US-ASCII
       string: ''
@@ -168,22 +299,22 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 55a343a2-cea8-40c4-8640-ad9c8894c7b4
+      - 41bd39ab-3212-4c30-9ccd-44cc31966a8b
       X-Runtime:
-      - '0.005622'
+      - '0.006214'
       Date:
-      - Tue, 31 Mar 2015 09:20:58 GMT
+      - Tue, 31 Mar 2015 10:47:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":11,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-03-31T09:20:58.642Z","updated_at":"2015-03-31T09:20:58.642Z"}'
+      string: '{"id":31,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T10:47:39.702Z","updated_at":"2015-03-31T10:47:39.702Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 09:20:58 GMT
+  recorded_at: Tue, 31 Mar 2015 10:47:39 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/collections/11.json
+    uri: http://gamification-api.dev/collections/31
     body:
       encoding: US-ASCII
       string: ''
@@ -212,16 +343,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c6739ecd-9ac1-4fd0-9b53-0076ca762b27
+      - 0cf533f5-7da7-49f2-96af-d7d1408e2cb7
       X-Runtime:
-      - '0.003821'
+      - '0.004051'
       Date:
-      - Tue, 31 Mar 2015 09:20:58 GMT
+      - Tue, 31 Mar 2015 10:47:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"No Record Found"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 09:20:58 GMT
+  recorded_at: Tue, 31 Mar 2015 10:47:39 GMT
 recorded_with: VCR 2.9.3

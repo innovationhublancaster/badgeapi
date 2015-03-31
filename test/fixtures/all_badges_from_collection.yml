@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - beba7751-c75b-435a-b9ac-b3d1437e82c5
+      - cc7c0d1f-46ca-47df-ad03-3b96eb327c58
       X-Runtime:
-      - '0.005003'
+      - '0.004565'
       Date:
-      - Mon, 30 Mar 2015 20:38:11 GMT
+      - Tue, 31 Mar 2015 10:47:51 GMT
       Connection:
       - close
     body:
@@ -47,5 +47,5 @@ http_interactions:
         Man","description":"Description?","requirements":"Complete 10 laps of the
         trim trail over any time","hint":"Keep going...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-30T14:59:37.647Z","updated_at":"2015-03-30T14:59:37.647Z"}]'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 20:38:11 GMT
+  recorded_at: Tue, 31 Mar 2015 10:47:51 GMT
 recorded_with: VCR 2.9.3

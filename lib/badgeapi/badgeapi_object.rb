@@ -4,6 +4,15 @@ module Badgeapi
 	class BadgeapiObject
 		class << self
 
+			def collection_name
+				name.demodulize.pluralize.underscore
+			end
+			alias collection_path collection_name
+
+			def member_name
+				name.demodulize.underscore
+			end
+
 			def initialize attributes = {}
 				if instance_of? BadgeapiObject
 					raise Error,
@@ -22,12 +31,65 @@ module Badgeapi
 				record
 			end
 
-
-			def from_json attributes = {}
-				attributes.map { |attributes| new(attributes) }
+			def find(id)
+				connection = Faraday.new()
+				connection.token_auth(Badgeapi.api_key)
+				response = connection.get "#{Badgeapi.api_url}/#{collection_path}/#{id}"
+				attributes = JSON.parse(response.body)
+				if attributes.include?("error")
+					raise Exception.new(attributes['error'])
+				else
+					from_response(attributes)
+				end
 			end
 
-			attr_reader :attributes
+			def all params = {}
+				connection = Faraday.new()
+				connection.token_auth(Badgeapi.api_key)
+
+				response = connection.get "#{Badgeapi.api_url}/#{collection_path}", params
+
+				attributes = JSON.parse(response.body)
+				if attributes.include?("error")
+					raise Exception.new(attributes['error'])
+				else
+					attributes.map { |attributes| from_response(attributes) }
+				end
+			end
+
+			def create params={}
+				connection = Faraday.new()
+				connection.token_auth(Badgeapi.api_key)
+
+				response = connection.post "#{Badgeapi.api_url}/#{collection_path}", member_name => params
+
+				attributes = JSON.parse(response.body)
+
+				if attributes.include?("error")
+					raise Exception.new(attributes['error'])
+				else
+					from_response(attributes)
+				end
+			end
+
+			def save params={}
+
+			end
+
+			def destroy(id)
+				connection = Faraday.new()
+				connection.token_auth(Badgeapi.api_key)
+
+				response = connection.delete "#{Badgeapi.api_url}/#{collection_path}/#{id}"
+
+				attributes = JSON.parse(response.body)
+
+				if attributes.include?("error")
+					raise Exception.new(attributes['error'])
+				else
+					from_response(attributes)
+				end
+			end
 
 		end
 	end

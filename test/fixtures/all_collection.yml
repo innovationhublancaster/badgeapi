@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/collections.json
+    uri: http://gamification-api.dev/collections
     body:
       encoding: US-ASCII
       string: ''
@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0c1aedbd-0908-42b2-9703-5b00aa25dff7
+      - f3ffca7b-cded-4fef-b52c-db7a404c2121
       X-Runtime:
-      - '0.004632'
+      - '0.004242'
       Date:
-      - Tue, 31 Mar 2015 09:20:59 GMT
+      - Tue, 31 Mar 2015 10:47:40 GMT
       Connection:
       - close
     body:
@@ -46,5 +46,5 @@ http_interactions:
         related to library data","created_at":"2015-03-30T14:59:37.612Z","updated_at":"2015-03-30T14:59:37.612Z"},{"id":2,"name":"Trim
         Trail","description":"Get fit and health plus earn some badges","created_at":"2015-03-30T14:59:37.618Z","updated_at":"2015-03-30T14:59:37.618Z"}]'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 09:20:59 GMT
+  recorded_at: Tue, 31 Mar 2015 10:47:40 GMT
 recorded_with: VCR 2.9.3

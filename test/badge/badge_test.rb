@@ -11,6 +11,14 @@ class BadgeapiBadgeTest < MiniTest::Test
 		assert Badgeapi::Badge
 	end
 
+	def test_object_path
+		assert_equal "badges", Badgeapi::Badge.collection_path
+	end
+
+	def test_object_name
+		assert_equal "badge", Badgeapi::Badge.member_name
+	end
+
 	def test_it_returns_back_a_single_badge
 		VCR.use_cassette('one_badge', :record => :all) do
 			Badgeapi.api_key = "86340fbfc17b4032b07592037dcc5e0b"
