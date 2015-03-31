@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ba0e4e39-4ae2-407f-be46-dd26d3c244f9
+      - 0c1aedbd-0908-42b2-9703-5b00aa25dff7
       X-Runtime:
-      - '0.004853'
+      - '0.004632'
       Date:
-      - Mon, 30 Mar 2015 20:44:39 GMT
+      - Tue, 31 Mar 2015 09:20:59 GMT
       Connection:
       - close
     body:
@@ -46,5 +46,5 @@ http_interactions:
         related to library data","created_at":"2015-03-30T14:59:37.612Z","updated_at":"2015-03-30T14:59:37.612Z"},{"id":2,"name":"Trim
         Trail","description":"Get fit and health plus earn some badges","created_at":"2015-03-30T14:59:37.618Z","updated_at":"2015-03-30T14:59:37.618Z"}]'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 20:44:39 GMT
+  recorded_at: Tue, 31 Mar 2015 09:20:59 GMT
 recorded_with: VCR 2.9.3

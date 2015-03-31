@@ -2,20 +2,8 @@
 module Badgeapi
 	class Badge < BadgeapiObject
 
-		define_attribute_methods %w(
-			id
-		 	name
-		 	description
-		 	requirements
-		 	hint
-		 	image
-		 	recipient_id
-		 	collection_id
-			issuer_id
-		 	issued_at
-		 	created_at
-		 	updated_at
-		)
+		attr_reader :id, :created_at, :updated_at
+		attr_accessor :name, :description, :requirements, :requirements, :hint, :image, :recipient_id, :collection_id, :issuer_id, :issued_at
 
 		def self.find(id)
 			connection = Faraday.new()
