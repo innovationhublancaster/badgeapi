@@ -142,4 +142,28 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert_raises(Exception) { Badgeapi::Collection.destroy(collection.id) }
 		end
 	end
+
+	def test_update_collection
+		VCR.use_cassette('update_collection', :record => :all) do
+
+			Badgeapi.api_key= '86340fbfc17b4032b07592037dcc5e0b'
+
+			collection = Badgeapi::Collection.create(
+					name: "Create Collection for update",
+					description: "This is a new collection",
+			)
+
+			collection.name = "Updated Collection"
+			collection.description = "Updated Collection"
+
+			collection.save
+
+			updated_collection = Badgeapi::Collection.find(collection.id)
+
+			assert_equal "Updated Collection", updated_collection.name
+			assert_equal "Updated Collection", updated_collection.description
+
+			Badgeapi::Collection.destroy(collection.id)
+		end
+	end
 end

@@ -42,7 +42,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			result = Badgeapi::Badge.all
 
 			# Make sure we got all the badges
-			assert_equal 6, result.length
+			assert_equal 5, result.length
 
 			# Make sure that the JSON was parsed
 			assert result.kind_of?(Array)
@@ -182,26 +182,41 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
-	# def test_update_badge
-	# 	VCR.use_cassette('destroy_badge_error', :record => :all) do
-	#
-	# 		Badgeapi.api_key= '86340fbfc17b4032b07592037dcc5e0b'
-	#
-	# 		badge = Badgeapi::Badge.create(
-	# 				name: "Create Badge for update",
-	# 				description: "This is a new badge",
-	# 				requirements: "You need to love the Badge API",
-	# 				hint: "Love us..",
-	# 				image: "http://example.org/badge.png",
-	# 				collection_id: 1
-	# 		)
-	#
-	# 		badge = Badgeapi::Badge.update(badge.id,
-	# 				name: "Updated Badge",
-	# 		)
-	#
-	# 	end
-	# end
+	def test_update_badge
+		VCR.use_cassette('update_badge', :record => :all) do
+
+			Badgeapi.api_key= '86340fbfc17b4032b07592037dcc5e0b'
+
+			badge = Badgeapi::Badge.create(
+					name: "Create Badge for update",
+					description: "This is a new badge",
+					requirements: "You need to love the Badge API",
+					hint: "Love us..",
+					image: "http://example.org/badge.png",
+					collection_id: 1
+			)
+
+			badge.name = "Updated Badge"
+			badge.description = "Updated Description"
+			badge.requirements = "Updated Requirements"
+			badge.hint = "Updated Hint"
+			badge.image = "Updated Image"
+			badge.collection_id = 2
+
+			badge.save
+
+			updated_badge = Badgeapi::Badge.find(badge.id)
+
+			assert_equal "Updated Badge", updated_badge.name
+			assert_equal "Updated Description", updated_badge.description
+			assert_equal "Updated Requirements", updated_badge.requirements
+			assert_equal "Updated Hint", updated_badge.hint
+			assert_equal "Updated Image", updated_badge.image
+			assert_equal 2, updated_badge.collection_id
+
+			Badgeapi::Badge.destroy(badge.id)
+		end
+	end
 
 
 

@@ -133,101 +133,6 @@ http_interactions:
     http_version: 
   recorded_at: Tue, 31 Mar 2015 10:13:58 GMT
 - request:
-    method: post
-    uri: http://gamification-api.dev/collections
-    body:
-      encoding: UTF-8
-      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+Test+Destroy
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="86340fbfc17b4032b07592037dcc5e0b"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Location:
-      - http://gamification-api.dev/collections/34
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"4ff5e7e67f450b8bcb1a4e38a34dadb4"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 88d88b80-acdc-4621-b5f6-d2c3ec6b5b8c
-      X-Runtime:
-      - '0.006773'
-      Date:
-      - Tue, 31 Mar 2015 10:47:40 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":34,"name":"Create Collection Test Destroy","description":"This
-        is a new badge","created_at":"2015-03-31T10:47:40.029Z","updated_at":"2015-03-31T10:47:40.029Z"}'
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 10:47:40 GMT
-- request:
-    method: post
-    uri: http://gamification-api.dev/collections
-    body:
-      encoding: UTF-8
-      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+Test+Destroy
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="86340fbfc17b4032b07592037dcc5e0b"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 422
-      message: Unprocessable Entity
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - acd14606-f050-4bc4-9b19-4e1e32103140
-      X-Runtime:
-      - '0.015302'
-      Date:
-      - Tue, 31 Mar 2015 10:47:40 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"error":{"name":["has already been taken"]}}'
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 10:47:40 GMT
-- request:
     method: delete
     uri: http://gamification-api.dev/collections/34
     body:
@@ -271,4 +176,319 @@ http_interactions:
         is a new badge","created_at":"2015-03-31T10:47:40.029Z","updated_at":"2015-03-31T10:47:40.029Z"}'
     http_version: 
   recorded_at: Tue, 31 Mar 2015 10:47:40 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/38
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b37c1c69-532a-4fbf-a46d-d569cd1d3734
+      X-Runtime:
+      - '0.005641'
+      Date:
+      - Tue, 31 Mar 2015 11:17:10 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":38,"name":"Create Collection Test Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T11:17:10.475Z","updated_at":"2015-03-31T11:17:10.475Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 11:17:10 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/42
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - efbd5cc3-9983-4113-aa2a-ddfa9ea7061d
+      X-Runtime:
+      - '0.005442'
+      Date:
+      - Tue, 31 Mar 2015 13:41:53 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":42,"name":"Create Collection Test Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T13:41:53.281Z","updated_at":"2015-03-31T13:41:53.281Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 13:41:53 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/47
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 8e224d40-6756-49b1-aaf0-ab4b777837fe
+      X-Runtime:
+      - '0.005597'
+      Date:
+      - Tue, 31 Mar 2015 13:42:50 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":47,"name":"Create Collection Test Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T13:42:50.162Z","updated_at":"2015-03-31T13:42:50.162Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 13:42:50 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c2e9fb0b-a56b-4eeb-a72b-c1a40920e829
+      X-Runtime:
+      - '0.005720'
+      Date:
+      - Tue, 31 Mar 2015 13:43:15 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":52,"name":"Create Collection Test Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T13:43:15.791Z","updated_at":"2015-03-31T13:43:15.791Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 13:43:15 GMT
+- request:
+    method: post
+    uri: http://gamification-api.dev/collections
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+Test+Destroy
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://gamification-api.dev/collections/57
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"497039217419e0614d459fb5abd8be19"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 826f5b21-355f-4de2-9962-a50385e242d9
+      X-Runtime:
+      - '0.013054'
+      Date:
+      - Tue, 31 Mar 2015 13:43:38 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":57,"name":"Create Collection Test Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T13:43:38.739Z","updated_at":"2015-03-31T13:43:38.739Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 13:43:38 GMT
+- request:
+    method: post
+    uri: http://gamification-api.dev/collections
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+Test+Destroy
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - cbd3e1ab-482f-46b8-ab3e-d9401f44b6f5
+      X-Runtime:
+      - '0.006528'
+      Date:
+      - Tue, 31 Mar 2015 13:43:38 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"name":["has already been taken"]}}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 13:43:38 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/57
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="86340fbfc17b4032b07592037dcc5e0b"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 8ec5933d-2405-4694-b0df-bc0ba4f88449
+      X-Runtime:
+      - '0.005607'
+      Date:
+      - Tue, 31 Mar 2015 13:43:38 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":57,"name":"Create Collection Test Destroy","description":"This
+        is a new badge","created_at":"2015-03-31T13:43:38.739Z","updated_at":"2015-03-31T13:43:38.739Z"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 13:43:38 GMT
 recorded_with: VCR 2.9.3

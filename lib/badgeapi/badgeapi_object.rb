@@ -13,16 +13,6 @@ module Badgeapi
 				name.demodulize.underscore
 			end
 
-			def initialize attributes = {}
-				if instance_of? BadgeapiObject
-					raise Error,
-						  "#{self.class} is an abstract class and cannot be instantiated"
-				end
-
-				self.attributes = attributes
-				yield self if block_given?
-			end
-
 			def from_response attributes
 				record = new
 				attributes.each do |name, value|
@@ -72,8 +62,20 @@ module Badgeapi
 				end
 			end
 
-			def save params={}
+			def save
+				abort('here')
+				connection = Faraday.new()
+				connection.token_auth(Badgeapi.api_key)
 
+				response = connection.patch "#{Badgeapi.api_url}/#{collection_path}/#{id}", to_json
+
+				attributes = JSON.parse(response.body)
+
+				if attributes.include?("error")
+					raise Exception.new(attributes['error'])
+				else
+					from_response(attributes)
+				end
 			end
 
 			def destroy(id)
@@ -90,7 +92,40 @@ module Badgeapi
 					from_response(attributes)
 				end
 			end
+		end
 
+		def attributes
+
+		end
+
+		def except(*keys)
+			abort "here"
+			dup.except!(*keys)
+		end
+
+		def except!(*keys)
+			keys.each { |key| delete(key) }
+			self
+		end
+
+		def save
+			connection = Faraday.new()
+			connection.token_auth(Badgeapi.api_key)
+
+			params = JSON.parse(self.to_json)
+			params.delete("id")
+			params.delete("created_at")
+			params.delete("updated_at")
+
+			response = connection.patch "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
+
+			attributes = JSON.parse(response.body)
+
+			if attributes.include?("error")
+				raise Exception.new(attributes['error'])
+			else
+				self.class.from_response(attributes)
+			end
 		end
 	end
 end
