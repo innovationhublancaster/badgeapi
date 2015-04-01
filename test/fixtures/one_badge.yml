@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2360de48-bdc4-43c9-90e5-01527ba689c3
+      - 35b47366-67c8-48fc-b7b1-a6dccb6dc24c
       X-Runtime:
-      - '0.003763'
+      - '0.003577'
       Date:
-      - Tue, 31 Mar 2015 15:01:51 GMT
+      - Wed, 01 Apr 2015 09:16:25 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
         out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T14:07:13.526Z","updated_at":"2015-03-31T14:07:13.526Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
+  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
 recorded_with: VCR 2.9.3

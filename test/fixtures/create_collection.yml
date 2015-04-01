@@ -1,58 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://gamification-api.dev/collections
-    body:
-      encoding: UTF-8
-      string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+Test
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Location:
-      - http://gamification-api.dev/collections/25
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"182f6ebd8179ca7e049ab862256e7099"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d55da06b-25ee-46cc-b150-f90b6bd0d923
-      X-Runtime:
-      - '0.010273'
-      Date:
-      - Tue, 31 Mar 2015 15:01:55 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":25,"name":"Create Collection Test","description":"This is a new
-        collection","created_at":"2015-03-31T15:01:55.607Z","updated_at":"2015-03-31T15:01:55.607Z"}'
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:55 GMT
-- request:
     method: delete
-    uri: http://gamification-api.dev/collections/25
+    uri: http://gamification-api.dev/collections/31
     body:
       encoding: US-ASCII
       string: ''
@@ -81,17 +31,155 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0a46b97a-46f0-4292-afec-054b9693a2b3
+      - d04aa9f7-e789-4fcd-a417-7ab93928cbfa
       X-Runtime:
-      - '0.021921'
+      - '0.005545'
       Date:
-      - Tue, 31 Mar 2015 15:01:55 GMT
+      - Wed, 01 Apr 2015 09:07:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":25,"name":"Create Collection Test","description":"This is a new
-        collection","created_at":"2015-03-31T15:01:55.607Z","updated_at":"2015-03-31T15:01:55.607Z"}'
+      string: '{"id":31,"name":"Create Collection Test","description":"This is a new
+        collection","created_at":"2015-04-01T09:07:42.598Z","updated_at":"2015-04-01T09:07:42.598Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:55 GMT
+  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/37
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4e813f6b-9596-4d79-b78d-c08134fa60b7
+      X-Runtime:
+      - '0.007164'
+      Date:
+      - Wed, 01 Apr 2015 09:08:36 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":37,"name":"Create Collection Test","description":"This is a new
+        collection","created_at":"2015-04-01T09:08:36.773Z","updated_at":"2015-04-01T09:08:36.773Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:08:36 GMT
+- request:
+    method: post
+    uri: http://gamification-api.dev/collections
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+Test
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://gamification-api.dev/collections/43
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b03f011317fb166ad2e2ce2deb1c2d85"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 39d6942e-e282-4f43-ace4-9c8f7d3e867c
+      X-Runtime:
+      - '0.012012'
+      Date:
+      - Wed, 01 Apr 2015 09:16:28 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":43,"name":"Create Collection Test","description":"This is a new
+        collection","created_at":"2015-04-01T09:16:28.697Z","updated_at":"2015-04-01T09:16:28.697Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/collections/43
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4a0427c4-fd73-4f29-a3f4-7c15d00a9b59
+      X-Runtime:
+      - '0.005448'
+      Date:
+      - Wed, 01 Apr 2015 09:16:28 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":43,"name":"Create Collection Test","description":"This is a new
+        collection","created_at":"2015-04-01T09:16:28.697Z","updated_at":"2015-04-01T09:16:28.697Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
 recorded_with: VCR 2.9.3

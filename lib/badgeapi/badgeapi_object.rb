@@ -13,6 +13,12 @@ module Badgeapi
 				name.demodulize.underscore
 			end
 
+			def request method, url, params={}
+				connection = Faraday.new()
+				connection.token_auth(Badgeapi.api_key)
+				from_response connection.send(method, url, params)
+			end
+
 			def from_response response
 				attributes = JSON.parse(response.body)
 
@@ -36,37 +42,23 @@ module Badgeapi
 			end
 
 			def find(id)
-				connection = Faraday.new()
-				connection.token_auth(Badgeapi.api_key)
-				from_response connection.get "#{Badgeapi.api_url}/#{collection_path}/#{id}"
+				request "get", "#{Badgeapi.api_url}/#{collection_path}/#{id}"
 			end
 
 			def all params = {}
-				connection = Faraday.new()
-				connection.token_auth(Badgeapi.api_key)
-
-				from_response connection.get "#{Badgeapi.api_url}/#{collection_path}", params
+				request "get", "#{Badgeapi.api_url}/#{collection_path}", params
 			end
 
 			def create params={}
-				connection = Faraday.new()
-				connection.token_auth(Badgeapi.api_key)
-
-				from_response connection.post "#{Badgeapi.api_url}/#{collection_path}", member_name => params
+				request "post", "#{Badgeapi.api_url}/#{collection_path}", member_name => params
 			end
 
 			def update id, params = {}
-				connection = Faraday.new()
-				connection.token_auth(Badgeapi.api_key)
-
-				from_response connection.patch "#{Badgeapi.api_url}/#{collection_path}/#{id}", member_name => params
+				request "patch", "#{Badgeapi.api_url}/#{collection_path}/#{id}", member_name => params
 			end
 
 			def destroy(id)
-				connection = Faraday.new()
-				connection.token_auth(Badgeapi.api_key)
-
-				from_response connection.delete "#{Badgeapi.api_url}/#{collection_path}/#{id}"
+				request "delete", "#{Badgeapi.api_url}/#{collection_path}/#{id}"
 			end
 		end
 
@@ -76,9 +68,6 @@ module Badgeapi
 		end
 
 		def save
-			connection = Faraday.new()
-			connection.token_auth(Badgeapi.api_key)
-
 			# Remove params that cannot be saved as they are not permitted through strong_params on api
 			params = JSON.parse(self.to_json)
 
@@ -86,7 +75,7 @@ module Badgeapi
 			params.delete("created_at")
 			params.delete("updated_at")
 
-			self.class.from_response connection.patch "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
+			self.class.request "patch", "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
 		end
 	end
 end

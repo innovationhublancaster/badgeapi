@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d99e09d250b405bea702a1048baf9213"'
+      - '"40f8ba44e965a030e7e0933732bc73c4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 754971f5-aed0-4d1b-809a-38f3dac51fea
+      - 680383e7-e9c8-4420-80af-67b6f5731286
       X-Runtime:
-      - '0.016717'
+      - '0.003655'
       Date:
-      - Tue, 31 Mar 2015 15:01:55 GMT
+      - Wed, 01 Apr 2015 09:16:28 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T14:07:13.505Z"}]'
+        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T15:05:42.955Z"}]'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:55 GMT
+  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
 recorded_with: VCR 2.9.3

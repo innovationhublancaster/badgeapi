@@ -29,22 +29,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b58e961470281f0239d13c63a4fed25e"'
+      - '"e91fa3bc7c47fedb996c1d19d53a220f"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 373e1190-4278-4ae2-8a91-c7c206755d7a
+      - b64147d8-d4b9-4232-a9ad-9c4ce278ba74
       X-Runtime:
-      - '0.003890'
+      - '0.003652'
       Date:
-      - Tue, 31 Mar 2015 15:01:55 GMT
+      - Wed, 01 Apr 2015 09:16:28 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T14:07:13.505Z"},{"id":2,"name":"Trim
+        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T15:05:42.955Z"},{"id":2,"name":"Trim
         Trail","description":"Get fit and health plus earn some badges","created_at":"2015-03-31T14:07:13.511Z","updated_at":"2015-03-31T14:07:13.511Z"}]'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:55 GMT
+  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
 recorded_with: VCR 2.9.3

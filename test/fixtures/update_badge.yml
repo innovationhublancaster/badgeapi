@@ -1,58 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://gamification-api.dev/badges
-    body:
-      encoding: UTF-8
-      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Bimage%5D=http%3A%2F%2Fexample.org%2Fbadge.png&badge%5Bname%5D=Create+Badge+for+update&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Location:
-      - http://gamification-api.dev/badges/40
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"e993eda39c7d3cb7203dfc28981b230d"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 2c02f859-fdce-447b-8188-1c7e95b5ff07
-      X-Runtime:
-      - '0.018992'
-      Date:
-      - Tue, 31 Mar 2015 15:01:51 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":40,"name":"Create Badge for update","description":"This is a
-        new badge","requirements":"You need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T15:01:51.620Z","updated_at":"2015-03-31T15:01:51.620Z"}'
-    http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
-- request:
     method: patch
-    uri: http://gamification-api.dev/badges/40
+    uri: http://gamification-api.dev/badges/52
     body:
       encoding: UTF-8
       string: badge%5Bcollection_id%5D=2&badge%5Bdescription%5D=Updated+Description&badge%5Bhint%5D=Updated+Hint&badge%5Bimage%5D=Updated+Image&badge%5Bissued_at%5D=&badge%5Bissuer_id%5D=&badge%5Bname%5D=Updated+Badge&badge%5Brecipient_id%5D=&badge%5Brequirements%5D=Updated+Requirements
@@ -83,22 +33,22 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 18f91b6d-d0d6-4f40-ba21-03971280cedc
+      - d2039bea-e409-43f6-9209-df826b320f0e
       X-Runtime:
-      - '0.008447'
+      - '0.009167'
       Date:
-      - Tue, 31 Mar 2015 15:01:51 GMT
+      - Wed, 01 Apr 2015 09:07:37 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":40,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-31T15:01:51.620Z","updated_at":"2015-03-31T15:01:51.661Z"}'
+      string: '{"id":52,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-04-01T09:07:37.455Z","updated_at":"2015-04-01T09:07:37.490Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
+  recorded_at: Wed, 01 Apr 2015 09:07:37 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/badges/40
+    uri: http://gamification-api.dev/badges/52
     body:
       encoding: US-ASCII
       string: ''
@@ -125,26 +75,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"50c30a1b825b1c1012ec88c8bccf6ed7"'
+      - '"e4fc505396ef9bba6a4773ccfa4ed729"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b078034f-d7bc-4372-9cd4-e4fc9d8e783c
+      - 4e12ec05-354f-475b-a3cb-9b898f11fc65
       X-Runtime:
-      - '0.003973'
+      - '0.003785'
       Date:
-      - Tue, 31 Mar 2015 15:01:51 GMT
+      - Wed, 01 Apr 2015 09:07:37 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":40,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-31T15:01:51.620Z","updated_at":"2015-03-31T15:01:51.661Z"}'
+      string: '{"id":52,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-04-01T09:07:37.455Z","updated_at":"2015-04-01T09:07:37.490Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
+  recorded_at: Wed, 01 Apr 2015 09:07:37 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/badges/40
+    uri: http://gamification-api.dev/badges/52
     body:
       encoding: US-ASCII
       string: ''
@@ -173,17 +123,203 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - b3719d37-93e8-457d-8eed-5d3ddad2a57f
+      - 7596d4de-bf26-4e1d-89a3-0e0fb359827e
       X-Runtime:
-      - '0.005742'
+      - '0.005588'
       Date:
-      - Tue, 31 Mar 2015 15:01:51 GMT
+      - Wed, 01 Apr 2015 09:07:37 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":40,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-31T15:01:51.620Z","updated_at":"2015-03-31T15:01:51.661Z"}'
+      string: '{"id":52,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-04-01T09:07:37.455Z","updated_at":"2015-04-01T09:07:37.490Z"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 15:01:51 GMT
+  recorded_at: Wed, 01 Apr 2015 09:07:37 GMT
+- request:
+    method: post
+    uri: http://gamification-api.dev/badges
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Bimage%5D=http%3A%2F%2Fexample.org%2Fbadge.png&badge%5Bname%5D=Create+Badge+for+update&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://gamification-api.dev/badges/58
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ef3ce10a2d118002a7369769bfe3a700"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 905ded7f-10e8-4a43-b0ec-4a1c9fa59519
+      X-Runtime:
+      - '0.007418'
+      Date:
+      - Wed, 01 Apr 2015 09:16:25 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":58,"name":"Create Badge for update","description":"This is a
+        new badge","requirements":"You need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T09:16:25.168Z","updated_at":"2015-04-01T09:16:25.168Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/badges/58
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=2&badge%5Bdescription%5D=Updated+Description&badge%5Bhint%5D=Updated+Hint&badge%5Bimage%5D=Updated+Image&badge%5Bissued_at%5D=&badge%5Bissuer_id%5D=&badge%5Bname%5D=Updated+Badge&badge%5Brecipient_id%5D=&badge%5Brequirements%5D=Updated+Requirements
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d451c8a5-6123-4a7a-a42f-d4a7b5820fb6
+      X-Runtime:
+      - '0.011558'
+      Date:
+      - Wed, 01 Apr 2015 09:16:25 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":58,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-04-01T09:16:25.168Z","updated_at":"2015-04-01T09:16:25.198Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/badges/58
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"565a614dece25ce2ed6180edfec50d7f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ee2751fc-bbc8-4b9e-8a1a-29ea7023123f
+      X-Runtime:
+      - '0.003991'
+      Date:
+      - Wed, 01 Apr 2015 09:16:25 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":58,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-04-01T09:16:25.168Z","updated_at":"2015-04-01T09:16:25.198Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/badges/58
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 54596cfa-c1a3-40f7-bb97-a1b52820aed3
+      X-Runtime:
+      - '0.005280'
+      Date:
+      - Wed, 01 Apr 2015 09:16:25 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":58,"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"Updated Image","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-04-01T09:16:25.168Z","updated_at":"2015-04-01T09:16:25.198Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
 recorded_with: VCR 2.9.3
