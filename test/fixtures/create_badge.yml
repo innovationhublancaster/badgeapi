@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://gamification-api.dev/badges/50
+    uri: http://gamification-api.dev/v1//badges/73
     body:
       encoding: US-ASCII
       string: ''
@@ -31,22 +31,66 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 67800f43-c317-4e2c-b223-e4e20396f0ee
+      - cb5ebc34-faf2-4aba-931b-ed1eef52f916
       X-Runtime:
-      - '0.005693'
+      - '0.005214'
       Date:
-      - Wed, 01 Apr 2015 09:07:37 GMT
+      - Wed, 01 Apr 2015 10:22:50 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":50,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T09:07:37.225Z","updated_at":"2015-04-01T09:07:37.225Z"}'
+      string: '{"id":73,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:22:50.296Z","updated_at":"2015-04-01T10:22:50.296Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:37 GMT
+  recorded_at: Wed, 01 Apr 2015 10:22:50 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//badges/79
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 06ddfdf9-2e1f-47ab-9fa3-b423225bf752
+      X-Runtime:
+      - '0.005539'
+      Date:
+      - Wed, 01 Apr 2015 10:24:38 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":79,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:24:38.799Z","updated_at":"2015-04-01T10:24:38.799Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 10:24:38 GMT
 - request:
     method: post
-    uri: http://gamification-api.dev/badges
+    uri: http://gamification-api.dev/v1//badges
     body:
       encoding: UTF-8
       string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Bimage%5D=http%3A%2F%2Fexample.org%2Fbadge.png&badge%5Bname%5D=Create+Badge+Test&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
@@ -72,31 +116,29 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
-      Location:
-      - http://gamification-api.dev/badges/56
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"87dba446e7b1c9a2a6f990a91a01e8ac"'
+      - '"c07500a33ba9f340783a2c0bc0d2b174"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 606e02ae-2706-46f1-bbf2-6f6f143b84a7
+      - 87fb2233-9729-4980-bb39-813620ec2e53
       X-Runtime:
-      - '0.012931'
+      - '0.011216'
       Date:
-      - Wed, 01 Apr 2015 09:16:24 GMT
+      - Wed, 01 Apr 2015 10:25:02 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":56,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T09:16:24.975Z","updated_at":"2015-04-01T09:16:24.975Z"}'
+      string: '{"id":85,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:25:02.186Z","updated_at":"2015-04-01T10:25:02.186Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:24 GMT
+  recorded_at: Wed, 01 Apr 2015 10:25:02 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/badges/56
+    uri: http://gamification-api.dev/v1//badges/85
     body:
       encoding: US-ASCII
       string: ''
@@ -125,17 +167,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - fceacb7a-e990-46c7-80bb-1995135dbdd7
+      - bccf69a5-f19d-4309-b1fd-ad94609e445b
       X-Runtime:
-      - '0.005470'
+      - '0.005507'
       Date:
-      - Wed, 01 Apr 2015 09:16:25 GMT
+      - Wed, 01 Apr 2015 10:25:02 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":56,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T09:16:24.975Z","updated_at":"2015-04-01T09:16:24.975Z"}'
+      string: '{"id":85,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:25:02.186Z","updated_at":"2015-04-01T10:25:02.186Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
+  recorded_at: Wed, 01 Apr 2015 10:25:02 GMT
 recorded_with: VCR 2.9.3

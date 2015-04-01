@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/30
+    uri: http://gamification-api.dev/v1//collections/48
     body:
       encoding: US-ASCII
       string: ''
@@ -31,22 +31,22 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - b8ba3515-5ecd-4e0c-842f-317c45f7eb93
+      - 5c7c246a-870d-4fcf-a660-f103b07ad081
       X-Runtime:
-      - '0.005817'
+      - '0.005217'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":30,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-04-01T09:07:42.457Z","updated_at":"2015-04-01T09:07:42.457Z"}'
+      string: '{"id":48,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-01T10:23:00.406Z","updated_at":"2015-04-01T10:23:00.406Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/30
+    uri: http://gamification-api.dev/v1//collections/48
     body:
       encoding: US-ASCII
       string: ''
@@ -75,21 +75,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f4f269d9-5135-46a9-8f2d-fc2bf4f03c41
+      - 0936af70-8479-43b0-b50f-1784203f77c4
       X-Runtime:
-      - '0.003611'
+      - '0.004611'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"No Record Found"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/36
+    uri: http://gamification-api.dev/v1//collections/54
     body:
       encoding: US-ASCII
       string: ''
@@ -118,22 +118,22 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - eb96da72-6e8e-4092-acd0-a641642247cf
+      - 4b7d71ea-a292-40d5-8cc0-631516059175
       X-Runtime:
-      - '0.004799'
+      - '0.006082'
       Date:
-      - Wed, 01 Apr 2015 09:08:36 GMT
+      - Wed, 01 Apr 2015 10:24:41 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":36,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-04-01T09:08:36.661Z","updated_at":"2015-04-01T09:08:36.661Z"}'
+      string: '{"id":54,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-01T10:24:41.968Z","updated_at":"2015-04-01T10:24:41.968Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:36 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:41 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/36
+    uri: http://gamification-api.dev/v1//collections/54
     body:
       encoding: US-ASCII
       string: ''
@@ -162,21 +162,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 48894277-c9cd-4eb0-ae41-9e35c9ec9a66
+      - b922a24d-4b92-4bac-a822-feddddc033b9
       X-Runtime:
-      - '0.004328'
+      - '0.003438'
       Date:
-      - Wed, 01 Apr 2015 09:08:36 GMT
+      - Wed, 01 Apr 2015 10:24:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"No Record Found"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:36 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
     method: post
-    uri: http://gamification-api.dev/collections
+    uri: http://gamification-api.dev/v1//collections
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+for+Destroy
@@ -202,31 +202,29 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
-      Location:
-      - http://gamification-api.dev/collections/42
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"35f41ef94c2ba550ab43c8a073be5c56"'
+      - '"2fe468efdeb82fcbbb1de9e00983b07d"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9897b545-cb7e-469c-aa5c-557b18fb1b0c
+      - 8eb382eb-67e8-4c39-b9a2-c970b37608e9
       X-Runtime:
-      - '0.016586'
+      - '0.011448'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:58 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":42,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-04-01T09:16:28.570Z","updated_at":"2015-04-01T09:16:28.570Z"}'
+      string: '{"id":60,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-01T10:24:58.754Z","updated_at":"2015-04-01T10:24:58.754Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:58 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/42
+    uri: http://gamification-api.dev/v1//collections/60
     body:
       encoding: US-ASCII
       string: ''
@@ -255,22 +253,22 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c6585c34-e1e0-4e4d-b4a3-db178b50d115
+      - 7a21cbbd-5fd0-4da2-8ef8-b595af73b9b0
       X-Runtime:
-      - '0.005093'
+      - '0.006011'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:58 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":42,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-04-01T09:16:28.570Z","updated_at":"2015-04-01T09:16:28.570Z"}'
+      string: '{"id":60,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-01T10:24:58.754Z","updated_at":"2015-04-01T10:24:58.754Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:58 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/42
+    uri: http://gamification-api.dev/v1//collections/60
     body:
       encoding: US-ASCII
       string: ''
@@ -299,16 +297,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - fcebb85a-5c16-45bb-b3ed-d4713ecf6897
+      - 7f9a118e-edd8-4ea8-8570-12bac971bff9
       X-Runtime:
-      - '0.003753'
+      - '0.003855'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:58 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"error":"No Record Found"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:58 GMT
 recorded_with: VCR 2.9.3

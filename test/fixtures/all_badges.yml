@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/badges
+    uri: http://gamification-api.dev/v1//badges
     body:
       encoding: US-ASCII
       string: ''
@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - aee23fe5-79cd-44f4-ab70-64b7cd2c7eaa
+      - 0f6b45fd-ac51-4f05-bd62-3cca30062317
       X-Runtime:
-      - '0.004896'
+      - '0.007332'
       Date:
-      - Wed, 01 Apr 2015 09:16:25 GMT
+      - Wed, 01 Apr 2015 10:25:02 GMT
       Connection:
       - close
     body:
@@ -97,5 +97,5 @@ http_interactions:
         MDMtMzFUMTQ6MDc6MTMuNTQ0WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTAzLTMx
         VDE0OjA3OjEzLjU0NFoifV0=
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:25 GMT
+  recorded_at: Wed, 01 Apr 2015 10:25:02 GMT
 recorded_with: VCR 2.9.3

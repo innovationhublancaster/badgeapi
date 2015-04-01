@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://gamification-api.dev/collections/34
+    uri: http://gamification-api.dev/v1//collections/52
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=Updated+Description&collection%5Bname%5D=Updated+Badge
@@ -33,21 +33,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - be5092a0-470a-49d9-8eb7-eda0687000d3
+      - bad4c948-5506-4e0a-9847-f74071002ea8
       X-Runtime:
-      - '0.007334'
+      - '0.008127'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":34,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T09:07:42.918Z","updated_at":"2015-04-01T09:07:42.949Z"}'
+      string: '{"id":52,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T10:23:00.839Z","updated_at":"2015-04-01T10:23:00.874Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/34
+    uri: http://gamification-api.dev/v1//collections/52
     body:
       encoding: US-ASCII
       string: ''
@@ -76,21 +76,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 47ad15ae-655a-4d44-8053-2ad5959f1a5f
+      - cf181bc8-94b5-4872-92ea-e7b832eafcd8
       X-Runtime:
-      - '0.005391'
+      - '0.005958'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":34,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T09:07:42.918Z","updated_at":"2015-04-01T09:07:42.949Z"}'
+      string: '{"id":52,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T10:23:00.839Z","updated_at":"2015-04-01T10:23:00.874Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: patch
-    uri: http://gamification-api.dev/collections/40
+    uri: http://gamification-api.dev/v1//collections/58
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=Updated+Description&collection%5Bname%5D=Updated+Badge
@@ -121,21 +121,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - a14bc355-69f8-4159-bd02-8a4e2f6b9230
+      - 431a8406-6289-4231-a414-0af62c57cdf0
       X-Runtime:
-      - '0.008596'
+      - '0.009151'
       Date:
-      - Wed, 01 Apr 2015 09:08:37 GMT
+      - Wed, 01 Apr 2015 10:24:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":40,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T09:08:37.099Z","updated_at":"2015-04-01T09:08:37.130Z"}'
+      string: '{"id":58,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T10:24:42.401Z","updated_at":"2015-04-01T10:24:42.428Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:37 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/40
+    uri: http://gamification-api.dev/v1//collections/58
     body:
       encoding: US-ASCII
       string: ''
@@ -164,21 +164,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 78c9078f-2c1e-48f2-97e4-6a1cf4b886d1
+      - ee99d068-4dfc-4bd5-9b35-9610193a7eb7
       X-Runtime:
-      - '0.005518'
+      - '0.005540'
       Date:
-      - Wed, 01 Apr 2015 09:08:37 GMT
+      - Wed, 01 Apr 2015 10:24:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":40,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T09:08:37.099Z","updated_at":"2015-04-01T09:08:37.130Z"}'
+      string: '{"id":58,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T10:24:42.401Z","updated_at":"2015-04-01T10:24:42.428Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:37 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
     method: post
-    uri: http://gamification-api.dev/collections
+    uri: http://gamification-api.dev/v1//collections
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+for+update
@@ -204,31 +204,29 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
-      Location:
-      - http://gamification-api.dev/collections/46
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"574add9786cf54f2c198bb85e98c5ed8"'
+      - '"ca974cc2ed38cd1d04e903db7dae7fc7"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 96803c0c-609b-447b-950a-dd307f7997b4
+      - 09162006-c304-4359-9a15-232a7cefab7e
       X-Runtime:
-      - '0.013098'
+      - '0.012523'
       Date:
-      - Wed, 01 Apr 2015 09:16:29 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":46,"name":"Create Collection for update","description":"This
-        is a new collection","created_at":"2015-04-01T09:16:28.991Z","updated_at":"2015-04-01T09:16:28.991Z"}'
+      string: '{"id":64,"name":"Create Collection for update","description":"This
+        is a new collection","created_at":"2015-04-01T10:24:59.187Z","updated_at":"2015-04-01T10:24:59.187Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:29 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 - request:
     method: patch
-    uri: http://gamification-api.dev/collections/46
+    uri: http://gamification-api.dev/v1//collections/64
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=Updated+Description&collection%5Bname%5D=Updated+Badge
@@ -259,21 +257,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 52f8671d-032e-42dc-b9ae-85366ab30cc9
+      - da0b35c2-b380-45ef-bf78-52db9f18d159
       X-Runtime:
-      - '0.007547'
+      - '0.007684'
       Date:
-      - Wed, 01 Apr 2015 09:16:29 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":46,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T09:16:28.991Z","updated_at":"2015-04-01T09:16:29.026Z"}'
+      string: '{"id":64,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T10:24:59.187Z","updated_at":"2015-04-01T10:24:59.217Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:29 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/46
+    uri: http://gamification-api.dev/v1//collections/64
     body:
       encoding: US-ASCII
       string: ''
@@ -302,16 +300,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 77e09e35-c9cf-407c-8cb9-6825fea701c5
+      - 17a829e0-be27-4c2a-87c4-4332fc4db5e3
       X-Runtime:
-      - '0.005542'
+      - '0.005449'
       Date:
-      - Wed, 01 Apr 2015 09:16:29 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":46,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T09:16:28.991Z","updated_at":"2015-04-01T09:16:29.026Z"}'
+      string: '{"id":64,"name":"Updated Badge","description":"Updated Description","created_at":"2015-04-01T10:24:59.187Z","updated_at":"2015-04-01T10:24:59.217Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:29 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 recorded_with: VCR 2.9.3

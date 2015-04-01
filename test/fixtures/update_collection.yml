@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://gamification-api.dev/collections/33
+    uri: http://gamification-api.dev/v1//collections/51
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
@@ -33,21 +33,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 22fb31bc-6265-4734-964f-89439c4c7204
+      - d2628df1-72e3-44a7-bc4e-69bcf1ba11f3
       X-Runtime:
-      - '0.007210'
+      - '0.007530'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":33,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:07:42.804Z","updated_at":"2015-04-01T09:07:42.841Z"}'
+      string: '{"id":51,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:23:00.718Z","updated_at":"2015-04-01T10:23:00.758Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/collections/33
+    uri: http://gamification-api.dev/v1//collections/51
     body:
       encoding: US-ASCII
       string: ''
@@ -74,25 +74,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"e214012ef20796d4cfaece807c623c39"'
+      - '"ecd6ea4d0513bbb7fc3fc6ae4c9997dd"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a437592c-e200-4eee-91c5-2b952012d631
+      - 2b9827a7-32d5-41f0-aed6-c67bffb0ac38
       X-Runtime:
-      - '0.003822'
+      - '0.003787'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":33,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:07:42.804Z","updated_at":"2015-04-01T09:07:42.841Z"}'
+      string: '{"id":51,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:23:00.718Z","updated_at":"2015-04-01T10:23:00.758Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/33
+    uri: http://gamification-api.dev/v1//collections/51
     body:
       encoding: US-ASCII
       string: ''
@@ -121,21 +121,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f0da0c8c-7523-4860-89a0-fa2597644348
+      - 1a32a1a0-b429-4b2c-b1cc-9ea2b4c6d23b
       X-Runtime:
-      - '0.005356'
+      - '0.006208'
       Date:
-      - Wed, 01 Apr 2015 09:07:42 GMT
+      - Wed, 01 Apr 2015 10:23:00 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":33,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:07:42.804Z","updated_at":"2015-04-01T09:07:42.841Z"}'
+      string: '{"id":51,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:23:00.718Z","updated_at":"2015-04-01T10:23:00.758Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:07:42 GMT
+  recorded_at: Wed, 01 Apr 2015 10:23:00 GMT
 - request:
     method: patch
-    uri: http://gamification-api.dev/collections/39
+    uri: http://gamification-api.dev/v1//collections/57
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
@@ -166,21 +166,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - dd8b40b9-7abd-48c0-807f-125469c54f8e
+      - 8950dec2-e762-4f65-a61c-036bd5eef7d8
       X-Runtime:
-      - '0.007174'
+      - '0.006988'
       Date:
-      - Wed, 01 Apr 2015 09:08:37 GMT
+      - Wed, 01 Apr 2015 10:24:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":39,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:08:36.990Z","updated_at":"2015-04-01T09:08:37.020Z"}'
+      string: '{"id":57,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:42.282Z","updated_at":"2015-04-01T10:24:42.316Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:37 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/collections/39
+    uri: http://gamification-api.dev/v1//collections/57
     body:
       encoding: US-ASCII
       string: ''
@@ -207,25 +207,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b2251a321ae417151c7b049285d182c5"'
+      - '"f23097cb1c8d211eea957439a0948a6e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 60d07a43-8510-4815-8343-8d5d60f610f4
+      - 74bd9686-53d5-42dd-85ca-297e2184f35d
       X-Runtime:
-      - '0.003679'
+      - '0.003852'
       Date:
-      - Wed, 01 Apr 2015 09:08:37 GMT
+      - Wed, 01 Apr 2015 10:24:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":39,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:08:36.990Z","updated_at":"2015-04-01T09:08:37.020Z"}'
+      string: '{"id":57,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:42.282Z","updated_at":"2015-04-01T10:24:42.316Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:37 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/39
+    uri: http://gamification-api.dev/v1//collections/57
     body:
       encoding: US-ASCII
       string: ''
@@ -254,21 +254,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f82c0034-3349-4391-84e4-26bd839b5435
+      - 201a1146-0856-47aa-9e47-89b59d82dd76
       X-Runtime:
-      - '0.005984'
+      - '0.005323'
       Date:
-      - Wed, 01 Apr 2015 09:08:37 GMT
+      - Wed, 01 Apr 2015 10:24:42 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":39,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:08:36.990Z","updated_at":"2015-04-01T09:08:37.020Z"}'
+      string: '{"id":57,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:42.282Z","updated_at":"2015-04-01T10:24:42.316Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:08:37 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
     method: post
-    uri: http://gamification-api.dev/collections
+    uri: http://gamification-api.dev/v1//collections
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+for+update
@@ -294,31 +294,29 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
-      Location:
-      - http://gamification-api.dev/collections/45
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"4c219283e9af0e5b1845995a336d6633"'
+      - '"70410f75ae6fc4f216e0a6539fe89b26"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 39bf4333-fd7d-4730-b613-52c21c51d7c5
+      - 8fe7ef33-015a-443e-a71a-1c97c04b419a
       X-Runtime:
-      - '0.011332'
+      - '0.007052'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":45,"name":"Create Collection for update","description":"This
-        is a new collection","created_at":"2015-04-01T09:16:28.882Z","updated_at":"2015-04-01T09:16:28.882Z"}'
+      string: '{"id":63,"name":"Create Collection for update","description":"This
+        is a new collection","created_at":"2015-04-01T10:24:59.077Z","updated_at":"2015-04-01T10:24:59.077Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 - request:
     method: patch
-    uri: http://gamification-api.dev/collections/45
+    uri: http://gamification-api.dev/v1//collections/63
     body:
       encoding: UTF-8
       string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
@@ -349,21 +347,21 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 55470a39-2822-4ab9-a7d2-a4a5723dbdba
+      - 7263ad63-a0e7-4d7b-b47b-835012a78138
       X-Runtime:
-      - '0.007768'
+      - '0.007497'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":45,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:16:28.882Z","updated_at":"2015-04-01T09:16:28.916Z"}'
+      string: '{"id":63,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:59.077Z","updated_at":"2015-04-01T10:24:59.106Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/collections/45
+    uri: http://gamification-api.dev/v1//collections/63
     body:
       encoding: US-ASCII
       string: ''
@@ -390,25 +388,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"e25d82299e7b24177ab058f878e05426"'
+      - '"8c09a52017d6d97fd037e2133d3c32e7"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 09ce14a6-3713-4d30-ba41-cd7ff2cd10d6
+      - 2e48b0ff-f8b5-48a7-aff6-d623722f9bfd
       X-Runtime:
-      - '0.003981'
+      - '0.003827'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":45,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:16:28.882Z","updated_at":"2015-04-01T09:16:28.916Z"}'
+      string: '{"id":63,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:59.077Z","updated_at":"2015-04-01T10:24:59.106Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/collections/45
+    uri: http://gamification-api.dev/v1//collections/63
     body:
       encoding: US-ASCII
       string: ''
@@ -437,16 +435,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 8116d6cf-6469-40a7-ba5b-9840b2302b12
+      - 4beaf9b7-b980-4947-be86-4b483e103fc6
       X-Runtime:
-      - '0.005596'
+      - '0.005492'
       Date:
-      - Wed, 01 Apr 2015 09:16:28 GMT
+      - Wed, 01 Apr 2015 10:24:59 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":45,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T09:16:28.882Z","updated_at":"2015-04-01T09:16:28.916Z"}'
+      string: '{"id":63,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:59.077Z","updated_at":"2015-04-01T10:24:59.106Z"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 09:16:28 GMT
+  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
 recorded_with: VCR 2.9.3
