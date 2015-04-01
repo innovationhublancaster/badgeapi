@@ -1,12 +1,11 @@
 require "bundler/gem_tasks"
 
-desc "Open an pry/irb session preloaded with this library"
-
+desc "Open an pry/irb session preloaded with badgeapi"
 task :console do
 	irb = "pry"
 	# Check if pry installed
 	begin
-		gem "monkey"
+		gem "pry"
 	rescue Gem::LoadError
 		irb = "irb"
 	end
