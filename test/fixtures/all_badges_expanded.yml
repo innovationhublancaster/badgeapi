@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//badges?expand=monkey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 633080f3-c755-422a-aed2-aa866f5eb7fc
+      X-Runtime:
+      - '0.004499'
+      Date:
+      - Thu, 09 Apr 2015 13:29:45 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"Invalid expand
+        parameter: monkey","status":400}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:29:45 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//badges?expand=collection
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b22494591ca9ac1d0696aa324221673b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4747a077-5d65-43c6-bf5a-2cca8db9213d
+      X-Runtime:
+      - '0.011294'
+      Date:
+      - Thu, 09 Apr 2015 13:29:45 GMT
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjEsIm5hbWUiOiJCb29rIFdvcm0iLCJkZXNjcmlwdGlvbiI6IkRl
+        c2NyaXB0aW9uPyIsInJlcXVpcmVtZW50cyI6IkxvYW4gb3V0IDI1IGJvb2tz
+        IiwiaGludCI6IllvdSBtdXN0IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0
+        dHA6Ly9vcGVuYmFkZ2VzLm9yZy93cC1jb250ZW50L3RoZW1lcy9vcGVuYmFk
+        Z2VzMi9tZWRpYS9pbWFnZXMvY29udGVudC1iYWNrZ3JvdW5kLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOjEsImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3
+        OjEzLjUyNloiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wNC0wOVQxMDo0ODo0OS4y
+        NjlaIiwiY29sbGVjdGlvbiI6eyJpZCI6MSwibmFtZSI6IkxpYnJhcnkiLCJk
+        ZXNjcmlwdGlvbiI6IkFsbCBvZiB0aGUgYmFkZ2VzIGF2YWlsYWJsZSByZWxh
+        dGVkIHRvIGxpYnJhcnkgZGF0YSIsImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMx
+        VDE0OjA3OjEzLjUwNVoiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wMy0zMVQxNTow
+        NTo0Mi45NTVaIn19LHsiaWQiOjIsIm5hbWUiOiJNZWdhIEJvb2sgV29ybSIs
+        ImRlc2NyaXB0aW9uIjoiRGVzY3JpcHRpb24/IiwicmVxdWlyZW1lbnRzIjoi
+        TG9hbiBvdXQgNTAgYm9va3MiLCJoaW50IjoiWW91IG11c3QgcmVhbGx5IGxp
+        a2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9vcGVuYmFkZ2VzLm9yZy93
+        cC1jb250ZW50L3RoZW1lcy9vcGVuYmFkZ2VzMi9tZWRpYS9pbWFnZXMvY29u
+        dGVudC1iYWNrZ3JvdW5kLnBuZyIsImNvbGxlY3Rpb25faWQiOjEsImNyZWF0
+        ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3OjEzLjUyOVoiLCJ1cGRhdGVkX2F0
+        IjoiMjAxNS0wMy0zMVQxNDowNzoxMy41MjlaIiwiY29sbGVjdGlvbiI6eyJp
+        ZCI6MSwibmFtZSI6IkxpYnJhcnkiLCJkZXNjcmlwdGlvbiI6IkFsbCBvZiB0
+        aGUgYmFkZ2VzIGF2YWlsYWJsZSByZWxhdGVkIHRvIGxpYnJhcnkgZGF0YSIs
+        ImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3OjEzLjUwNVoiLCJ1cGRh
+        dGVkX2F0IjoiMjAxNS0wMy0zMVQxNTowNTo0Mi45NTVaIn19LHsiaWQiOjMs
+        Im5hbWUiOiJOaWdodCBPd2wiLCJkZXNjcmlwdGlvbiI6IkRlc2NyaXB0aW9u
+        PyIsInJlcXVpcmVtZW50cyI6IkxvYW4gb3V0IGEgYm9vayBiZXR3ZWVuIDAw
+        OjAwIC0gNTowMCIsImhpbnQiOiJJdCBtdXN0IGJlIGxhdGUuLi4iLCJpbWFn
+        ZSI6Imh0dHA6Ly9vcGVuYmFkZ2VzLm9yZy93cC1jb250ZW50L3RoZW1lcy9v
+        cGVuYmFkZ2VzMi9tZWRpYS9pbWFnZXMvY29udGVudC1iYWNrZ3JvdW5kLnBu
+        ZyIsImNvbGxlY3Rpb25faWQiOjEsImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMx
+        VDE0OjA3OjEzLjUzM1oiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wMy0zMVQxNDow
+        NzoxMy41MzNaIiwiY29sbGVjdGlvbiI6eyJpZCI6MSwibmFtZSI6IkxpYnJh
+        cnkiLCJkZXNjcmlwdGlvbiI6IkFsbCBvZiB0aGUgYmFkZ2VzIGF2YWlsYWJs
+        ZSByZWxhdGVkIHRvIGxpYnJhcnkgZGF0YSIsImNyZWF0ZWRfYXQiOiIyMDE1
+        LTAzLTMxVDE0OjA3OjEzLjUwNVoiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wMy0z
+        MVQxNTowNTo0Mi45NTVaIn19LHsiaWQiOjQsIm5hbWUiOiJPdXIgQmVzdCBG
+        cmllbmQiLCJkZXNjcmlwdGlvbiI6IkRlc2NyaXB0aW9uPyIsInJlcXVpcmVt
+        ZW50cyI6IsKjMCBpbiBmaW5lcyBmb3IgdGhlIHBhc3QgMTIgbW9udGhzIiwi
+        aGludCI6IkRvbid0IGdldCBpbiB0cm91YmxlIG5vdy4uLiIsImltYWdlIjoi
+        aHR0cDovL29wZW5iYWRnZXMub3JnL3dwLWNvbnRlbnQvdGhlbWVzL29wZW5i
+        YWRnZXMyL21lZGlhL2ltYWdlcy9jb250ZW50LWJhY2tncm91bmQucG5nIiwi
+        Y29sbGVjdGlvbl9pZCI6MSwiY3JlYXRlZF9hdCI6IjIwMTUtMDMtMzFUMTQ6
+        MDc6MTMuNTM5WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3OjEz
+        LjUzOVoiLCJjb2xsZWN0aW9uIjp7ImlkIjoxLCJuYW1lIjoiTGlicmFyeSIs
+        ImRlc2NyaXB0aW9uIjoiQWxsIG9mIHRoZSBiYWRnZXMgYXZhaWxhYmxlIHJl
+        bGF0ZWQgdG8gbGlicmFyeSBkYXRhIiwiY3JlYXRlZF9hdCI6IjIwMTUtMDMt
+        MzFUMTQ6MDc6MTMuNTA1WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE1
+        OjA1OjQyLjk1NVoifX0seyJpZCI6NSwibmFtZSI6IllvdSBUcmltIFRyYWls
+        ZWQhIiwiZGVzY3JpcHRpb24iOiJEZXNjcmlwdGlvbj8iLCJyZXF1aXJlbWVu
+        dHMiOiJDb21wbGV0ZSBvbmUgbGFwIG9mIHRoZSB0cmltIHRyYWlsIiwiaGlu
+        dCI6IkhhdmUgdG8gdXNlZCB0aGUgdHJpbSB0cmFpbD8iLCJpbWFnZSI6Imh0
+        dHA6Ly9vcGVuYmFkZ2VzLm9yZy93cC1jb250ZW50L3RoZW1lcy9vcGVuYmFk
+        Z2VzMi9tZWRpYS9pbWFnZXMvY29udGVudC1iYWNrZ3JvdW5kLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOjIsImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3
+        OjEzLjU0MloiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wMy0zMVQxNDowNzoxMy41
+        NDJaIn0seyJpZCI6NiwibmFtZSI6Ik1hcmF0aG9uIE1hbiIsImRlc2NyaXB0
+        aW9uIjoiRGVzY3JpcHRpb24/IiwicmVxdWlyZW1lbnRzIjoiQ29tcGxldGUg
+        MTAgbGFwcyBvZiB0aGUgdHJpbSB0cmFpbCBvdmVyIGFueSB0aW1lIiwiaGlu
+        dCI6IktlZXAgZ29pbmcuLi4iLCJpbWFnZSI6Imh0dHA6Ly9vcGVuYmFkZ2Vz
+        Lm9yZy93cC1jb250ZW50L3RoZW1lcy9vcGVuYmFkZ2VzMi9tZWRpYS9pbWFn
+        ZXMvY29udGVudC1iYWNrZ3JvdW5kLnBuZyIsImNvbGxlY3Rpb25faWQiOjIs
+        ImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3OjEzLjU0NFoiLCJ1cGRh
+        dGVkX2F0IjoiMjAxNS0wMy0zMVQxNDowNzoxMy41NDRaIn1d
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:29:45 GMT
+recorded_with: VCR 2.9.3

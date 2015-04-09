@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"ff89289a93612f199b34708ded006150"'
+      - '"ab8a30f4e88e5875ea18b29ce6d53c4a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9438568f-5724-47ef-8cd1-45c2a572b0c6
+      - 1287e827-0d4f-405c-8a55-ef3274471889
       X-Runtime:
-      - '0.004684'
+      - '0.012814'
       Date:
-      - Wed, 01 Apr 2015 10:25:01 GMT
+      - Thu, 09 Apr 2015 13:29:44 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-03-31T14:07:13.526Z","updated_at":"2015-03-31T14:07:13.526Z"}]'
+        out 25 books","hint":"You must like books...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","collection_id":1,"created_at":"2015-03-31T14:07:13.526Z","updated_at":"2015-04-09T10:48:49.269Z"}]'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:25:01 GMT
+  recorded_at: Thu, 09 Apr 2015 13:29:44 GMT
 recorded_with: VCR 2.9.3

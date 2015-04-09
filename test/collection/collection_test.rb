@@ -32,6 +32,26 @@ class BadgeapiCollectionTest < MiniTest::Test
 		end
 	end
 
+	def test_it_returns_back_a_single_collection_expanded
+		VCR.use_cassette('one_collection_expanded', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+
+			collection = Badgeapi::Collection.find(1, expand: "badges")
+
+			assert_equal Badgeapi::Collection, collection.class
+
+			assert_equal 1, collection.id
+			assert_equal "Library", collection.name
+			assert_equal "All of the badges available related to library data", collection.description
+
+
+			assert_equal Badgeapi::Badge, collection.badges[0].class
+			assert_equal 4, collection.badges.length
+			assert_equal "Book Worm", collection.badges[0].name
+
+		end
+	end
+
 	def test_it_returns_back_all_collections
 		VCR.use_cassette('all_collection', :record => :all) do
 			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
@@ -44,6 +64,22 @@ class BadgeapiCollectionTest < MiniTest::Test
 			# Make sure that the JSON was parsed
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Collection)
+		end
+	end
+
+	def test_it_returns_back_all_collections_expanded
+		VCR.use_cassette('all_collection_expanded', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+
+			result = Badgeapi::Collection.all(expand: "badges")
+
+			# Make sure we got all the badges
+			assert_equal 2, result.length
+
+			# Make sure that the JSON was parsed
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Collection)
+			assert result.first.badges.first.kind_of?(Badgeapi::Badge)
 		end
 	end
 

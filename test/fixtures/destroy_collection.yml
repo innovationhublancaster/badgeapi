@@ -175,54 +175,6 @@ http_interactions:
     http_version: 
   recorded_at: Wed, 01 Apr 2015 10:24:41 GMT
 - request:
-    method: post
-    uri: http://gamification-api.dev/v1//collections
-    body:
-      encoding: UTF-8
-      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+for+Destroy&collection%5Brequirements%5D=You+need+to+love+the+Badge+API
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"7c7c49f7662530514fcf8d994b64c5e8"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d448b42f-504c-412d-a2f2-0b83d185728d
-      X-Runtime:
-      - '0.012291'
-      Date:
-      - Wed, 01 Apr 2015 10:24:58 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":59,"name":"Create Collection for Destroy","description":"This
-        is a new badge","created_at":"2015-04-01T10:24:58.668Z","updated_at":"2015-04-01T10:24:58.668Z"}'
-    http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:24:58 GMT
-- request:
     method: delete
     uri: http://gamification-api.dev/v1//collections/59
     body:
@@ -309,4 +261,682 @@ http_interactions:
       string: '{"error":"No Record Found"}'
     http_version: 
   recorded_at: Wed, 01 Apr 2015 10:24:58 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2bc0fe9977b71082e402d636111af6ac"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bf398b22-8d15-4bd0-a96f-4f2aa4208b64
+      X-Runtime:
+      - '0.006524'
+      Date:
+      - Thu, 09 Apr 2015 13:06:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":73,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:06:29.400Z","updated_at":"2015-04-09T13:06:29.400Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:06:29 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - fab27fc3-6cd3-4a1a-84ab-152b3ca832ca
+      X-Runtime:
+      - '0.006476'
+      Date:
+      - Thu, 09 Apr 2015 13:06:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 73","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:06:29 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/80
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cf34e2f19cec6cafe271b689839a09c6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1303d479-48c3-4392-9a53-66c88a023e08
+      X-Runtime:
+      - '0.030042'
+      Date:
+      - Thu, 09 Apr 2015 13:12:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":80,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:12:08.113Z","updated_at":"2015-04-09T13:12:08.113Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:12:08 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/80
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a9382b6c-fcd3-4acb-865f-9621271cdb4d
+      X-Runtime:
+      - '0.004395'
+      Date:
+      - Thu, 09 Apr 2015 13:12:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 80","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:12:08 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/86
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6773dde185b40f9194765428f355f153"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4f0acc02-aab1-4935-9ff6-86944ba791e2
+      X-Runtime:
+      - '0.005822'
+      Date:
+      - Thu, 09 Apr 2015 13:32:02 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":86,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:32:02.082Z","updated_at":"2015-04-09T13:32:02.082Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:02 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/86
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - ba0fd601-8c2f-4b3b-921d-f025a9265128
+      X-Runtime:
+      - '0.003887'
+      Date:
+      - Thu, 09 Apr 2015 13:32:02 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 86","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:02 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/92
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"128fd8268e8aaf8f8e0bef4e9c6b4d73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 166930ee-ce97-46c6-9955-e4b0b1079938
+      X-Runtime:
+      - '0.005590'
+      Date:
+      - Thu, 09 Apr 2015 13:32:49 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":92,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:32:49.738Z","updated_at":"2015-04-09T13:32:49.738Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:49 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/92
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - cb11eb22-04a4-4e8f-94b1-6797276301f4
+      X-Runtime:
+      - '0.003872'
+      Date:
+      - Thu, 09 Apr 2015 13:32:49 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 92","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:49 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/98
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"389f06423a66eaf84c2e6d53bf8a9640"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 269c9206-f696-4e2c-9c23-cd91150feb97
+      X-Runtime:
+      - '0.006675'
+      Date:
+      - Thu, 09 Apr 2015 13:33:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":98,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:33:08.066Z","updated_at":"2015-04-09T13:33:08.066Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:33:08 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/98
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 271406e3-a965-4338-8596-8a12b3484fb0
+      X-Runtime:
+      - '0.004117'
+      Date:
+      - Thu, 09 Apr 2015 13:33:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 98","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:33:08 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/104
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"50668bcf74c95726f434159342383c58"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 905a00e6-3fb9-4911-8491-28f4472003c5
+      X-Runtime:
+      - '0.005793'
+      Date:
+      - Thu, 09 Apr 2015 13:34:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":104,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:34:31.014Z","updated_at":"2015-04-09T13:34:31.014Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:31 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/104
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 50c7b79a-f3d3-4a44-b220-6202bde53fbd
+      X-Runtime:
+      - '0.003984'
+      Date:
+      - Thu, 09 Apr 2015 13:34:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 104","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:31 GMT
+- request:
+    method: post
+    uri: http://gamification-api.dev/v1//collections
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+for+Destroy&collection%5Brequirements%5D=You+need+to+love+the+Badge+API
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ef81d5a99f57b0a9db5de6dad6b29266"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - abdfa158-bad2-428e-8914-e926bd5d1af8
+      X-Runtime:
+      - '0.013707'
+      Date:
+      - Thu, 09 Apr 2015 13:34:53 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":110,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:34:53.843Z","updated_at":"2015-04-09T13:34:53.843Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:53 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/110
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ef81d5a99f57b0a9db5de6dad6b29266"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ac318b9d-f6a5-4251-b2c2-b44c0a4288ee
+      X-Runtime:
+      - '0.005435'
+      Date:
+      - Thu, 09 Apr 2015 13:34:53 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":110,"name":"Create Collection for Destroy","description":"This
+        is a new badge","created_at":"2015-04-09T13:34:53.843Z","updated_at":"2015-04-09T13:34:53.843Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:53 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/110
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1fa93fc3-2632-4719-b465-2e62744506f7
+      X-Runtime:
+      - '0.003846'
+      Date:
+      - Thu, 09 Apr 2015 13:34:53 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
+        with id: 110","status":404}}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:53 GMT
 recorded_with: VCR 2.9.3

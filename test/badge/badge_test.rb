@@ -36,6 +36,26 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
+	def test_it_returns_back_a_single_badge_expanded
+		VCR.use_cassette('one_badge_expanded', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+
+			badge = Badgeapi::Badge.find(1, expand: "collection")
+			assert_equal Badgeapi::Badge, badge.class
+
+			assert_equal 1, badge.id
+			assert_equal "Book Worm", badge.name
+			assert_equal "Description?", badge.description
+			assert_equal "Loan out 25 books", badge.requirements
+			assert_equal "You must like books...", badge.hint
+			assert_equal "http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png", badge.image
+			assert_equal 1, badge.collection_id
+
+			assert_equal Badgeapi::Collection, badge.collection.class
+			assert_equal "Library", badge.collection.name
+		end
+	end
+
 	def test_it_returns_back_all_badges
 		VCR.use_cassette('all_badges', :record => :all) do
 			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
@@ -47,6 +67,31 @@ class BadgeapiBadgeTest < MiniTest::Test
 			# Make sure that the JSON was parsed
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Badge)
+		end
+	end
+
+	def test_it_returns_back_all_badges_exapanded
+		VCR.use_cassette('all_badges_expanded', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+			result = Badgeapi::Badge.all(expand: "collection")
+
+			# Make sure we got all the badges
+			assert_equal 6, result.length
+
+			# Make sure that the JSON was parsed
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+			assert result.first.collection.kind_of?(Badgeapi::Collection)
+
+			#assert_not_nil result['collection']
+		end
+	end
+
+	def test_it_errors_all_badges_exapanded
+		VCR.use_cassette('all_badges_expanded', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+
+			assert_raises(Exception) { Badgeapi::Badge.all(expand: "monkey") }
 		end
 	end
 

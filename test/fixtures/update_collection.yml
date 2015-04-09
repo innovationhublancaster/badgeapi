@@ -267,54 +267,6 @@ http_interactions:
     http_version: 
   recorded_at: Wed, 01 Apr 2015 10:24:42 GMT
 - request:
-    method: post
-    uri: http://gamification-api.dev/v1//collections
-    body:
-      encoding: UTF-8
-      string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+for+update
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"70410f75ae6fc4f216e0a6539fe89b26"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8fe7ef33-015a-443e-a71a-1c97c04b419a
-      X-Runtime:
-      - '0.007052'
-      Date:
-      - Wed, 01 Apr 2015 10:24:59 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":63,"name":"Create Collection for update","description":"This
-        is a new collection","created_at":"2015-04-01T10:24:59.077Z","updated_at":"2015-04-01T10:24:59.077Z"}'
-    http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
-- request:
     method: patch
     uri: http://gamification-api.dev/v1//collections/63
     body:
@@ -447,4 +399,1011 @@ http_interactions:
       string: '{"id":63,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-01T10:24:59.077Z","updated_at":"2015-04-01T10:24:59.106Z"}'
     http_version: 
   recorded_at: Wed, 01 Apr 2015 10:24:59 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/77
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"596b5dec67ad75813674bad7c576926d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 73d38ab8-4b1f-4cdc-a6dc-5fca28a74c48
+      X-Runtime:
+      - '0.009305'
+      Date:
+      - Thu, 09 Apr 2015 13:06:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":77,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:06:29.856Z","updated_at":"2015-04-09T13:06:29.894Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:06:29 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/77
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"596b5dec67ad75813674bad7c576926d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e98e509-20a4-411f-84f2-c6d609407cb0
+      X-Runtime:
+      - '0.004399'
+      Date:
+      - Thu, 09 Apr 2015 13:06:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":77,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:06:29.856Z","updated_at":"2015-04-09T13:06:29.894Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:06:29 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/77
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"596b5dec67ad75813674bad7c576926d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 68b6bfc7-8650-438d-96a0-54244fad25a8
+      X-Runtime:
+      - '0.008196'
+      Date:
+      - Thu, 09 Apr 2015 13:06:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":77,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:06:29.856Z","updated_at":"2015-04-09T13:06:29.894Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:06:29 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/84
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d838f31a320ddc5ef7f8f9864871779a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a60b7e2e-c8e6-4864-83ab-95c1e1b30f8b
+      X-Runtime:
+      - '0.008881'
+      Date:
+      - Thu, 09 Apr 2015 13:12:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":84,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:12:08.600Z","updated_at":"2015-04-09T13:12:08.634Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:12:08 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/84
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d838f31a320ddc5ef7f8f9864871779a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e1f1e7c1-05f1-4ad0-92c1-a548d80603b9
+      X-Runtime:
+      - '0.004681'
+      Date:
+      - Thu, 09 Apr 2015 13:12:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":84,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:12:08.600Z","updated_at":"2015-04-09T13:12:08.634Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:12:08 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/84
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d838f31a320ddc5ef7f8f9864871779a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cb614141-3a3f-455f-8ffd-ca0959dbb2a2
+      X-Runtime:
+      - '0.005860'
+      Date:
+      - Thu, 09 Apr 2015 13:12:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":84,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:12:08.600Z","updated_at":"2015-04-09T13:12:08.634Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:12:08 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/90
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"527df005d5d9250b7c53ad61e7b42bc9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e672f777-9128-4621-b5dd-0111fc97c519
+      X-Runtime:
+      - '0.007775'
+      Date:
+      - Thu, 09 Apr 2015 13:32:02 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":90,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:32:02.560Z","updated_at":"2015-04-09T13:32:02.592Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:02 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/90
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"527df005d5d9250b7c53ad61e7b42bc9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a0662790-4873-4b55-9f8c-fcb535e21d34
+      X-Runtime:
+      - '0.004002'
+      Date:
+      - Thu, 09 Apr 2015 13:32:02 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":90,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:32:02.560Z","updated_at":"2015-04-09T13:32:02.592Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:02 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/90
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"527df005d5d9250b7c53ad61e7b42bc9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc410f69-1b58-40fc-8fee-6f91869885a0
+      X-Runtime:
+      - '0.005694'
+      Date:
+      - Thu, 09 Apr 2015 13:32:02 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":90,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:32:02.560Z","updated_at":"2015-04-09T13:32:02.592Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:02 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/96
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f4bd0a7a7bdcaa3b86a8eb398216baab"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a1b671fe-0efe-4684-9e00-a3cfd421a24a
+      X-Runtime:
+      - '0.012230'
+      Date:
+      - Thu, 09 Apr 2015 13:32:50 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":96,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:32:50.211Z","updated_at":"2015-04-09T13:32:50.246Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:50 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/96
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f4bd0a7a7bdcaa3b86a8eb398216baab"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f226128d-1f36-41b2-a623-0b443fa55dde
+      X-Runtime:
+      - '0.004291'
+      Date:
+      - Thu, 09 Apr 2015 13:32:50 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":96,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:32:50.211Z","updated_at":"2015-04-09T13:32:50.246Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:50 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/96
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f4bd0a7a7bdcaa3b86a8eb398216baab"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b3589c1b-5221-4f96-a0d9-c828ad9144bd
+      X-Runtime:
+      - '0.006861'
+      Date:
+      - Thu, 09 Apr 2015 13:32:50 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":96,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:32:50.211Z","updated_at":"2015-04-09T13:32:50.246Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:32:50 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/102
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9a1551fd3fc378dc87c266fa78202e96"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 26346799-ef23-4cfa-b2ff-55ba36761be9
+      X-Runtime:
+      - '0.009133'
+      Date:
+      - Thu, 09 Apr 2015 13:33:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":102,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:33:08.546Z","updated_at":"2015-04-09T13:33:08.582Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:33:08 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/102
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9a1551fd3fc378dc87c266fa78202e96"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 85a49c43-6581-4e1d-bba4-dfcc81b7a1d6
+      X-Runtime:
+      - '0.004119'
+      Date:
+      - Thu, 09 Apr 2015 13:33:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":102,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:33:08.546Z","updated_at":"2015-04-09T13:33:08.582Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:33:08 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/102
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9a1551fd3fc378dc87c266fa78202e96"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 54041104-6af9-48d4-a6a6-239423058172
+      X-Runtime:
+      - '0.005615'
+      Date:
+      - Thu, 09 Apr 2015 13:33:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":102,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:33:08.546Z","updated_at":"2015-04-09T13:33:08.582Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:33:08 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/108
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"8224f446fdf4d2e9522555484a1d339d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0eb2378f-2061-4620-8b63-fd35fbc10932
+      X-Runtime:
+      - '0.008833'
+      Date:
+      - Thu, 09 Apr 2015 13:34:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":108,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:34:31.533Z","updated_at":"2015-04-09T13:34:31.574Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:31 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"8224f446fdf4d2e9522555484a1d339d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 728a562c-1d8f-4ad0-ab6f-676a06fab52d
+      X-Runtime:
+      - '0.003864'
+      Date:
+      - Thu, 09 Apr 2015 13:34:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":108,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:34:31.533Z","updated_at":"2015-04-09T13:34:31.574Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:31 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"8224f446fdf4d2e9522555484a1d339d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fbbbe620-f76c-45ce-842f-e803c92d2d20
+      X-Runtime:
+      - '0.022546'
+      Date:
+      - Thu, 09 Apr 2015 13:34:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":108,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:34:31.533Z","updated_at":"2015-04-09T13:34:31.574Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:31 GMT
+- request:
+    method: post
+    uri: http://gamification-api.dev/v1//collections
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+for+update
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d39c9c67fdeab2c4985c9729c722ce40"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4e36457e-f6fa-4c90-bd2f-2a58dd4e5e54
+      X-Runtime:
+      - '0.011419'
+      Date:
+      - Thu, 09 Apr 2015 13:34:54 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":114,"name":"Create Collection for update","description":"This
+        is a new collection","created_at":"2015-04-09T13:34:54.381Z","updated_at":"2015-04-09T13:34:54.381Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:54 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1//collections/114
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=Updated+Collection&collection%5Bname%5D=Updated+Collection
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e6dac0f7252540a6383693555e0af5c0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ad18ca78-6512-432d-be02-a3d97d03ad36
+      X-Runtime:
+      - '0.007895'
+      Date:
+      - Thu, 09 Apr 2015 13:34:54 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":114,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:34:54.381Z","updated_at":"2015-04-09T13:34:54.418Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:54 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1//collections/114
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e6dac0f7252540a6383693555e0af5c0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d300bbd6-0240-4a98-9eb7-de9a4dd3b44c
+      X-Runtime:
+      - '0.004389'
+      Date:
+      - Thu, 09 Apr 2015 13:34:54 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":114,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:34:54.381Z","updated_at":"2015-04-09T13:34:54.418Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:54 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1//collections/114
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e6dac0f7252540a6383693555e0af5c0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e20564e9-d73e-4408-b39e-21c73a4a10ed
+      X-Runtime:
+      - '0.005843'
+      Date:
+      - Thu, 09 Apr 2015 13:34:54 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":114,"name":"Updated Collection","description":"Updated Collection","created_at":"2015-04-09T13:34:54.381Z","updated_at":"2015-04-09T13:34:54.418Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 13:34:54 GMT
 recorded_with: VCR 2.9.3

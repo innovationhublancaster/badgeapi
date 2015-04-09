@@ -2,6 +2,7 @@
 
 module Badgeapi
 	class BadgeapiObject
+
 		class << self
 
 			def collection_name
@@ -26,23 +27,51 @@ module Badgeapi
 					raise Exception.new(attributes['error'])
 				else
 					if attributes.class == Array
-						attributes.map { |attributes| map_json_to_object(attributes) }
+						attributes.map do |attributes|
+							map_json_to_object(attributes)
+						end
 					else
 						map_json_to_object attributes
 					end
 				end
 			end
 
+			def object_classes
+				@object_classes ||= {
+					'collection' => Collection,
+					'badge'=> Badge
+				}
+			end
+
 			def map_json_to_object attributes
 				record = new
 				attributes.each do |name, value|
-					record.instance_variable_set "@#{name}", value
+					if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
+						child = map_related_object object_classes.fetch(name.singularize), value
+						record.instance_variable_set "@#{name}", child
+					else
+						record.instance_variable_set "@#{name}", value
+					end
 				end
 				record
 			end
 
-			def find(id)
-				request "get", "#{Badgeapi.api_url}/#{collection_path}/#{id}"
+			def map_related_object object, attributes
+				if attributes.class == Array
+					attributes.map do |attributes|
+						map_related_object object, attributes
+					end
+				else
+					record = object.new
+					attributes.each do |name, value|
+						record.instance_variable_set "@#{name}", value
+					end
+					record
+				end
+			end
+
+			def find id, params ={}
+				request "get", "#{Badgeapi.api_url}/#{collection_path}/#{id}", params
 			end
 
 			def all params = {}
@@ -60,6 +89,7 @@ module Badgeapi
 			def destroy(id)
 				request "delete", "#{Badgeapi.api_url}/#{collection_path}/#{id}"
 			end
+
 		end
 
 		def inspect
@@ -77,5 +107,9 @@ module Badgeapi
 
 			self.class.request "patch", "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
 		end
+
+
+
+
 	end
 end
