@@ -80,6 +80,11 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Collection)
 			assert result.first.badges.first.kind_of?(Badgeapi::Badge)
+			assert_equal "Book Worm", result.first.badges.first.name
+
+			result.first.badges.each do |badge|
+				assert_equal Badgeapi::Badge, badge.class
+			end
 		end
 	end
 
