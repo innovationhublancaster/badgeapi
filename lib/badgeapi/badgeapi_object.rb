@@ -24,7 +24,7 @@ module Badgeapi
 				attributes = JSON.parse(response.body)
 
 				if attributes.include?("error")
-					raise Exception.new(attributes['error'])
+					handle_api_error attributes
 				else
 					if attributes.class == Array
 						attributes.map do |attributes|
@@ -108,8 +108,20 @@ module Badgeapi
 			self.class.request "patch", "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
 		end
 
+	private
 
+		def self.handle_api_error error
+			error_object = error['error']
 
+			case error_object["type"]
+				when "invalid_request_error"
+					raise InvalidRequestError.new(error_object["message"], error_object["status"], error)
+				when "api_error"
+					raise APIError.new(error_object["message"], error_object["status"], error)
+				else
+					raise APIError.new("Unknown error tyep #{error_object["type"]}", error_object["status"], error)
+			end
+		end
 
 	end
 end

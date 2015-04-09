@@ -106,7 +106,16 @@ class BadgeapiCollectionTest < MiniTest::Test
 	def test_collections_raise_errors
 		VCR.use_cassette('collection_error', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
-			assert_raises(Exception) { Badgeapi::Collection.find(27) }
+
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Collection.find(27) }
+
+			begin
+				Badgeapi::Collection.find(27)
+			rescue Badgeapi::InvalidRequestError => e
+				assert_equal(404, e.http_status)
+				refute_empty e.message
+				assert_equal(true, e.json_body.kind_of?(Hash))
+			end
 		end
 	end
 
@@ -138,12 +147,23 @@ class BadgeapiCollectionTest < MiniTest::Test
 				description: "This is a new badge"
 			)
 
-			assert_raises(Exception) {
+			assert_raises(Badgeapi::InvalidRequestError) {
 				Badgeapi::Collection.create(
-					name: "Create Collection Test Destroy",
-					description: "This is a new badge"
+						name: "Create Collection Test Destroy",
+						description: "This is a new badge"
 				)
 			}
+
+			begin
+				Badgeapi::Collection.create(
+						name: "Create Collection Test Destroy",
+						description: "This is a new badge"
+				)
+			rescue Badgeapi::InvalidRequestError => e
+				assert_equal(422, e.http_status)
+				refute_empty e.message
+				assert_equal(true, e.json_body.kind_of?(Hash))
+			end
 
 			Badgeapi::Collection.destroy(collection.id)
 		end
@@ -164,7 +184,15 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 			assert_equal Badgeapi::Collection, destroyed_collection.class
 
-			assert_raises(Exception) { Badgeapi::Collection.find(destroyed_collection.id) }
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Collection.find(destroyed_collection.id) }
+
+			begin
+				Badgeapi::Collection.find(destroyed_collection.id)
+			rescue Badgeapi::InvalidRequestError => e
+				assert_equal(404, e.http_status)
+				refute_empty e.message
+				assert_equal(true, e.json_body.kind_of?(Hash))
+			end
 		end
 	end
 
@@ -180,7 +208,15 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 			destroyed_collection = Badgeapi::Collection.destroy(collection.id)
 
-			assert_raises(Exception) { Badgeapi::Collection.destroy(collection.id) }
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Collection.destroy(collection.id) }
+
+			begin
+				Badgeapi::Collection.destroy(collection.id)
+			rescue Badgeapi::InvalidRequestError => e
+				assert_equal(404, e.http_status)
+				refute_empty e.message
+				assert_equal(true, e.json_body.kind_of?(Hash))
+			end
 		end
 	end
 
