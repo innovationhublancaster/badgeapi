@@ -14,7 +14,7 @@ require_relative "badgeapi/errors/invalid_request_error"
 
 module Badgeapi
 
-	@api_base = 'http://gamification-api.dev/v1/'
+	@api_base = 'http://gamification-api.dev/v1'
 
 	class << self
 		attr_accessor :api_key, :api_base

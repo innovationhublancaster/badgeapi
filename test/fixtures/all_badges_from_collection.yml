@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1//badges?collection_id=2
+    uri: http://gamification-api.dev/v1/badges?collection_id=2
     body:
       encoding: US-ASCII
       string: ''
@@ -29,23 +29,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"004970aa9a3d7696ac8d52c991075b45"'
+      - '"038c15ea7b272dc86e9ae2a654408e23"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ea42d616-5011-4d85-b964-93400ea45c6e
+      - e380dc51-da66-41f7-82c5-2fcd8ad66b7c
       X-Runtime:
-      - '0.004809'
+      - '0.006369'
       Date:
-      - Wed, 01 Apr 2015 10:03:29 GMT
+      - Thu, 16 Apr 2015 13:59:37 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":5,"name":"You Trim Trailed!","description":"Description?","requirements":"Complete
-        one lap of the trim trail","hint":"Have to used the trim trail?","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-31T14:07:13.542Z","updated_at":"2015-03-31T14:07:13.542Z"},{"id":6,"name":"Marathon
+        one lap of the trim trail","hint":"Have to used the trim trail?","image":"http://gamification-api.dev/uploads/badge/image/5/seed.png","collection_id":2,"created_at":"2015-04-16T13:44:50.290Z","updated_at":"2015-04-16T13:44:50.290Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/5/grey_seed.png"},{"id":6,"name":"Marathon
         Man","description":"Description?","requirements":"Complete 10 laps of the
-        trim trail over any time","hint":"Keep going...","image":"http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png","recipient_id":null,"issuer_id":null,"collection_id":2,"issued_at":null,"created_at":"2015-03-31T14:07:13.544Z","updated_at":"2015-03-31T14:07:13.544Z"}]'
+        trim trail over any time","hint":"Keep going...","image":"http://gamification-api.dev/uploads/badge/image/6/seed.png","collection_id":2,"created_at":"2015-04-16T13:44:50.345Z","updated_at":"2015-04-16T13:44:50.345Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/6/grey_seed.png"}]'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:03:29 GMT
+  recorded_at: Thu, 16 Apr 2015 13:59:37 GMT
 recorded_with: VCR 2.9.3

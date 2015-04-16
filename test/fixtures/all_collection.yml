@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1//collections
+    uri: http://gamification-api.dev/v1/collections
     body:
       encoding: US-ASCII
       string: ''
@@ -29,22 +29,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d3ec3ca8697be6cef1ec81da5d3e7e6b"'
+      - '"57b276a40ab583bebc36a113326c9ffa"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e16b8e33-e03a-4c48-a6e9-a0942f309bf6
+      - 2b81d0be-1363-497d-b1e0-35679aa07183
       X-Runtime:
-      - '0.004747'
+      - '0.006659'
       Date:
-      - Thu, 09 Apr 2015 15:15:10 GMT
+      - Thu, 16 Apr 2015 14:26:22 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T15:05:42.955Z"},{"id":79,"name":"Trim
-        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-04-09T13:11:54.884Z","updated_at":"2015-04-09T13:11:54.884Z"}]'
+        related to library data","created_at":"2015-04-16T13:34:11.963Z","updated_at":"2015-04-16T13:34:11.963Z"},{"id":2,"name":"Trim
+        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-04-16T13:34:11.970Z","updated_at":"2015-04-16T13:34:11.970Z"}]'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 15:15:10 GMT
+  recorded_at: Thu, 16 Apr 2015 14:26:22 GMT
 recorded_with: VCR 2.9.3

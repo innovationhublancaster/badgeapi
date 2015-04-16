@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1//collections
+    uri: http://gamification-api.dev/v1/collections?expand=badges
     body:
       encoding: US-ASCII
       string: ''
@@ -29,62 +29,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d3ec3ca8697be6cef1ec81da5d3e7e6b"'
+      - '"fd768a85fb2bb1551c146072cd394088"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c1df6ed0-37d7-4f9b-b662-a587d833eeb3
+      - 528fb189-1051-4757-b863-13fb9bcd5bd8
       X-Runtime:
-      - '0.005153'
+      - '0.013402'
       Date:
-      - Thu, 09 Apr 2015 13:34:31 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T15:05:42.955Z"},{"id":79,"name":"Trim
-        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-04-09T13:11:54.884Z","updated_at":"2015-04-09T13:11:54.884Z"}]'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 13:34:31 GMT
-- request:
-    method: get
-    uri: http://gamification-api.dev/v1//collections?expand=badges
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"302281422f0ab47973cac5a499c0d715"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1de15d8d-571a-47d9-8a8f-0254a16b93e5
-      X-Runtime:
-      - '0.008621'
-      Date:
-      - Thu, 09 Apr 2015 15:15:10 GMT
+      - Thu, 16 Apr 2015 14:26:22 GMT
       Connection:
       - close
     body:
@@ -92,42 +45,54 @@ http_interactions:
       string: !binary |-
         W3siaWQiOjEsIm5hbWUiOiJMaWJyYXJ5IiwiZGVzY3JpcHRpb24iOiJBbGwg
         b2YgdGhlIGJhZGdlcyBhdmFpbGFibGUgcmVsYXRlZCB0byBsaWJyYXJ5IGRh
-        dGEiLCJjcmVhdGVkX2F0IjoiMjAxNS0wMy0zMVQxNDowNzoxMy41MDVaIiwi
-        dXBkYXRlZF9hdCI6IjIwMTUtMDMtMzFUMTU6MDU6NDIuOTU1WiIsImJhZGdl
+        dGEiLCJjcmVhdGVkX2F0IjoiMjAxNS0wNC0xNlQxMzozNDoxMS45NjNaIiwi
+        dXBkYXRlZF9hdCI6IjIwMTUtMDQtMTZUMTM6MzQ6MTEuOTYzWiIsImJhZGdl
         cyI6W3siaWQiOjEsIm5hbWUiOiJCb29rIFdvcm0iLCJkZXNjcmlwdGlvbiI6
         IkRlc2NyaXB0aW9uPyIsInJlcXVpcmVtZW50cyI6IkxvYW4gb3V0IDI1IGJv
         b2tzIiwiaGludCI6IllvdSBtdXN0IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6
-        Imh0dHA6Ly9vcGVuYmFkZ2VzLm9yZy93cC1jb250ZW50L3RoZW1lcy9vcGVu
-        YmFkZ2VzMi9tZWRpYS9pbWFnZXMvY29udGVudC1iYWNrZ3JvdW5kLnBuZyIs
-        ImNvbGxlY3Rpb25faWQiOjEsImNyZWF0ZWRfYXQiOiIyMDE1LTAzLTMxVDE0
-        OjA3OjEzLjUyNloiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wNC0wOVQxMDo0ODo0
-        OS4yNjlaIn0seyJpZCI6MiwibmFtZSI6Ik1lZ2EgQm9vayBXb3JtIiwiZGVz
-        Y3JpcHRpb24iOiJEZXNjcmlwdGlvbj8iLCJyZXF1aXJlbWVudHMiOiJMb2Fu
-        IG91dCA1MCBib29rcyIsImhpbnQiOiJZb3UgbXVzdCByZWFsbHkgbGlrZSBi
-        b29rcy4uLiIsImltYWdlIjoiaHR0cDovL29wZW5iYWRnZXMub3JnL3dwLWNv
-        bnRlbnQvdGhlbWVzL29wZW5iYWRnZXMyL21lZGlhL2ltYWdlcy9jb250ZW50
-        LWJhY2tncm91bmQucG5nIiwiY29sbGVjdGlvbl9pZCI6MSwiY3JlYXRlZF9h
-        dCI6IjIwMTUtMDMtMzFUMTQ6MDc6MTMuNTI5WiIsInVwZGF0ZWRfYXQiOiIy
-        MDE1LTAzLTMxVDE0OjA3OjEzLjUyOVoifSx7ImlkIjozLCJuYW1lIjoiTmln
-        aHQgT3dsIiwiZGVzY3JpcHRpb24iOiJEZXNjcmlwdGlvbj8iLCJyZXF1aXJl
-        bWVudHMiOiJMb2FuIG91dCBhIGJvb2sgYmV0d2VlbiAwMDowMCAtIDU6MDAi
-        LCJoaW50IjoiSXQgbXVzdCBiZSBsYXRlLi4uIiwiaW1hZ2UiOiJodHRwOi8v
-        b3BlbmJhZGdlcy5vcmcvd3AtY29udGVudC90aGVtZXMvb3BlbmJhZGdlczIv
-        bWVkaWEvaW1hZ2VzL2NvbnRlbnQtYmFja2dyb3VuZC5wbmciLCJjb2xsZWN0
-        aW9uX2lkIjoxLCJjcmVhdGVkX2F0IjoiMjAxNS0wMy0zMVQxNDowNzoxMy41
-        MzNaIiwidXBkYXRlZF9hdCI6IjIwMTUtMDMtMzFUMTQ6MDc6MTMuNTMzWiJ9
-        LHsiaWQiOjQsIm5hbWUiOiJPdXIgQmVzdCBGcmllbmQiLCJkZXNjcmlwdGlv
-        biI6IkRlc2NyaXB0aW9uPyIsInJlcXVpcmVtZW50cyI6IsKjMCBpbiBmaW5l
-        cyBmb3IgdGhlIHBhc3QgMTIgbW9udGhzIiwiaGludCI6IkRvbid0IGdldCBp
-        biB0cm91YmxlIG5vdy4uLiIsImltYWdlIjoiaHR0cDovL29wZW5iYWRnZXMu
-        b3JnL3dwLWNvbnRlbnQvdGhlbWVzL29wZW5iYWRnZXMyL21lZGlhL2ltYWdl
-        cy9jb250ZW50LWJhY2tncm91bmQucG5nIiwiY29sbGVjdGlvbl9pZCI6MSwi
-        Y3JlYXRlZF9hdCI6IjIwMTUtMDMtMzFUMTQ6MDc6MTMuNTM5WiIsInVwZGF0
-        ZWRfYXQiOiIyMDE1LTAzLTMxVDE0OjA3OjEzLjUzOVoifV19LHsiaWQiOjc5
-        LCJuYW1lIjoiVHJpbSBUcmFpbCIsImRlc2NyaXB0aW9uIjoiR2V0IGZpdCBh
-        bmQgaGVhbHRoIHBsdXMgZWFybiBzb21lIGJhZGdlcyIsImNyZWF0ZWRfYXQi
-        OiIyMDE1LTA0LTA5VDEzOjExOjU0Ljg4NFoiLCJ1cGRhdGVkX2F0IjoiMjAx
-        NS0wNC0wOVQxMzoxMTo1NC44ODRaIiwiYmFkZ2VzIjpbXX1d
+        Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi91cGxvYWRzL2JhZGdlL2lt
+        YWdlLzEvc2VlZC5wbmciLCJjb2xsZWN0aW9uX2lkIjoxLCJjcmVhdGVkX2F0
+        IjoiMjAxNS0wNC0xNlQxMzo0NDo1MC4wNzFaIiwidXBkYXRlZF9hdCI6IjIw
+        MTUtMDQtMTZUMTM6NDQ6NTAuMDcxWiJ9LHsiaWQiOjIsIm5hbWUiOiJNZWdh
+        IEJvb2sgV29ybSIsImRlc2NyaXB0aW9uIjoiRGVzY3JpcHRpb24/IiwicmVx
+        dWlyZW1lbnRzIjoiTG9hbiBvdXQgNTAgYm9va3MiLCJoaW50IjoiWW91IG11
+        c3QgcmVhbGx5IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1p
+        ZmljYXRpb24tYXBpLmRldi91cGxvYWRzL2JhZGdlL2ltYWdlLzIvc2VlZC5w
+        bmciLCJjb2xsZWN0aW9uX2lkIjoxLCJjcmVhdGVkX2F0IjoiMjAxNS0wNC0x
+        NlQxMzo0NDo1MC4xMjdaIiwidXBkYXRlZF9hdCI6IjIwMTUtMDQtMTZUMTM6
+        NDQ6NTAuMTI3WiJ9LHsiaWQiOjMsIm5hbWUiOiJOaWdodCBPd2wiLCJkZXNj
+        cmlwdGlvbiI6IkRlc2NyaXB0aW9uPyIsInJlcXVpcmVtZW50cyI6IkxvYW4g
+        b3V0IGEgYm9vayBiZXR3ZWVuIDAwOjAwIC0gNTowMCIsImhpbnQiOiJJdCBt
+        dXN0IGJlIGxhdGUuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24t
+        YXBpLmRldi91cGxvYWRzL2JhZGdlL2ltYWdlLzMvc2VlZC5wbmciLCJjb2xs
+        ZWN0aW9uX2lkIjoxLCJjcmVhdGVkX2F0IjoiMjAxNS0wNC0xNlQxMzo0NDo1
+        MC4xODNaIiwidXBkYXRlZF9hdCI6IjIwMTUtMDQtMTZUMTM6NDQ6NTAuMTgz
+        WiJ9LHsiaWQiOjQsIm5hbWUiOiJPdXIgQmVzdCBGcmllbmQiLCJkZXNjcmlw
+        dGlvbiI6IkRlc2NyaXB0aW9uPyIsInJlcXVpcmVtZW50cyI6IsKjMCBpbiBm
+        aW5lcyBmb3IgdGhlIHBhc3QgMTIgbW9udGhzIiwiaGludCI6IkRvbid0IGdl
+        dCBpbiB0cm91YmxlIG5vdy4uLiIsImltYWdlIjoiaHR0cDovL2dhbWlmaWNh
+        dGlvbi1hcGkuZGV2L3VwbG9hZHMvYmFkZ2UvaW1hZ2UvNC9zZWVkLnBuZyIs
+        ImNvbGxlY3Rpb25faWQiOjEsImNyZWF0ZWRfYXQiOiIyMDE1LTA0LTE2VDEz
+        OjQ0OjUwLjI0MFoiLCJ1cGRhdGVkX2F0IjoiMjAxNS0wNC0xNlQxMzo0NDo1
+        MC4yNDBaIn1dfSx7ImlkIjoyLCJuYW1lIjoiVHJpbSBUcmFpbCIsImRlc2Ny
+        aXB0aW9uIjoiR2V0IGZpdCBhbmQgaGVhbHRoIHBsdXMgZWFybiBzb21lIGJh
+        ZGdlcyIsImNyZWF0ZWRfYXQiOiIyMDE1LTA0LTE2VDEzOjM0OjExLjk3MFoi
+        LCJ1cGRhdGVkX2F0IjoiMjAxNS0wNC0xNlQxMzozNDoxMS45NzBaIiwiYmFk
+        Z2VzIjpbeyJpZCI6NSwibmFtZSI6IllvdSBUcmltIFRyYWlsZWQhIiwiZGVz
+        Y3JpcHRpb24iOiJEZXNjcmlwdGlvbj8iLCJyZXF1aXJlbWVudHMiOiJDb21w
+        bGV0ZSBvbmUgbGFwIG9mIHRoZSB0cmltIHRyYWlsIiwiaGludCI6IkhhdmUg
+        dG8gdXNlZCB0aGUgdHJpbSB0cmFpbD8iLCJpbWFnZSI6Imh0dHA6Ly9nYW1p
+        ZmljYXRpb24tYXBpLmRldi91cGxvYWRzL2JhZGdlL2ltYWdlLzUvc2VlZC5w
+        bmciLCJjb2xsZWN0aW9uX2lkIjoyLCJjcmVhdGVkX2F0IjoiMjAxNS0wNC0x
+        NlQxMzo0NDo1MC4yOTBaIiwidXBkYXRlZF9hdCI6IjIwMTUtMDQtMTZUMTM6
+        NDQ6NTAuMjkwWiJ9LHsiaWQiOjYsIm5hbWUiOiJNYXJhdGhvbiBNYW4iLCJk
+        ZXNjcmlwdGlvbiI6IkRlc2NyaXB0aW9uPyIsInJlcXVpcmVtZW50cyI6IkNv
+        bXBsZXRlIDEwIGxhcHMgb2YgdGhlIHRyaW0gdHJhaWwgb3ZlciBhbnkgdGlt
+        ZSIsImhpbnQiOiJLZWVwIGdvaW5nLi4uIiwiaW1hZ2UiOiJodHRwOi8vZ2Ft
+        aWZpY2F0aW9uLWFwaS5kZXYvdXBsb2Fkcy9iYWRnZS9pbWFnZS82L3NlZWQu
+        cG5nIiwiY29sbGVjdGlvbl9pZCI6MiwiY3JlYXRlZF9hdCI6IjIwMTUtMDQt
+        MTZUMTM6NDQ6NTAuMzQ1WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA0LTE2VDEz
+        OjQ0OjUwLjM0NVoifV19XQ==
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 15:15:10 GMT
+  recorded_at: Thu, 16 Apr 2015 14:26:22 GMT
 recorded_with: VCR 2.9.3

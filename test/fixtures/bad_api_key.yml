@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1//badges
+    uri: http://gamification-api.dev/v1/badges
     body:
       encoding: US-ASCII
       string: ''
@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 453fdea0-4178-4098-b025-a8f6b7accc5b
+      - bc015579-c6b6-41fd-82af-3003bffed562
       X-Runtime:
-      - '0.033385'
+      - '0.069020'
       Date:
-      - Thu, 09 Apr 2015 15:17:12 GMT
+      - Thu, 16 Apr 2015 13:54:18 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"The API key is
         missing or invalid","status":401}}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 15:17:12 GMT
+  recorded_at: Thu, 16 Apr 2015 13:54:18 GMT
 recorded_with: VCR 2.9.3

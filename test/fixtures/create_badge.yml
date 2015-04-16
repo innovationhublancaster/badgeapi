@@ -2,714 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/73
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - cb5ebc34-faf2-4aba-931b-ed1eef52f916
-      X-Runtime:
-      - '0.005214'
-      Date:
-      - Wed, 01 Apr 2015 10:22:50 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":73,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:22:50.296Z","updated_at":"2015-04-01T10:22:50.296Z"}'
-    http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:22:50 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/79
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 06ddfdf9-2e1f-47ab-9fa3-b423225bf752
-      X-Runtime:
-      - '0.005539'
-      Date:
-      - Wed, 01 Apr 2015 10:24:38 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":79,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:24:38.799Z","updated_at":"2015-04-01T10:24:38.799Z"}'
-    http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:24:38 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/85
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - bccf69a5-f19d-4309-b1fd-ad94609e445b
-      X-Runtime:
-      - '0.005507'
-      Date:
-      - Wed, 01 Apr 2015 10:25:02 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":85,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","recipient_id":null,"issuer_id":null,"collection_id":1,"issued_at":null,"created_at":"2015-04-01T10:25:02.186Z","updated_at":"2015-04-01T10:25:02.186Z"}'
-    http_version: 
-  recorded_at: Wed, 01 Apr 2015 10:25:02 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/21
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 8f42e96a-303d-498b-9cc3-523328ec530e
-      X-Runtime:
-      - '0.006080'
-      Date:
-      - Wed, 08 Apr 2015 11:52:17 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-08T11:52:17.868Z","updated_at":"2015-04-08T11:52:17.868Z"}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 11:52:17 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/27
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 040a6fd2-21b6-4996-96eb-ec42c34367eb
-      X-Runtime:
-      - '0.005380'
-      Date:
-      - Wed, 08 Apr 2015 15:48:26 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":27,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-08T15:48:25.974Z","updated_at":"2015-04-08T15:48:25.974Z"}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 15:48:26 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/33
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 4078d83e-d4b8-4c1e-824f-5b3122f103b8
-      X-Runtime:
-      - '0.005782'
-      Date:
-      - Wed, 08 Apr 2015 16:04:12 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":33,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-08T16:04:12.693Z","updated_at":"2015-04-08T16:04:12.693Z"}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 16:04:12 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/39
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 42d7ca55-f869-432a-a7c5-abee8faa8738
-      X-Runtime:
-      - '0.006483'
-      Date:
-      - Wed, 08 Apr 2015 16:04:28 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":39,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-08T16:04:28.050Z","updated_at":"2015-04-08T16:04:28.050Z"}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 16:04:28 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/45
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 0ca9f600-4052-45c8-8ead-8696abc84efb
-      X-Runtime:
-      - '0.005714'
-      Date:
-      - Wed, 08 Apr 2015 16:15:14 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":45,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-08T16:15:14.294Z","updated_at":"2015-04-08T16:15:14.294Z"}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 16:15:14 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/50
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 5f2b3cdc-4028-41e4-959f-94258fa3c0a1
-      X-Runtime:
-      - '0.006556'
-      Date:
-      - Wed, 08 Apr 2015 16:17:10 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":50,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-08T16:17:10.229Z","updated_at":"2015-04-08T16:17:10.229Z"}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 16:17:10 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/54
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 37cd77be-6745-48f9-9982-ace9e929bab5
-      X-Runtime:
-      - '0.006252'
-      Date:
-      - Thu, 09 Apr 2015 08:52:25 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":54,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T08:52:24.971Z","updated_at":"2015-04-09T08:52:24.971Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 08:52:25 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/60
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      Content-Type:
-      - text/html; charset=utf-8
-      Content-Length:
-      - '16127'
-      X-Request-Id:
-      - a8597bf4-6da2-4a62-813c-94f2c5d429ee
-      X-Runtime:
-      - '0.029290'
-      Date:
-      - Thu, 09 Apr 2015 08:54:42 GMT
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
-        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
-        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
-        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
-        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
-        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
-        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
-        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
-        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
-        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
-        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
-        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
-        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
-        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
-        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
-        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
-        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
-        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
-        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
-        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
-        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
-        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
-        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
-        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
-        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
-        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
-        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
-        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
-        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
-        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
-        function(id) {\n      document.getElementById(id).style.display = 'block';\n
-        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
-        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
-        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
-        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
-        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    NoMethodError\n
-        \     in V1::BadgesController#destroy\n  </h1>\n</header>\n\n<div id=\"container\">\n
-        \ <h2>undefined method `green&#39; for &quot;DESTROY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&quot;:String</h2>\n\n
-        \ <div class=\"source\">\n<div class=\"info\">\n  Extracted source (around
-        line <strong>#97</strong>):\n</div>\n<div class=\"data\">\n  <table cellpadding=\"0\"
-        cellspacing=\"0\" class=\"lines\">\n      <tr>\n        <td>\n          <pre
-        class=\"line_numbers\">\n<span>95</span>\n<span>96</span>\n<span>97</span>\n<span>98</span>\n<span>99</span>\n<span>100</span>\n
-        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">\n</div><div
-        class=\"line\">\t\t\tlogger.debug(&quot;==========================&quot;)\n</div><div
-        class=\"line active\">\t\t\tlogger.debug(&quot;DESTROY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&quot;.green)\n</div><div
-        class=\"line\">\t\t\tlogger.debug(&quot;==========================&quot;)\n</div><div
-        class=\"line\">\t\t\tlogger.debug(@badge)\n</div><div class=\"line\">\t\t\tlogger.debug(&quot;==========================&quot;)\n</div>\n</pre>\n</td>\n
-        \   </tr>\n  </table>\n</div>\n</div>\n\n  \n<p><code>Rails.root: /Users/tomskarbek/Rails/gamification_api</code></p>\n\n<div
-        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
-        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
-        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
-        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
-        block;\">\n      <pre><code>app/controllers/v1/badges_controller.rb:97:in
-        `destroy&#39;</code></pre>\n    </div>\n    <div id=\"Framework-Trace\" style=\"display:
-        none;\">\n      <pre><code>actionpack (4.1.8) lib/abstract_controller/base.rb:189:in
-        `process_action&#39;\nactionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in
-        `process_action&#39;\nactionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in
-        `block in process_action&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:113:in
-        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport
-        (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;\nactivesupport
-        (4.1.8) lib/active_support/callbacks.rb:166:in `call&#39;\nactivesupport (4.1.8)
-        lib/active_support/callbacks.rb:166:in `block in halting&#39;\nactivesupport
-        (4.1.8) lib/active_support/callbacks.rb:86:in `call&#39;\nactivesupport (4.1.8)
-        lib/active_support/callbacks.rb:86:in `run_callbacks&#39;\nactionpack (4.1.8)
-        lib/abstract_controller/callbacks.rb:19:in `process_action&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
-        (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
-        (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
-        (4.1.8) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
-        (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
-        (4.1.8) lib/abstract_controller/base.rb:136:in `process&#39;\nactionview (4.1.8)
-        lib/action_view/rendering.rb:30:in `process&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:196:in
-        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in
-        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:232:in `block
-        in action&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
-        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
-        `dispatch&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in
-        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in
-        `block in call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
-        `each&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
-        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in
-        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:35:in
-        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.1.8)
-        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
-        (4.1.8) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.1.8)
-        lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;\nactiverecord
-        (4.1.8) lib/active_record/migration.rb:380:in `call&#39;\nactionpack (4.1.8)
-        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
-        (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
-        (4.1.8) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.1.8) lib/rails/rack/logger.rb:20:in
-        `block in call&#39;\nactivesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in
-        `block in tagged&#39;\nactivesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in
-        `tagged&#39;\nactivesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in
-        `tagged&#39;\nrailties (4.1.8) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
-        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in
-        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.1.8)
-        lib/action_dispatch/middleware/static.rb:84:in `call&#39;\nrailties (4.1.8)
-        lib/rails/engine.rb:514:in `call&#39;\nrailties (4.1.8) lib/rails/application.rb:144:in
-        `call&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:155:in
-        `handle&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:109:in
-        `rescue in block (2 levels) in start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:106:in
-        `block (2 levels) in start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:96:in
-        `each&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:96:in
-        `block in start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:76:in
-        `loop&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:76:in
-        `start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:12:in
-        `run&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/bin/nack_worker:4:in
-        `&lt;main&gt;&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\" style=\"display:
-        none;\">\n      <pre><code>app/controllers/v1/badges_controller.rb:97:in `destroy&#39;\nactionpack
-        (4.1.8) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
-        (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;\nactivesupport
-        (4.1.8) lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport (4.1.8)
-        lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
-        `block in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:166:in
-        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block
-        in halting&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:86:in
-        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;\nactionpack
-        (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
-        (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
-        (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
-        (4.1.8) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
-        (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
-        (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
-        (4.1.8) lib/abstract_controller/base.rb:136:in `process&#39;\nactionview (4.1.8)
-        lib/action_view/rendering.rb:30:in `process&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:196:in
-        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in
-        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:232:in `block
-        in action&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
-        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
-        `dispatch&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in
-        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in
-        `block in call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
-        `each&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
-        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in
-        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:35:in
-        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.1.8)
-        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
-        (4.1.8) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.1.8)
-        lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;\nactiverecord
-        (4.1.8) lib/active_record/migration.rb:380:in `call&#39;\nactionpack (4.1.8)
-        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
-        (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
-        (4.1.8) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.1.8) lib/rails/rack/logger.rb:20:in
-        `block in call&#39;\nactivesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in
-        `block in tagged&#39;\nactivesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in
-        `tagged&#39;\nactivesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in
-        `tagged&#39;\nrailties (4.1.8) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
-        (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
-        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in
-        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.1.8)
-        lib/action_dispatch/middleware/static.rb:84:in `call&#39;\nrailties (4.1.8)
-        lib/rails/engine.rb:514:in `call&#39;\nrailties (4.1.8) lib/rails/application.rb:144:in
-        `call&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:155:in
-        `handle&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:109:in
-        `rescue in block (2 levels) in start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:106:in
-        `block (2 levels) in start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:96:in
-        `each&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:96:in
-        `block in start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:76:in
-        `loop&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:76:in
-        `start&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/lib/nack/server.rb:12:in
-        `run&#39;\n/usr/local/Cellar/pow/0.5.0/libexec/node_modules/nack/bin/nack_worker:4:in
-        `&lt;main&gt;&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2 style=\"margin-top:
-        30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>{&quot;id&quot;=&gt;&quot;60&quot;}</pre>\n\n<div
-        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
-        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
-        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
-        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
-        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>HTTP_ACCEPT:
-        &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
-        &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;gamification-api.dev&quot;</pre></div>\n</div>\n\n<h2
-        style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p> <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 08:54:42 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/65
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: Internal Server Error
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 4f4b0dd3-c537-49c8-93d4-e1c81cccae48
-      X-Runtime:
-      - '0.011811'
-      Date:
-      - Thu, 09 Apr 2015 08:57:17 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":65,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T08:57:16.981Z","updated_at":"2015-04-09T08:57:16.981Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 08:57:17 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/71
+    uri: http://gamification-api.dev/v1/badges/9
     body:
       encoding: US-ASCII
       string: ''
@@ -736,26 +29,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d48ef1071fa2775fb4191e3a4b74a6eb"'
+      - '"91970a3cf5442d10ee19b44c8a855a07"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - db02038e-21cb-4aef-9bbb-8d9ef7e012d8
+      - 5b6ce855-ec8d-4acb-9242-5b1b57a07bb8
       X-Runtime:
-      - '0.005871'
+      - '0.017631'
       Date:
-      - Thu, 09 Apr 2015 10:18:35 GMT
+      - Thu, 16 Apr 2015 14:04:17 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":71,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:18:35.364Z","updated_at":"2015-04-09T10:18:35.364Z"}'
+      string: '{"id":9,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/9/badge_80e0a20701cf3962fd29.png","collection_id":1,"created_at":"2015-04-16T14:04:17.580Z","updated_at":"2015-04-16T14:04:17.580Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:18:35 GMT
+  recorded_at: Thu, 16 Apr 2015 14:04:17 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/77
+    uri: http://gamification-api.dev/v1/badges/14
     body:
       encoding: US-ASCII
       string: ''
@@ -782,26 +75,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"ebe687b034305cacaec108ea302fc56b"'
+      - '"9df2008ec3bdf6002dd7b76000bdcd00"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 20e1f14e-b897-4eb4-ab6c-e1e9ad6ebc9a
+      - 9bd1313a-1573-4c84-ab39-d4089fdd05a8
       X-Runtime:
-      - '0.006140'
+      - '0.009920'
       Date:
-      - Thu, 09 Apr 2015 10:19:47 GMT
+      - Thu, 16 Apr 2015 14:07:01 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":77,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:19:47.785Z","updated_at":"2015-04-09T10:19:47.785Z"}'
+      string: '{"id":14,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/14/badge_2c3e2653a7f55df1945d.png","collection_id":1,"created_at":"2015-04-16T14:07:01.500Z","updated_at":"2015-04-16T14:07:01.500Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:19:47 GMT
+  recorded_at: Thu, 16 Apr 2015 14:07:01 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/83
+    uri: http://gamification-api.dev/v1/badges/20
     body:
       encoding: US-ASCII
       string: ''
@@ -828,26 +121,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"8f1f8590e94b4f8c0ae7c625cf628898"'
+      - '"873f726fbada5c7a9ff0f173a66251d8"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 72e5b9f2-0c7c-4ca3-8e79-d9d0ad049c5a
+      - f59a555a-eb0c-49f4-9e4d-a95901fe2dbd
       X-Runtime:
-      - '0.006101'
+      - '0.009034'
       Date:
-      - Thu, 09 Apr 2015 10:47:51 GMT
+      - Thu, 16 Apr 2015 14:18:36 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":83,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:47:51.768Z","updated_at":"2015-04-09T10:47:51.768Z"}'
+      string: '{"id":20,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/20/badge_e20904ac5e0489be9258.png","collection_id":1,"created_at":"2015-04-16T14:18:36.834Z","updated_at":"2015-04-16T14:18:36.834Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:47:51 GMT
+  recorded_at: Thu, 16 Apr 2015 14:18:36 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/89
+    uri: http://gamification-api.dev/v1/badges/23
     body:
       encoding: US-ASCII
       string: ''
@@ -874,26 +167,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"da6798ced0dcbe32ed9b097353bc4a95"'
+      - '"74cd1072aef65e15b15a78ed49ae4416"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f661270-05ce-418c-afc0-78a6327b5264
+      - b8ba3dc7-6c3f-40f9-b326-00e5aa1e69f2
       X-Runtime:
-      - '0.005942'
+      - '0.009202'
       Date:
-      - Thu, 09 Apr 2015 10:49:10 GMT
+      - Thu, 16 Apr 2015 14:21:54 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":89,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:49:10.891Z","updated_at":"2015-04-09T10:49:10.891Z"}'
+      string: '{"id":23,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/23/badge_bf365ccdaca1261c5bf8.png","collection_id":1,"created_at":"2015-04-16T14:21:53.984Z","updated_at":"2015-04-16T14:21:53.984Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:49:10 GMT
+  recorded_at: Thu, 16 Apr 2015 14:21:54 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/95
+    uri: http://gamification-api.dev/v1/badges/24
     body:
       encoding: US-ASCII
       string: ''
@@ -920,26 +213,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"73b7e9841735934b86903eb79cfa87af"'
+      - '"e9adeb49b037db942caede6f614bb475"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d1fdca2a-85c7-4b69-88ad-887e27de7b09
+      - 1ef12dea-0d74-4c81-9399-c80065b57ca7
       X-Runtime:
-      - '0.005773'
+      - '0.008857'
       Date:
-      - Thu, 09 Apr 2015 10:51:30 GMT
+      - Thu, 16 Apr 2015 14:22:03 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":95,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:51:30.825Z","updated_at":"2015-04-09T10:51:30.825Z"}'
+      string: '{"id":24,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/24/badge_0005e92e67a0967f6631.png","collection_id":1,"created_at":"2015-04-16T14:22:03.124Z","updated_at":"2015-04-16T14:22:03.124Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:51:30 GMT
+  recorded_at: Thu, 16 Apr 2015 14:22:03 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/101
+    uri: http://gamification-api.dev/v1/badges/26
     body:
       encoding: US-ASCII
       string: ''
@@ -966,26 +259,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"8a2c99bd1fc9f02848af4a95c3049ae2"'
+      - '"b4293a1373e3dc18ed4484d7559d8740"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3fca683a-f3b2-4cba-bbe5-f6e3bcc45906
+      - 953d6e7c-5ef4-4071-993c-89d9959cdcf2
       X-Runtime:
-      - '0.006130'
+      - '0.010107'
       Date:
-      - Thu, 09 Apr 2015 10:53:06 GMT
+      - Thu, 16 Apr 2015 14:22:17 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":101,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:53:06.874Z","updated_at":"2015-04-09T10:53:06.874Z"}'
+      string: '{"id":26,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/26/badge_b2e722a69b8ee34ba182.png","collection_id":1,"created_at":"2015-04-16T14:22:17.250Z","updated_at":"2015-04-16T14:22:17.250Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:53:06 GMT
+  recorded_at: Thu, 16 Apr 2015 14:22:17 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/107
+    uri: http://gamification-api.dev/v1/badges/28
     body:
       encoding: US-ASCII
       string: ''
@@ -1012,26 +305,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"6a00315dd178a83cfb0e90779c7221c0"'
+      - '"cd0f0907adc2da2408f73eb0fcbc5266"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f2afc67e-7b8d-4971-adb1-791d4cd507b6
+      - b3cc4f64-43e7-4ed6-a012-9b2e0bdff4cd
       X-Runtime:
-      - '0.006027'
+      - '0.008227'
       Date:
-      - Thu, 09 Apr 2015 10:53:29 GMT
+      - Thu, 16 Apr 2015 14:23:16 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":107,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:53:29.749Z","updated_at":"2015-04-09T10:53:29.749Z"}'
+      string: '{"id":28,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/28/badge_de71b6357b610ffcf416.png","collection_id":1,"created_at":"2015-04-16T14:23:16.159Z","updated_at":"2015-04-16T14:23:16.159Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:53:29 GMT
+  recorded_at: Thu, 16 Apr 2015 14:23:16 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/113
+    uri: http://gamification-api.dev/v1/badges/32
     body:
       encoding: US-ASCII
       string: ''
@@ -1058,26 +351,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"2d5800db04f9d25c81a69e4d35f3f840"'
+      - '"226bafbacfbfb7294e9133c4516e90ba"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d6571813-5749-4014-8d2e-8f7389d400b6
+      - 2cf817d3-ea50-41f1-b8fe-bca1039455fc
       X-Runtime:
-      - '0.005966'
+      - '0.007120'
       Date:
-      - Thu, 09 Apr 2015 10:54:00 GMT
+      - Thu, 16 Apr 2015 14:23:25 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":113,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:54:00.049Z","updated_at":"2015-04-09T10:54:00.049Z"}'
+      string: '{"id":32,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/32/badge_f1d3d0d550c6c3ea43af.png","collection_id":1,"created_at":"2015-04-16T14:23:25.218Z","updated_at":"2015-04-16T14:23:25.218Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:54:00 GMT
+  recorded_at: Thu, 16 Apr 2015 14:23:25 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/119
+    uri: http://gamification-api.dev/v1/badges/36
     body:
       encoding: US-ASCII
       string: ''
@@ -1104,26 +397,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"733e5481df7aaa4bed23be6b8c322cf1"'
+      - '"7ab682b0a1993f4f46d8cc9a7b93405b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a63c6b01-6c5b-4bde-b078-7f591d26e26b
+      - a883e36e-0342-4487-b1e9-be247a36f6fc
       X-Runtime:
-      - '0.007032'
+      - '0.008913'
       Date:
-      - Thu, 09 Apr 2015 10:54:12 GMT
+      - Thu, 16 Apr 2015 14:23:36 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":119,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:54:12.387Z","updated_at":"2015-04-09T10:54:12.387Z"}'
+      string: '{"id":36,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/36/badge_0f8bb1f79f8ae9dc30bf.png","collection_id":1,"created_at":"2015-04-16T14:23:36.225Z","updated_at":"2015-04-16T14:23:36.225Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:54:12 GMT
+  recorded_at: Thu, 16 Apr 2015 14:23:36 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/125
+    uri: http://gamification-api.dev/v1/badges/41
     body:
       encoding: US-ASCII
       string: ''
@@ -1150,627 +443,29 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"bab25a6b40a4d08482f92c9feed457a8"'
+      - '"f5105259c2dd0402dd7ef6882075a6b4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9342be88-9029-412e-8548-2dd021ff7727
+      - d1a9a3dd-bbe1-4099-8966-d0e4d74eabf0
       X-Runtime:
-      - '0.005919'
+      - '0.027941'
       Date:
-      - Thu, 09 Apr 2015 10:54:39 GMT
+      - Thu, 16 Apr 2015 14:25:54 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":125,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:54:39.646Z","updated_at":"2015-04-09T10:54:39.646Z"}'
+      string: '{"id":41,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/41/badge_3ed35e13a4841540b27f.png","collection_id":1,"created_at":"2015-04-16T14:25:54.605Z","updated_at":"2015-04-16T14:25:54.605Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:54:39 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/131
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"7d1c7e59986307c7dd3a3fa671120da3"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 524bc8b7-3b0e-49a6-9e17-310766811309
-      X-Runtime:
-      - '0.006045'
-      Date:
-      - Thu, 09 Apr 2015 10:54:52 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":131,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:54:51.975Z","updated_at":"2015-04-09T10:54:51.975Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:54:52 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/137
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a0cd11235b2ae5b10831135f00877310"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a3432b46-d31d-48b2-af25-295f720a1774
-      X-Runtime:
-      - '0.006347'
-      Date:
-      - Thu, 09 Apr 2015 10:56:01 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":137,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:56:00.989Z","updated_at":"2015-04-09T10:56:00.989Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:56:01 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/143
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"f2a3c2a3a2598653aff08f8a9687a66d"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 15823e0f-533d-48d7-9210-da3cd25d9d79
-      X-Runtime:
-      - '0.005772'
-      Date:
-      - Thu, 09 Apr 2015 10:56:16 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":143,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T10:56:16.502Z","updated_at":"2015-04-09T10:56:16.502Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 10:56:16 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/149
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"4afec7b20eb23ed44d494b17743f10be"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f6e9a207-f66d-474f-94ec-f8bb688c85bc
-      X-Runtime:
-      - '0.007496'
-      Date:
-      - Thu, 09 Apr 2015 11:22:33 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":149,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:22:33.427Z","updated_at":"2015-04-09T11:22:33.427Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:22:33 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/155
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"b9cf8f22022e16f0166b82e1b11069ff"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 650c679f-0a29-4f16-954d-4e5dd477bcc8
-      X-Runtime:
-      - '0.006826'
-      Date:
-      - Thu, 09 Apr 2015 11:53:01 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":155,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:53:01.010Z","updated_at":"2015-04-09T11:53:01.010Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:53:01 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/161
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"45e1ac3b5e148142055f3fd2aa7774a3"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 246d64a9-67b7-4b08-82c4-b2356e215131
-      X-Runtime:
-      - '0.006224'
-      Date:
-      - Thu, 09 Apr 2015 11:53:28 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":161,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:53:28.393Z","updated_at":"2015-04-09T11:53:28.393Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:53:28 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/167
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"7254392bdfdd6fc2f26dfc759a515e47"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 10475114-a71f-4f2d-804d-d9a66a46bd47
-      X-Runtime:
-      - '0.006187'
-      Date:
-      - Thu, 09 Apr 2015 11:54:07 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":167,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:54:07.372Z","updated_at":"2015-04-09T11:54:07.372Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:54:07 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/173
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"e77e0bd75dd8244471204417bc62eedd"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5110c57e-1c84-43a3-aa30-c5634eb9c01e
-      X-Runtime:
-      - '0.006550'
-      Date:
-      - Thu, 09 Apr 2015 11:55:19 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":173,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:55:19.810Z","updated_at":"2015-04-09T11:55:19.810Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:55:19 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/179
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"3917b04fd39e3b8fc84f181a91ff935f"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 4a3d6b27-85a6-4ae0-9246-ac4b8db3af00
-      X-Runtime:
-      - '0.005999'
-      Date:
-      - Thu, 09 Apr 2015 11:58:12 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":179,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:58:12.644Z","updated_at":"2015-04-09T11:58:12.644Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:58:12 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/185
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"fedf97ac99d8013c4deeb2834d9aa4e0"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3df76941-7a44-4101-9e80-c8801a70a353
-      X-Runtime:
-      - '0.006666'
-      Date:
-      - Thu, 09 Apr 2015 11:58:29 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":185,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:58:29.941Z","updated_at":"2015-04-09T11:58:29.941Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:58:29 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/191
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"d6cd398a6d1dc52a3acb7240fbcc1f25"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5e8d3069-9483-4824-93e8-ff3fd077e57a
-      X-Runtime:
-      - '0.018353'
-      Date:
-      - Thu, 09 Apr 2015 11:58:47 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":191,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T11:58:47.571Z","updated_at":"2015-04-09T11:58:47.571Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 11:58:47 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/197
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"883b517e07863457b880ddea2c3590f4"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f8c6e7e1-0574-4e52-b4e4-3a1351f2e192
-      X-Runtime:
-      - '0.009817'
-      Date:
-      - Thu, 09 Apr 2015 13:05:53 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":197,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T13:05:53.081Z","updated_at":"2015-04-09T13:05:53.081Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 13:05:53 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1//badges/203
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"9eefe3b7c8fc09860394dd3024d65c52"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8fdaf86f-3453-43c6-a16e-4cb16622c612
-      X-Runtime:
-      - '0.005874'
-      Date:
-      - Thu, 09 Apr 2015 13:23:06 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":203,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T13:23:06.853Z","updated_at":"2015-04-09T13:23:06.853Z"}'
-    http_version: 
-  recorded_at: Thu, 09 Apr 2015 13:23:06 GMT
+  recorded_at: Thu, 16 Apr 2015 14:25:54 GMT
 - request:
     method: post
-    uri: http://gamification-api.dev/v1//badges
+    uri: http://gamification-api.dev/v1/badges
     body:
       encoding: UTF-8
-      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Bimage%5D=http%3A%2F%2Fexample.org%2Fbadge.png&badge%5Bname%5D=Create+Badge+Test&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
+      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Bimage%5D=iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0%0Ad2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i%0AZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2Vo%0AaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6%0AbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5%0ALjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS%0AREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk%0AZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg%0AeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu%0Aczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s%0AbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S%0AZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w%0AIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p%0AaWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv%0AY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz%0ANkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i%0AeG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS%0AZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE%0ARDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8%0AL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI%2FPlCcFjQAAAAGUExURZTB%0AIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg%0Agg%3D%3D%0A&badge%5Bname%5D=Create+Badge+Test&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
     headers:
       User-Agent:
       - Faraday v0.9.1
@@ -1796,26 +491,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"190a894dd019daf6ef70a13e7b2c850e"'
+      - '"64ab8a0961fb120f7b4c22974d7e9711"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7a90f2d7-3218-4747-afdb-7f6eca90203d
+      - b4fc840b-f13a-40b5-a0c6-616c177339f3
       X-Runtime:
-      - '0.013879'
+      - '0.025135'
       Date:
-      - Thu, 09 Apr 2015 13:29:45 GMT
+      - Thu, 16 Apr 2015 14:26:04 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":213,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T13:29:45.319Z","updated_at":"2015-04-09T13:29:45.319Z"}'
+      string: '{"id":45,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/45/badge_f486eea0ff003aeabb72.png","collection_id":1,"created_at":"2015-04-16T14:26:04.481Z","updated_at":"2015-04-16T14:26:04.481Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/45/grey_badge_f486eea0ff003aeabb72.png"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 13:29:45 GMT
+  recorded_at: Thu, 16 Apr 2015 14:26:04 GMT
 - request:
     method: delete
-    uri: http://gamification-api.dev/v1//badges/213
+    uri: http://gamification-api.dev/v1/badges/45
     body:
       encoding: US-ASCII
       string: ''
@@ -1842,21 +537,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"190a894dd019daf6ef70a13e7b2c850e"'
+      - '"b6dbb172f419a5aeb579165d9cc5d9e5"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4ba40df7-ba7a-4959-baaf-dbde4a083b3c
+      - 7b4dd35b-ea8e-49c7-9901-4304b0a9d2ec
       X-Runtime:
-      - '0.006053'
+      - '0.015257'
       Date:
-      - Thu, 09 Apr 2015 13:29:45 GMT
+      - Thu, 16 Apr 2015 14:26:04 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":213,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://example.org/badge.png","collection_id":1,"created_at":"2015-04-09T13:29:45.319Z","updated_at":"2015-04-09T13:29:45.319Z"}'
+      string: '{"id":45,"name":"Create Badge Test","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/45/badge_f486eea0ff003aeabb72.png","collection_id":1,"created_at":"2015-04-16T14:26:04.481Z","updated_at":"2015-04-16T14:26:04.481Z"}'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 13:29:45 GMT
+  recorded_at: Thu, 16 Apr 2015 14:26:04 GMT
 recorded_with: VCR 2.9.3

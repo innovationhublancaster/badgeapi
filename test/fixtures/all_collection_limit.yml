@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1//collections?limit=1
+    uri: http://gamification-api.dev/v1/collections?limit=1
     body:
       encoding: US-ASCII
       string: ''
@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"40f8ba44e965a030e7e0933732bc73c4"'
+      - '"cee8a71a86a48f4efde287b7970240c5"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f7950544-21f3-4bae-8408-e6f9c2ffc473
+      - 669e24fa-ceef-49cd-8b05-cb92b9517158
       X-Runtime:
-      - '0.047916'
+      - '0.015021'
       Date:
-      - Thu, 09 Apr 2015 15:15:09 GMT
+      - Thu, 16 Apr 2015 14:26:21 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-03-31T14:07:13.505Z","updated_at":"2015-03-31T15:05:42.955Z"}]'
+        related to library data","created_at":"2015-04-16T13:34:11.963Z","updated_at":"2015-04-16T13:34:11.963Z"}]'
     http_version: 
-  recorded_at: Thu, 09 Apr 2015 15:15:09 GMT
+  recorded_at: Thu, 16 Apr 2015 14:26:21 GMT
 recorded_with: VCR 2.9.3

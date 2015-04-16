@@ -177,7 +177,6 @@ class BadgeapiCollectionTest < MiniTest::Test
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for Destroy",
 					description: "This is a new badge",
-					requirements: "You need to love the Badge API"
 			)
 
 			destroyed_collection = Badgeapi::Collection.destroy(collection.id)
