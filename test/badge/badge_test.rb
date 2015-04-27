@@ -56,6 +56,44 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
+	def test_it_returns_back_all_badges_issued_to_user
+		VCR.use_cassette('all_badges_issued', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+			result = Badgeapi::Badge.all(user: "t.skarbek-wazynski@lancaster.ac.uk")
+
+			# Make sure we got all the badges
+			assert_equal 1, result.length
+
+			# Make sure that the JSON was parsed
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+
+			result = Badgeapi::Badge.all(user: "0043181")
+
+			# Make sure we got all the badges
+			assert_equal 1, result.length
+
+			# Make sure that the JSON was parsed
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+		end
+	end
+
+	def test_it_raises_error_for_bad_user
+		VCR.use_cassette('all_badges_bad_user', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Badge.all(user: "t.skarbek-wazynski") }
+		end
+	end
+
+	def test_it_raises_error_for_non_existing_user
+		VCR.use_cassette('all_badges_bad_user', :record => :all) do
+			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Badge.all(user: "t.skarbek-wazynsky@lancaster.ac.uk") }
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Badge.all(user: "081897144451") }
+		end
+	end
+
 	def test_it_returns_back_all_badges
 		VCR.use_cassette('all_badges', :record => :all) do
 			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
@@ -262,6 +300,110 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_equal 2, updated_badge.collection_id
 
 			Badgeapi::Badge.destroy(badge.id)
+		end
+	end
+
+	def test_should_issue_badge_with_email
+		VCR.use_cassette('issue_badge_to_user', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			result = Badgeapi::Badge.issue(
+				2,
+				recipient: "t.skarbek-wazynski@lancaster.ac.uk"
+			)
+
+			assert_equal 2, result.length
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+
+			Badgeapi::Badge.revoke(
+					2,
+					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
+			)
+		end
+	end
+
+	def test_should_revoke_badge_with_email
+		VCR.use_cassette('revoke_badge_from_user', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			result = Badgeapi::Badge.issue(
+					2,
+					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
+			)
+
+			result = Badgeapi::Badge.revoke(
+					2,
+					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
+			)
+
+			assert_equal 1, result.length
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+		end
+	end
+
+	def test_should_issue_badge_with_library_card
+		VCR.use_cassette('issue_badge_to_user_with_library_card', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			result = Badgeapi::Badge.issue(
+					3,
+					recipient: "0043181"
+			)
+
+
+			assert_equal 2, result.length
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+
+			result = Badgeapi::Badge.revoke(
+					3,
+					recipient: "0043181"
+			)
+
+			assert_equal 1, result.length
+			assert result.kind_of?(Array)
+			assert result.first.kind_of?(Badgeapi::Badge)
+		end
+	end
+
+	def test_should_error_when_user_param_is_bad
+		VCR.use_cassette('issue_badge_to_bad_user', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			assert_raises(Badgeapi::InvalidRequestError) {
+				Badgeapi::Badge.issue(
+					2,
+					recipient: "t.skarbek-wazynski"
+				)
+			}
+		end
+	end
+
+	def test_should_error_when_issuing_bad_already_issued
+		VCR.use_cassette('issue_already_owned_badge', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			assert_raises(Badgeapi::InvalidRequestError) {
+				Badgeapi::Badge.issue(
+						1,
+						recipient: "t.skarbek-wazynski@lancaster.ac.uk"
+				)
+			}
+		end
+	end
+
+	def test_should_error_when_revoking_badge_not_owned
+		VCR.use_cassette('revoke_badge_not_issued', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			assert_raises(Badgeapi::InvalidRequestError) {
+				Badgeapi::Badge.revoke(
+						3,
+						recipient: "t.skarbek-wazynski@lancaster.ac.uk"
+				)
+			}
 		end
 	end
 

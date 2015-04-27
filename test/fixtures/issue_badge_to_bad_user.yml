@@ -1,24 +1,26 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://gamification-api.dev/v1/collections/1
+    method: post
+    uri: http://gamification-api.dev/v1/badges/2/issue
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: recipient=t.skarbek-wazynski
     headers:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
       - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 422
+      message: Unprocessable Entity
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -28,22 +30,21 @@ http_interactions:
       - nosniff
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - '"a70764bbc08318066ed02227d14f5f4b"'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 308fb8d4-0f7b-44f1-bd06-092b2b702e3a
+      - 82348a06-22a9-4b94-9fbf-b38032ed3e0f
       X-Runtime:
-      - '0.004363'
+      - '0.010687'
       Date:
-      - Mon, 27 Apr 2015 09:28:17 GMT
+      - Mon, 27 Apr 2015 13:02:31 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":1,"name":"Library","description":"All of the badges available
-        related to library data","created_at":"2015-04-17T16:05:52.985Z","updated_at":"2015-04-17T16:05:52.985Z"}'
+      string: '{"error":{"type":"invalid_request_error","message":"Invalid search
+        parameter: t.skarbek-wazynski, must be university email address or library
+        card number.","status":"422"}}'
     http_version: 
-  recorded_at: Mon, 27 Apr 2015 09:28:17 GMT
+  recorded_at: Mon, 27 Apr 2015 13:02:31 GMT
 recorded_with: VCR 2.9.3

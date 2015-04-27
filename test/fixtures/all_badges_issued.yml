@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1/badges?user=t.skarbek-wazynski@lancaster.ac.uk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"056438540c81261d54c2961a470e4f52"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3dd62e7c-4094-4944-9b82-a8ebd008551d
+      X-Runtime:
+      - '0.025331'
+      Date:
+      - Mon, 27 Apr 2015 13:02:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":1,"created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-17T16:05:53.136Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png"}]'
+    http_version: 
+  recorded_at: Mon, 27 Apr 2015 13:02:29 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1/badges?user=0043181
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"056438540c81261d54c2961a470e4f52"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 32db773a-933c-48fd-9e84-09d225019de9
+      X-Runtime:
+      - '1.613500'
+      Date:
+      - Mon, 27 Apr 2015 13:02:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":1,"created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-17T16:05:53.136Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png"}]'
+    http_version: 
+  recorded_at: Mon, 27 Apr 2015 13:02:31 GMT
+recorded_with: VCR 2.9.3
