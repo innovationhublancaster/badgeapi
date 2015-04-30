@@ -26,13 +26,13 @@ class BadgeapiBadgeTest < MiniTest::Test
 			badge = Badgeapi::Badge.find(1)
 			assert_equal Badgeapi::Badge, badge.class
 
-			assert_equal 1, badge.id
+			assert_equal "book-worm", badge.id
 			assert_equal "Book Worm", badge.name
 			assert_equal "Description?", badge.description
 			assert_equal "Loan out 25 books", badge.requirements
 			assert_equal "You must like books...", badge.hint
 			#assert_equal "http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png", badge.image
-			assert_equal 1, badge.collection_id
+			assert_equal "library", badge.collection_id
 		end
 	end
 
@@ -43,13 +43,13 @@ class BadgeapiBadgeTest < MiniTest::Test
 			badge = Badgeapi::Badge.find(1, expand: "collection")
 			assert_equal Badgeapi::Badge, badge.class
 
-			assert_equal 1, badge.id
+			assert_equal "book-worm", badge.id
 			assert_equal "Book Worm", badge.name
 			assert_equal "Description?", badge.description
 			assert_equal "Loan out 25 books", badge.requirements
 			assert_equal "You must like books...", badge.hint
 			#assert_equal "http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png", badge.image
-			assert_equal 1, badge.collection_id
+			assert_equal "library", badge.collection_id
 
 			assert_equal Badgeapi::Collection, badge.collection.class
 			assert_equal "Library", badge.collection.name
@@ -189,7 +189,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_equal "You need to love the Badge API", badge.requirements
 			assert_equal "Love us..", badge.hint
 			#assert_equal "http://example.org/badge.png", badge.image
-			assert_equal 1, badge.collection_id
+			assert_equal "library", badge.collection_id
 
 			Badgeapi::Badge.destroy(badge.id)
 		end
@@ -290,14 +290,55 @@ class BadgeapiBadgeTest < MiniTest::Test
 					description: "Updated Description",
 					requirements: "Updated Requirements",
 					hint: "Updated Hint",
-					collection_id: 2
+					collection_id: "trim-trail"
 			)
 
 			assert_equal "Updated Badge", updated_badge.name
 			assert_equal "Updated Description", updated_badge.description
 			assert_equal "Updated Requirements", updated_badge.requirements
 			assert_equal "Updated Hint", updated_badge.hint
-			assert_equal 2, updated_badge.collection_id
+			assert_equal "trim-trail", updated_badge.collection_id
+
+			Badgeapi::Badge.destroy(badge.id)
+		end
+	end
+
+	def test_update_badge_via_update_with_slug_update_and_history
+		VCR.use_cassette('update_badge_via_update_slug_history', :record => :all) do
+			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
+
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			badge = Badgeapi::Badge.create(
+					name: "Create Badge for update",
+					description: "This is a new badge",
+					requirements: "You need to love the Badge API",
+					hint: "Love us..",
+					image: @base64_image,
+					collection_id: 1
+			)
+
+			assert_equal "create-badge-for-update", badge.id
+
+
+			updated_badge = Badgeapi::Badge.update(badge.id,
+												   name: "Updated Badge",
+												   description: "Updated Description",
+												   requirements: "Updated Requirements",
+												   hint: "Updated Hint",
+												   collection_id: "trim-trail"
+			)
+
+			assert_equal "updated-badge", updated_badge.id
+			assert_equal "Updated Badge", updated_badge.name
+			assert_equal "Updated Description", updated_badge.description
+			assert_equal "Updated Requirements", updated_badge.requirements
+			assert_equal "Updated Hint", updated_badge.hint
+			assert_equal "trim-trail", updated_badge.collection_id
+
+			using_old_slug = Badgeapi::Badge.find(badge.id)
+
+			assert_equal "Updated Badge", using_old_slug.name
 
 			Badgeapi::Badge.destroy(badge.id)
 		end

@@ -1,0 +1,191 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://gamification-api.dev/v1/badges
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Bimage%5D=iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0%0Ad2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i%0AZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2Vo%0AaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6%0AbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5%0ALjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS%0AREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk%0AZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg%0AeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu%0Aczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s%0AbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S%0AZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w%0AIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p%0AaWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv%0AY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz%0ANkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i%0AeG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS%0AZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE%0ARDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8%0AL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI%2FPlCcFjQAAAAGUExURZTB%0AIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg%0Agg%3D%3D%0A&badge%5Bname%5D=Create+Badge+for+update&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"fef7ffc81cc87a07bf6fc437632f4bd5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2228a4b7-9cfa-4b09-a321-324d1cd12a8a
+      X-Runtime:
+      - '0.035026'
+      Date:
+      - Thu, 30 Apr 2015 14:31:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge for update","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/161/badge_7971d3a313cff655ce0e.png","collection_id":"library","created_at":"2015-04-30T14:31:33.302Z","updated_at":"2015-04-30T14:31:33.302Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/161/grey_badge_7971d3a313cff655ce0e.png","id":"create-badge-for-update"}'
+    http_version: 
+  recorded_at: Thu, 30 Apr 2015 14:31:33 GMT
+- request:
+    method: patch
+    uri: http://gamification-api.dev/v1/badges/create-badge-for-update
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=trim-trail&badge%5Bdescription%5D=Updated+Description&badge%5Bhint%5D=Updated+Hint&badge%5Bname%5D=Updated+Badge&badge%5Brequirements%5D=Updated+Requirements
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"37d62f2260c3d1e6a358416d0320b9f5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e06fbb7e-446c-47e3-b7bf-e1e3d94f8ed6
+      X-Runtime:
+      - '0.018364'
+      Date:
+      - Thu, 30 Apr 2015 14:31:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/161/badge_7971d3a313cff655ce0e.png","collection_id":"trim-trail","created_at":"2015-04-30T14:31:33.302Z","updated_at":"2015-04-30T14:31:33.345Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/161/grey_badge_7971d3a313cff655ce0e.png","id":"updated-badge"}'
+    http_version: 
+  recorded_at: Thu, 30 Apr 2015 14:31:33 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1/badges/create-badge-for-update
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"37d62f2260c3d1e6a358416d0320b9f5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1a899677-e811-4464-ab7e-420f15d9c6d9
+      X-Runtime:
+      - '0.009590'
+      Date:
+      - Thu, 30 Apr 2015 14:31:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/161/badge_7971d3a313cff655ce0e.png","collection_id":"trim-trail","created_at":"2015-04-30T14:31:33.302Z","updated_at":"2015-04-30T14:31:33.345Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/161/grey_badge_7971d3a313cff655ce0e.png","id":"updated-badge"}'
+    http_version: 
+  recorded_at: Thu, 30 Apr 2015 14:31:33 GMT
+- request:
+    method: delete
+    uri: http://gamification-api.dev/v1/badges/create-badge-for-update
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"37d62f2260c3d1e6a358416d0320b9f5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b3de2b16-c3e8-420b-9e2e-e0ab04553220
+      X-Runtime:
+      - '0.016174'
+      Date:
+      - Thu, 30 Apr 2015 14:31:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/161/badge_7971d3a313cff655ce0e.png","collection_id":"trim-trail","created_at":"2015-04-30T14:31:33.302Z","updated_at":"2015-04-30T14:31:33.345Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/161/grey_badge_7971d3a313cff655ce0e.png","id":"updated-badge"}'
+    http_version: 
+  recorded_at: Thu, 30 Apr 2015 14:31:33 GMT
+recorded_with: VCR 2.9.3

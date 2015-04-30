@@ -26,7 +26,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 			collection = Badgeapi::Collection.find(1)
 			assert_equal Badgeapi::Collection, collection.class
 
-			assert_equal 1, collection.id
+			assert_equal "library", collection.id
 			assert_equal "Library", collection.name
 			assert_equal "All of the badges available related to library data", collection.description
 		end
@@ -40,7 +40,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 			assert_equal Badgeapi::Collection, collection.class
 
-			assert_equal 1, collection.id
+			assert_equal "library", collection.id
 			assert_equal "Library", collection.name
 			assert_equal "All of the badges available related to library data", collection.description
 

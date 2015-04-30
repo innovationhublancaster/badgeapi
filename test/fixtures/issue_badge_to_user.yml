@@ -31,25 +31,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"878dc9cbcb9f040d1efea891ed44acee"'
+      - '"258a23bca6e338f20360141b75065fb5"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0707c9ab-a437-4367-89c2-347805a0ac25
+      - c2f8c6cf-6556-4768-96a6-1b6efb2114d2
       X-Runtime:
-      - '0.030335'
+      - '0.032611'
       Date:
-      - Mon, 27 Apr 2015 13:02:31 GMT
+      - Thu, 30 Apr 2015 14:31:30 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":1,"created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-17T16:05:53.136Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png"},{"id":2,"name":"Mega
+      string: '[{"name":"Book Worm","description":"Description?","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-30T14:20:54.145Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","id":"book-worm"},{"name":"Mega
         Book Worm","description":"Description?","requirements":"Loan out 50 books","hint":"You
-        must really like books...","image":"http://gamification-api.dev/uploads/badge/image/2/seed.png","collection_id":1,"created_at":"2015-04-17T16:05:53.212Z","updated_at":"2015-04-17T16:05:53.212Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/2/grey_seed.png"}]'
+        must really like books...","image":"http://gamification-api.dev/uploads/badge/image/2/seed.png","collection_id":"library","created_at":"2015-04-17T16:05:53.212Z","updated_at":"2015-04-27T14:36:14.423Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/2/grey_seed.png","id":"mega-book-worm"}]'
     http_version: 
-  recorded_at: Mon, 27 Apr 2015 13:02:31 GMT
+  recorded_at: Thu, 30 Apr 2015 14:31:30 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges/2/revoke
@@ -81,21 +81,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"056438540c81261d54c2961a470e4f52"'
+      - '"e51fcef8e071794b9f60277d6fa751ec"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dfcf54ff-2120-49bd-9eff-10da2afa02be
+      - 2d96dbce-fc3d-4988-92b3-d6b81559f167
       X-Runtime:
-      - '0.030161'
+      - '0.030524'
       Date:
-      - Mon, 27 Apr 2015 13:02:31 GMT
+      - Thu, 30 Apr 2015 14:31:30 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '[{"id":1,"name":"Book Worm","description":"Description?","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":1,"created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-17T16:05:53.136Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png"}]'
+      string: '[{"name":"Book Worm","description":"Description?","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-30T14:20:54.145Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","id":"book-worm"}]'
     http_version: 
-  recorded_at: Mon, 27 Apr 2015 13:02:31 GMT
+  recorded_at: Thu, 30 Apr 2015 14:31:30 GMT
 recorded_with: VCR 2.9.3
