@@ -17,6 +17,7 @@ module Badgeapi
 	if ENV['RAILS_ENV'] == "production"
 		@api_base = 'http://badgeapi.lancaster.ac.uk/v1'
 	else
+		puts "DEVELOPMENT"
 		@api_base = 'http://gamification-api.dev/v1'
 	end
 

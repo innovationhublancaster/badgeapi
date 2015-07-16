@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"94cee604fb6b9bd10bad9de9d0c02124"'
+      - '"7375a72c89785842b9c3663fea03002d"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 056ab6dd-8530-405a-abd8-55a8721dc4d9
+      - 75a306ae-f764-4430-98d0-ef46c5c82bac
       X-Runtime:
-      - '0.039442'
+      - '0.014528'
       Date:
-      - Thu, 30 Apr 2015 14:31:28 GMT
+      - Thu, 16 Jul 2015 10:38:09 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"name":"Book Worm","description":"Description?","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-04-17T16:05:53.136Z","updated_at":"2015-04-30T14:20:54.145Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","id":"book-worm"}'
+      string: '{"name":"Book Worm","description":"You have loaned out over 25 books.
+        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}'
     http_version: 
-  recorded_at: Thu, 30 Apr 2015 14:31:28 GMT
+  recorded_at: Thu, 16 Jul 2015 10:38:09 GMT
 recorded_with: VCR 2.9.3

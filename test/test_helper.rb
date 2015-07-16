@@ -2,6 +2,7 @@
 require './lib/badgeapi'
 require 'minitest/autorun'
 require 'webmock/minitest'
+require 'minitest/focus'
 require 'vcr'
 
 VCR.configure do |c|

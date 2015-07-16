@@ -28,11 +28,13 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 			assert_equal "book-worm", badge.id
 			assert_equal "Book Worm", badge.name
-			assert_equal "Description?", badge.description
+			assert_equal "You have loaned out over 25 books. Nice going!", badge.description
 			assert_equal "Loan out 25 books", badge.requirements
 			assert_equal "You must like books...", badge.hint
 			#assert_equal "http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png", badge.image
 			assert_equal "library", badge.collection_id
+			assert_equal "bronze", badge.level
+			assert_equal 25, badge.points
 		end
 	end
 
@@ -45,7 +47,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 			assert_equal "book-worm", badge.id
 			assert_equal "Book Worm", badge.name
-			assert_equal "Description?", badge.description
+			assert_equal "You have loaned out over 25 books. Nice going!", badge.description
 			assert_equal "Loan out 25 books", badge.requirements
 			assert_equal "You must like books...", badge.hint
 			#assert_equal "http://openbadges.org/wp-content/themes/openbadges2/media/images/content-background.png", badge.image
@@ -68,7 +70,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Badge)
 
-			result = Badgeapi::Badge.all(user: "0043181")
+			result = Badgeapi::Badge.all(user: "0043181") #uni card number for t.skarbek-wazynski
 
 			# Make sure we got all the badges
 			assert_equal 1, result.length
@@ -180,7 +182,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
 				image: @base64_image,
-				collection_id: 1
+				collection_id: 1,
+				level: "bronze"
 			)
 
 			assert_equal Badgeapi::Badge, badge.class
@@ -207,7 +210,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
 				image: @base64_image,
-				collection_id: 1
+				collection_id: 1,
+				level: "bronze"
 			)
 
 			assert_raises(Badgeapi::InvalidRequestError) {
@@ -217,7 +221,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 					requirements: "You need to love the Badge API",
 					hint: "Love us..",
 					image: @base64_image,
-					collection_id: 1
+					collection_id: 1,
+					level: "bronze"
 				)
 			}
 
@@ -237,7 +242,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
 				image: @base64_image,
-				collection_id: 1
+				collection_id: 1,
+				level: "bronze"
 			)
 
 			destroyed_badge = Badgeapi::Badge.destroy(badge.id)
@@ -260,7 +266,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
 				image: @base64_image,
-				collection_id: 1
+				collection_id: 1,
+				level: "bronze"
 			)
 
 			destroyed_badge = Badgeapi::Badge.destroy(badge.id)
@@ -282,7 +289,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 					requirements: "You need to love the Badge API",
 					hint: "Love us..",
 					image: @base64_image,
-					collection_id: 1
+					collection_id: 1,
+					level: "bronze"
 			)
 
 			updated_badge = Badgeapi::Badge.update(badge.id,
@@ -315,7 +323,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 					requirements: "You need to love the Badge API",
 					hint: "Love us..",
 					image: @base64_image,
-					collection_id: 1
+					collection_id: 1,
+					level: "bronze"
 			)
 
 			assert_equal "create-badge-for-update", badge.id
@@ -344,12 +353,13 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
+
 	def test_should_issue_badge_with_email
 		VCR.use_cassette('issue_badge_to_user', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			result = Badgeapi::Badge.issue(
-				2,
+				"mega-book-worm",
 				recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 
@@ -357,10 +367,12 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Badge)
 
-			Badgeapi::Badge.revoke(
-					2,
+			result = Badgeapi::Badge.revoke(
+					"mega-book-worm",
 					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
+
+			assert_equal 1, result.length
 		end
 	end
 
@@ -369,12 +381,14 @@ class BadgeapiBadgeTest < MiniTest::Test
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			result = Badgeapi::Badge.issue(
-					2,
+					"mega-book-worm",
 					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 
+			assert_equal 2, result.length
+
 			result = Badgeapi::Badge.revoke(
-					2,
+					"mega-book-worm",
 					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 

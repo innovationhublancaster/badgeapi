@@ -29,23 +29,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"038c15ea7b272dc86e9ae2a654408e23"'
+      - '"b14fbdd7658f3d6f2536890583e79c84"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e380dc51-da66-41f7-82c5-2fcd8ad66b7c
+      - 42ce7f7a-9911-423b-a3b6-9c06338c30db
       X-Runtime:
-      - '0.006369'
+      - '0.018564'
       Date:
-      - Thu, 16 Apr 2015 13:59:37 GMT
+      - Tue, 14 Jul 2015 15:47:24 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '[{"id":5,"name":"You Trim Trailed!","description":"Description?","requirements":"Complete
-        one lap of the trim trail","hint":"Have to used the trim trail?","image":"http://gamification-api.dev/uploads/badge/image/5/seed.png","collection_id":2,"created_at":"2015-04-16T13:44:50.290Z","updated_at":"2015-04-16T13:44:50.290Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/5/grey_seed.png"},{"id":6,"name":"Marathon
-        Man","description":"Description?","requirements":"Complete 10 laps of the
-        trim trail over any time","hint":"Keep going...","image":"http://gamification-api.dev/uploads/badge/image/6/seed.png","collection_id":2,"created_at":"2015-04-16T13:44:50.345Z","updated_at":"2015-04-16T13:44:50.345Z","image_greyscale":"http://gamification-api.dev/uploads/badge/image/6/grey_seed.png"}]'
+      string: '[{"name":"You Trim Trailed!","description":"You ran one lap of the
+        trim trail","requirements":"Complete one lap of the trim trail","hint":"Have
+        to used the trim trail?","image":"http://gamification-api.dev/uploads/badge/image/5/seed.png","collection_id":"trim-trail","created_at":"2015-07-14T14:14:17.042Z","updated_at":"2015-07-14T14:14:17.042Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/5/grey_seed.png","required_badges":[],"points":25,"id":"you-trim-trailed"},{"name":"Marathon
+        Man","description":"You have run 10 laps of the trips trail that is 47 kilometers","requirements":"Complete
+        10 laps of the trim trail over any time","hint":"Keep going...","image":"http://gamification-api.dev/uploads/badge/image/6/seed.png","collection_id":"trim-trail","created_at":"2015-07-14T14:14:17.130Z","updated_at":"2015-07-14T14:14:17.130Z","level":"gold","image_greyscale":"http://gamification-api.dev/uploads/badge/image/6/grey_seed.png","required_badges":[],"points":25,"id":"marathon-man"}]'
     http_version: 
-  recorded_at: Thu, 16 Apr 2015 13:59:37 GMT
+  recorded_at: Tue, 14 Jul 2015 15:47:24 GMT
 recorded_with: VCR 2.9.3
