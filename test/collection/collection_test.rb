@@ -28,6 +28,8 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 			assert_equal "library", collection.id
 			assert_equal "Library", collection.name
+			assert_equal 125, collection.total_points_available
+
 			assert_equal "Use your library and earn badges", collection.description
 		end
 	end
@@ -42,13 +44,15 @@ class BadgeapiCollectionTest < MiniTest::Test
 
 			assert_equal "library", collection.id
 			assert_equal "Library", collection.name
+			assert_equal 125, collection.total_points_available
 			assert_equal "Use your library and earn badges", collection.description
 
 
 			assert_equal Badgeapi::Badge, collection.badges[0].class
 			assert_equal 4, collection.badges.length
 			assert_equal "Book Worm", collection.badges[0].name
-
+			assert_equal "bronze", collection.badges.first.level
+			assert_equal 25, collection.badges.first.points
 		end
 	end
 
@@ -81,6 +85,9 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert result.first.kind_of?(Badgeapi::Collection)
 			assert result.first.badges.first.kind_of?(Badgeapi::Badge)
 			assert_equal "Book Worm", result.first.badges.first.name
+			assert_equal "bronze", result.first.badges.first.level
+			assert_equal 25, result.first.badges.first.points
+
 
 			result.first.badges.each do |badge|
 				assert_equal Badgeapi::Badge, badge.class

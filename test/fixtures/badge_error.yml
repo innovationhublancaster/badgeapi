@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 85da6e0e-977a-4a6d-a6d3-64d5a63ef89d
+      - 43a818d6-45b5-453b-bbf6-53494ad25577
       X-Runtime:
-      - '0.011028'
+      - '0.012313'
       Date:
-      - Thu, 16 Jul 2015 10:38:08 GMT
+      - Fri, 17 Jul 2015 09:55:59 GMT
       Connection:
       - close
     body:
@@ -43,5 +43,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No badge exists
         with id: 27","status":404}}'
     http_version: 
-  recorded_at: Thu, 16 Jul 2015 10:38:08 GMT
+  recorded_at: Fri, 17 Jul 2015 09:55:59 GMT
 recorded_with: VCR 2.9.3

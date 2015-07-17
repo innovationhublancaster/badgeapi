@@ -2,6 +2,341 @@
 http_interactions:
 - request:
     method: get
+    uri: http://gamification-api.dev/v1/badges?user=rob.ellis@lancaster.ac.uk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '22684'
+      X-Request-Id:
+      - b79c9c75-f10e-44d9-bada-e34cf603fcf9
+      X-Runtime:
+      - '0.118177'
+      Date:
+      - Thu, 16 Jul 2015 15:28:21 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    NoMethodError\n
+        \     in V1::BadgesController#index\n  </h1>\n</header>\n\n<div id=\"container\">\n
+        \ <h2>undefined method `badges&#39; for nil:NilClass</h2>\n\n  <div class=\"source\">\n<div
+        class=\"info\">\n  Extracted source (around line <strong>#28</strong>):\n</div>\n<div
+        class=\"data\">\n  <table cellpadding=\"0\" cellspacing=\"0\" class=\"lines\">\n
+        \     <tr>\n        <td>\n          <pre class=\"line_numbers\">\n<span>26</span>\n<span>27</span>\n<span>28</span>\n<span>29</span>\n<span>30</span>\n<span>31</span>\n
+        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">\t\t\tif
+        @username.present?\n</div><div class=\"line\">\t\t\t\t@recipient = Recipient.find_by_username(@username[&#39;username&#39;])\n</div><div
+        class=\"line active\">\t\t\t\t@badges = @recipient.badges.merge(@badges)\n</div><div
+        class=\"line\">\t\t\tend\n</div><div class=\"line\">\n</div><div class=\"line\">\t\t\t#
+        Limit if required\n</div>\n</pre>\n</td>\n    </tr>\n  </table>\n</div>\n</div>\n\n
+        \ \n<p><code>Rails.root: /Users/tomskarbek/Rails/gamification_api</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code>app/controllers/v1/badges_controller.rb:28:in
+        `index&#39;\napp/middleware/catch_json_parse_errors.rb:9:in `call&#39;</code></pre>\n
+        \   </div>\n    <div id=\"Framework-Trace\" style=\"display: none;\">\n      <pre><code>actionpack
+        (4.1.8) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;\nactivesupport
+        (4.1.8) lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport (4.1.8)
+        lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
+        `block in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block
+        in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block
+        in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:166:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block
+        in halting&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:86:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.1.8) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/base.rb:136:in `process&#39;\nactionview (4.1.8)
+        lib/action_view/rendering.rb:30:in `process&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:196:in
+        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:232:in `block
+        in action&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
+        `dispatch&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in
+        `block in call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/rack/agent_hooks.rb:30:in
+        `traced_call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/rack/browser_monitoring.rb:32:in
+        `traced_call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/rack/developer_mode.rb:48:in
+        `traced_call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nrack
+        (1.5.2) lib/rack/conditionalget.rb:25:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nrack
+        (1.5.2) lib/rack/head.rb:11:in `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactiverecord (4.1.8) lib/active_record/query_cache.rb:36:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactiverecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactiverecord (4.1.8) lib/active_record/migration.rb:380:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in
+        `block in call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:82:in
+        `run_callbacks&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrailties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.1.8) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.1.8) lib/rails/rack/logger.rb:20:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nactionpack
+        (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nactionpack
+        (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrailties (4.1.8) lib/rails/engine.rb:514:in `call&#39;\nrailties
+        (4.1.8) lib/rails/application.rb:144:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\n/Users/tomskarbek/Library/Application
+        Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle&#39;\n/Users/tomskarbek/Library/Application
+        Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue
+        in block (2 levels) in start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in
+        `block (2 levels) in start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in
+        `each&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in
+        `block in start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in
+        `loop&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in
+        `start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in
+        `run&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in
+        `&lt;main&gt;&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\" style=\"display:
+        none;\">\n      <pre><code>app/controllers/v1/badges_controller.rb:28:in `index&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;\nactivesupport
+        (4.1.8) lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport (4.1.8)
+        lib/active_support/callbacks.rb:113:in `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
+        `block in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block
+        in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block
+        in halting_and_conditional&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:166:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block
+        in halting&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:86:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.1.8) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.1.8) lib/abstract_controller/base.rb:136:in `process&#39;\nactionview (4.1.8)
+        lib/action_view/rendering.rb:30:in `process&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:196:in
+        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.1.8) lib/action_controller/metal.rb:232:in `block
+        in action&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in
+        `dispatch&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in
+        `block in call&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/rack/agent_hooks.rb:30:in
+        `traced_call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/rack/browser_monitoring.rb:32:in
+        `traced_call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/rack/developer_mode.rb:48:in
+        `traced_call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nrack
+        (1.5.2) lib/rack/conditionalget.rb:25:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nrack
+        (1.5.2) lib/rack/head.rb:11:in `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\napp/middleware/catch_json_parse_errors.rb:9:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactiverecord (4.1.8) lib/active_record/query_cache.rb:36:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactiverecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactiverecord (4.1.8) lib/active_record/migration.rb:380:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in
+        `block in call&#39;\nactivesupport (4.1.8) lib/active_support/callbacks.rb:82:in
+        `run_callbacks&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrailties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.1.8) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.1.8) lib/rails/rack/logger.rb:20:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nactionpack
+        (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nactivesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in
+        `call&#39;\nnewrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\nactionpack
+        (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call&#39;\nnewrelic_rpm
+        (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in
+        `call&#39;\nrailties (4.1.8) lib/rails/engine.rb:514:in `call&#39;\nrailties
+        (4.1.8) lib/rails/application.rb:144:in `call&#39;\nnewrelic_rpm (3.12.0.288)
+        lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call&#39;\n/Users/tomskarbek/Library/Application
+        Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle&#39;\n/Users/tomskarbek/Library/Application
+        Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue
+        in block (2 levels) in start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in
+        `block (2 levels) in start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in
+        `each&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in
+        `block in start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in
+        `loop&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in
+        `start&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in
+        `run&#39;\n/Users/tomskarbek/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in
+        `&lt;main&gt;&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2 style=\"margin-top:
+        30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>{&quot;user&quot;=&gt;&quot;rob.ellis@lancaster.ac.uk&quot;}</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>HTTP_ACCEPT:
+        &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;gamification-api.dev&quot;</pre></div>\n</div>\n\n<h2
+        style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p> <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Thu, 16 Jul 2015 15:28:21 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1/badges?user=r.ellis@lancaster.ac.uk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - f8626019-aed8-4dc2-ac19-c4d7e4789514
+      X-Runtime:
+      - '0.084220'
+      Date:
+      - Thu, 16 Jul 2015 15:44:20 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"This user has no
+        badges","status":404}}'
+    http_version: 
+  recorded_at: Thu, 16 Jul 2015 15:44:20 GMT
+- request:
+    method: get
     uri: http://gamification-api.dev/v1/badges?user=t.skarbek-wazynski@lancaster.ac.uk
     body:
       encoding: US-ASCII
@@ -33,11 +368,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a564f6d1-343f-4ed6-957e-fd74c63c0418
+      - a6633413-e994-4be0-aaa0-98e97f7df651
       X-Runtime:
-      - '0.022696'
+      - '0.023727'
       Date:
-      - Thu, 16 Jul 2015 10:38:10 GMT
+      - Fri, 17 Jul 2015 09:56:01 GMT
       Connection:
       - close
     body:
@@ -45,7 +380,7 @@ http_interactions:
       string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
     http_version: 
-  recorded_at: Thu, 16 Jul 2015 10:38:10 GMT
+  recorded_at: Fri, 17 Jul 2015 09:56:01 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=0043181
@@ -79,11 +414,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 668021f9-4291-4658-ab32-ccff56e9f318
+      - aa1d5d17-4c4d-4143-9765-82f82ace973b
       X-Runtime:
-      - '1.250174'
+      - '1.426291'
       Date:
-      - Thu, 16 Jul 2015 10:38:11 GMT
+      - Fri, 17 Jul 2015 09:56:03 GMT
       Connection:
       - close
     body:
@@ -91,5 +426,5 @@ http_interactions:
       string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
     http_version: 
-  recorded_at: Thu, 16 Jul 2015 10:38:11 GMT
+  recorded_at: Fri, 17 Jul 2015 09:56:03 GMT
 recorded_with: VCR 2.9.3
