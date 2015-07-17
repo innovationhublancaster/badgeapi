@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/collections?limit=1
+    uri: http://gamification-api.dev/v1/recipients?user=0043181
     body:
       encoding: US-ASCII
       string: ''
@@ -29,21 +29,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1ffa7fc08ccfa55f81f32c8e21d084a8"'
+      - '"0616856c23bcaead77926c29e5390c8b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 47dacea3-3aef-479f-98a5-17c83d12028d
+      - 98a1b3f4-d9d6-4490-81c3-75bf9b38ad22
       X-Runtime:
-      - '0.010887'
+      - '2.873380'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Fri, 17 Jul 2015 15:42:43 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '[{"id":"library","name":"Library","description":"Use your library and
-        earn badges","created_at":"2015-07-16T09:21:22.292Z","updated_at":"2015-07-16T09:21:22.292Z","total_points_available":125}]'
+      string: '{"total_score":25,"badges_total":1,"bronze_count":1,"silver_count":0,"gold_count":0,"platinum_count":0}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Fri, 17 Jul 2015 15:42:43 GMT
 recorded_with: VCR 2.9.3

@@ -1,56 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://gamification-api.dev/v1/collections
-    body:
-      encoding: UTF-8
-      string: collection%5Bdescription%5D=This+is+a+new+badge&collection%5Bname%5D=Create+Collection+for+Destroy
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"0a95dab8d0ccf37b93491445a8b2856d"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d22d100c-090a-40ba-a22e-1464efbfdc1f
-      X-Runtime:
-      - '0.022415'
-      Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"id":"create-collection-for-destroy","name":"Create Collection for
-        Destroy","description":"This is a new badge","created_at":"2015-07-17T15:34:22.128Z","updated_at":"2015-07-17T15:34:22.128Z","total_points_available":0}'
-    http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1/collections/create-collection-for-destroy
+    method: get
+    uri: http://gamification-api.dev/v1/recipients?user=dfsgsdgg
     body:
       encoding: US-ASCII
       string: ''
@@ -65,8 +17,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 422
+      message: Unprocessable Entity
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -76,27 +28,69 @@ http_interactions:
       - nosniff
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - '"0a95dab8d0ccf37b93491445a8b2856d"'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 7787297e-c959-4c75-8c70-b2bf440d0106
+      - 44afd28a-b2f1-40d0-a205-0732813a7e9c
       X-Runtime:
-      - '0.013431'
+      - '0.012492'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Fri, 17 Jul 2015 15:42:40 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"create-collection-for-destroy","name":"Create Collection for
-        Destroy","description":"This is a new badge","created_at":"2015-07-17T15:34:22.128Z","updated_at":"2015-07-17T15:34:22.128Z","total_points_available":0}'
+      string: '{"error":{"type":"invalid_request_error","message":"Invalid search
+        parameter: dfsgsdgg, must be university email address or university card number.","status":422}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Fri, 17 Jul 2015 15:42:40 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/collections/create-collection-for-destroy
+    uri: http://gamification-api.dev/v1/recipients?user=dfsgsdgg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 2c89c8f8-d345-4e95-a935-c53a259f8cfb
+      X-Runtime:
+      - '0.010331'
+      Date:
+      - Fri, 17 Jul 2015 15:42:40 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"Invalid search
+        parameter: dfsgsdgg, must be university email address or university card number.","status":422}}'
+    http_version: 
+  recorded_at: Fri, 17 Jul 2015 15:42:40 GMT
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1/recipients?user=j.stennet@lancaster.ac.uk
     body:
       encoding: US-ASCII
       string: ''
@@ -125,22 +119,22 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d6acb497-d028-44a9-a64e-aab01a23c491
+      - 6721afae-9722-4e2a-81de-03658b5e481b
       X-Runtime:
-      - '0.009042'
+      - '0.016027'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Fri, 17 Jul 2015 15:42:40 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
-        with id: create-collection-for-destroy","status":404}}'
+      string: '{"error":{"type":"invalid_request_error","message":"Unable to find
+        user with specified data j.stennet@lancaster.ac.uk","status":404}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Fri, 17 Jul 2015 15:42:40 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/collections/create-collection-for-destroy
+    uri: http://gamification-api.dev/v1/recipients?user=j.stennet@lancaster.ac.uk
     body:
       encoding: US-ASCII
       string: ''
@@ -169,17 +163,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - dda9310b-1021-4515-93bb-62d1fd5bce9d
+      - f867dd2b-2133-49a1-acaf-dedba7303203
       X-Runtime:
-      - '0.009911'
+      - '0.015315'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Fri, 17 Jul 2015 15:42:41 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
-        with id: create-collection-for-destroy","status":404}}'
+      string: '{"error":{"type":"invalid_request_error","message":"Unable to find
+        user with specified data j.stennet@lancaster.ac.uk","status":404}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Fri, 17 Jul 2015 15:42:41 GMT
 recorded_with: VCR 2.9.3

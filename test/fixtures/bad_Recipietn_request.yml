@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/collections/27
+    uri: http://gamification-api.dev/v1/recipients
     body:
       encoding: US-ASCII
       string: ''
@@ -17,8 +17,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 422
+      message: Unprocessable Entity
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -31,22 +31,23 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c93131fd-fe9d-4a9c-8c8f-d5fe6defb4e3
+      - 2c089825-3419-4c89-81f7-9957a9c13faf
       X-Runtime:
-      - '0.011030'
+      - '0.011890'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Fri, 17 Jul 2015 15:20:17 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
-        with id: 27","status":404}}'
+      string: '{"error":{"type":"invalid_request_error","message":"No user specified.
+        Please specify user as a param using either university email or university
+        card. e.g user=user@lancaster.ac.uk","status":422}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Fri, 17 Jul 2015 15:20:17 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/collections/27
+    uri: http://gamification-api.dev/v1/recipients
     body:
       encoding: US-ASCII
       string: ''
@@ -61,8 +62,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 422
+      message: Unprocessable Entity
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -75,17 +76,18 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - fbdaa482-8ca4-4c6d-ac56-e262b44f4154
+      - f5ff496b-d4d6-401b-8300-6f71893789cb
       X-Runtime:
-      - '0.014915'
+      - '0.011752'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Fri, 17 Jul 2015 15:20:17 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"No collection exists
-        with id: 27","status":404}}'
+      string: '{"error":{"type":"invalid_request_error","message":"No user specified.
+        Please specify user as a param using either university email or university
+        card. e.g user=user@lancaster.ac.uk","status":422}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Fri, 17 Jul 2015 15:20:17 GMT
 recorded_with: VCR 2.9.3

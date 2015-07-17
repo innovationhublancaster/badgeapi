@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/badges?user=t.skarbek-wazynski
+    uri: http://gamification-api.dev/v1/recipients
     body:
       encoding: US-ASCII
       string: ''
@@ -31,23 +31,23 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 57e282dc-eba3-4174-92e4-b22b97c58d25
+      - 2c447f68-f9f4-4065-b334-eec868997103
       X-Runtime:
-      - '0.012098'
+      - '0.008719'
       Date:
-      - Fri, 17 Jul 2015 14:56:16 GMT
+      - Fri, 17 Jul 2015 15:18:44 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"Invalid search
-        parameter: t.skarbek-wazynski, must be university email address or university
-        card number.","status":"422"}}'
+      string: '{"error":{"type":"invalid_request_error","message":"No user specified.
+        Please specify user as a param using either university email or university
+        card. e.g user=user@lancaster.ac.uk","status":422}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 14:56:16 GMT
+  recorded_at: Fri, 17 Jul 2015 15:18:44 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/badges?user=t.skarbek-wazynsky@lancaster.ac.uk
+    uri: http://gamification-api.dev/v1/recipients
     body:
       encoding: US-ASCII
       string: ''
@@ -62,8 +62,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 422
+      message: Unprocessable Entity
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -76,22 +76,23 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - b540d4ed-1100-4180-bdb3-442d712bb642
+      - 5fb4a26b-1995-4a93-a3d4-f02c145361ed
       X-Runtime:
-      - '0.019672'
+      - '0.007406'
       Date:
-      - Fri, 17 Jul 2015 14:56:16 GMT
+      - Fri, 17 Jul 2015 15:18:44 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"Unable to find
-        user with specified data t.skarbek-wazynsky@lancaster.ac.uk","status":"404"}}'
+      string: '{"error":{"type":"invalid_request_error","message":"No user specified.
+        Please specify user as a param using either university email or university
+        card. e.g user=user@lancaster.ac.uk","status":422}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 14:56:16 GMT
+  recorded_at: Fri, 17 Jul 2015 15:18:44 GMT
 - request:
     method: get
-    uri: http://gamification-api.dev/v1/badges?user=081897144451
+    uri: http://gamification-api.dev/v1/recipients?user=t.skarbek-wazynski@lancaster.ac.uk
     body:
       encoding: US-ASCII
       string: ''
@@ -106,8 +107,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -117,20 +118,21 @@ http_interactions:
       - nosniff
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - '"0616856c23bcaead77926c29e5390c8b"'
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 28b8804d-4f6b-40f8-95c8-f242ff85046f
+      - fcce0934-7ac8-4dcc-8608-da193c47eab4
       X-Runtime:
-      - '1.479348'
+      - '0.022426'
       Date:
-      - Fri, 17 Jul 2015 14:56:17 GMT
+      - Fri, 17 Jul 2015 15:42:41 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"error":{"type":"invalid_request_error","message":"Unable to find
-        user with specified data 081897144451","status":"404"}}'
+      string: '{"total_score":25,"badges_total":1,"bronze_count":1,"silver_count":0,"gold_count":0,"platinum_count":0}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 14:56:17 GMT
+  recorded_at: Fri, 17 Jul 2015 15:42:41 GMT
 recorded_with: VCR 2.9.3
