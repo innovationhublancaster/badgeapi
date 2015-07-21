@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b9474c62-2b34-4f35-94c2-69154dab3905
+      - d417036c-6434-4522-8d69-0f006ef01a63
       X-Runtime:
-      - '0.016521'
+      - '0.017408'
       Date:
-      - Fri, 17 Jul 2015 10:00:38 GMT
+      - Tue, 21 Jul 2015 08:10:38 GMT
       Connection:
       - close
     body:
@@ -116,5 +116,5 @@ http_interactions:
         bi1hcGkuZGV2L3VwbG9hZHMvYmFkZ2UvaW1hZ2UvNi9ncmV5X3NlZWQucG5n
         IiwicG9pbnRzIjo3NSwiaWQiOiJtYXJhdGhvbi1tYW4ifV19XQ==
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 10:00:38 GMT
+  recorded_at: Tue, 21 Jul 2015 08:10:38 GMT
 recorded_with: VCR 2.9.3

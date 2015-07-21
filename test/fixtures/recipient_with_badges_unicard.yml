@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gamification-api.dev/v1/recipients?user=0043181
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"acde49a57ebc9ba795f6d09daff4d02a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 652bfafd-59e0-4bf5-8e1a-cbf1bad78399
+      X-Runtime:
+      - '2.344221'
+      Date:
+      - Tue, 21 Jul 2015 08:10:16 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"total_score":25,"badges_total":1,"bronze_count":1,"silver_count":0,"gold_count":0,"platinum_count":0,"badges":[{"name":"Book
+        Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":1,"created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","slug":"book-worm","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","points":25}]}'
+    http_version: 
+  recorded_at: Tue, 21 Jul 2015 08:10:16 GMT
+recorded_with: VCR 2.9.3

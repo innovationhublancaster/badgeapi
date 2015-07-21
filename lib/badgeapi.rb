@@ -6,6 +6,7 @@ require_relative "badgeapi/badgeapi_object"
 require_relative "badgeapi/version"
 require_relative "badgeapi/badge"
 require_relative "badgeapi/collection"
+require_relative "badgeapi/recipient"
 
 # Errors
 require_relative "badgeapi/errors/badgeapi_error"

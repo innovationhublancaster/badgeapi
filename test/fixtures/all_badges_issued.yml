@@ -368,11 +368,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a6633413-e994-4be0-aaa0-98e97f7df651
+      - 753302da-0d2d-4133-9e3e-4c525088a995
       X-Runtime:
-      - '0.023727'
+      - '0.026905'
       Date:
-      - Fri, 17 Jul 2015 09:56:01 GMT
+      - Fri, 17 Jul 2015 14:56:17 GMT
       Connection:
       - close
     body:
@@ -380,7 +380,7 @@ http_interactions:
       string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 09:56:01 GMT
+  recorded_at: Fri, 17 Jul 2015 14:56:17 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=0043181
@@ -414,11 +414,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - aa1d5d17-4c4d-4143-9765-82f82ace973b
+      - a0489a4f-0e29-464d-913a-f022fd87f591
       X-Runtime:
-      - '1.426291'
+      - '1.273095'
       Date:
-      - Fri, 17 Jul 2015 09:56:03 GMT
+      - Fri, 17 Jul 2015 14:56:19 GMT
       Connection:
       - close
     body:
@@ -426,5 +426,5 @@ http_interactions:
       string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 09:56:03 GMT
+  recorded_at: Fri, 17 Jul 2015 14:56:19 GMT
 recorded_with: VCR 2.9.3
