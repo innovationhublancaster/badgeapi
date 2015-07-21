@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c7c23a7a-7307-4660-b945-a480cfc04457
+      - 2d2a3dac-fad7-444d-b844-9a5e34eec66c
       X-Runtime:
-      - '0.012393'
+      - '0.012315'
       Date:
-      - Fri, 17 Jul 2015 14:56:16 GMT
+      - Tue, 21 Jul 2015 12:42:25 GMT
       Connection:
       - close
     body:
@@ -43,7 +43,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Invalid expand
         parameter: monkey","status":400}}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 14:56:16 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:25 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?expand=collection
@@ -77,11 +77,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 909d3ead-adc0-4007-94de-3c4bf883a514
+      - 5039bfd0-ff28-48d3-9e96-9337392e6d79
       X-Runtime:
-      - '0.042440'
+      - '0.061576'
       Date:
-      - Fri, 17 Jul 2015 14:56:17 GMT
+      - Tue, 21 Jul 2015 12:42:27 GMT
       Connection:
       - close
     body:
@@ -194,5 +194,5 @@ http_interactions:
         bF9wb2ludHNfYXZhaWxhYmxlIjoxMDB9LCJpZCI6Im1hcmF0aG9uLW1hbiJ9
         XQ==
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 14:56:17 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:27 GMT
 recorded_with: VCR 2.9.3

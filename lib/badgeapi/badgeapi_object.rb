@@ -39,7 +39,7 @@ module Badgeapi
 			def object_classes
 				@object_classes ||= {
 					'collection' => Collection,
-					'badge'=> Badge
+					'badge'=> Badge,
 				}
 			end
 
@@ -48,6 +48,9 @@ module Badgeapi
 				attributes.each do |name, value|
 					if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
 						child = map_related_object object_classes.fetch(name.singularize), value
+						record.instance_variable_set "@#{name}", child
+					elsif name == "required_badges"
+						child = map_related_object object_classes.fetch("badge"), value
 						record.instance_variable_set "@#{name}", child
 					else
 						record.instance_variable_set "@#{name}", value

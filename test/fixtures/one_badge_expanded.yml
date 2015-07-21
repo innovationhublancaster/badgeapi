@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 70cd39ea-2be1-434e-8f37-71e64e867b80
+      - f7287e2f-b6e3-4c8f-9a72-6fb1fe5e7645
       X-Runtime:
-      - '0.016843'
+      - '0.025524'
       Date:
-      - Fri, 17 Jul 2015 14:56:17 GMT
+      - Tue, 21 Jul 2015 12:42:27 GMT
       Connection:
       - close
     body:
@@ -46,5 +46,5 @@ http_interactions:
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"collection":{"id":"library","name":"Library","description":"Use
         your library and earn badges","created_at":"2015-07-16T09:21:22.292Z","updated_at":"2015-07-16T09:21:22.292Z"},"id":"book-worm"}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 14:56:17 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:27 GMT
 recorded_with: VCR 2.9.3

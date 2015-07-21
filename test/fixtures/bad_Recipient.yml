@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 7b915246-1ed2-48c6-8a39-cb71bf128ba8
+      - df46b90d-8157-4db8-aaed-a24dc6e84836
       X-Runtime:
-      - '0.011667'
+      - '0.014834'
       Date:
-      - Tue, 21 Jul 2015 08:29:26 GMT
+      - Tue, 21 Jul 2015 12:42:44 GMT
       Connection:
       - close
     body:
@@ -43,7 +43,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Invalid search
         parameter: dfsgsdgg, must be university email address or university card number.","status":422}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 08:29:26 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:44 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/recipients?user=dfsgsdgg
@@ -75,11 +75,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 36d1c6a2-4a45-480e-86ba-a49cddcc93be
+      - cd53da02-e943-4798-948a-34c688dfce28
       X-Runtime:
-      - '0.009787'
+      - '0.021953'
       Date:
-      - Tue, 21 Jul 2015 08:29:26 GMT
+      - Tue, 21 Jul 2015 12:42:44 GMT
       Connection:
       - close
     body:
@@ -87,7 +87,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Invalid search
         parameter: dfsgsdgg, must be university email address or university card number.","status":422}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 08:29:26 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:44 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/recipients?user=j.stennet@lancaster.ac.uk
@@ -119,11 +119,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - fbce63ba-d9d8-4856-9d32-f67239b647e9
+      - 65ae743a-3cb6-4a9d-a5dc-c8f40b1706c2
       X-Runtime:
-      - '0.019226'
+      - '0.019882'
       Date:
-      - Tue, 21 Jul 2015 08:29:26 GMT
+      - Tue, 21 Jul 2015 12:42:44 GMT
       Connection:
       - close
     body:
@@ -131,7 +131,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Unable to find
         user with specified data j.stennet@lancaster.ac.uk","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 08:29:26 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:44 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/recipients?user=j.stennet@lancaster.ac.uk
@@ -163,11 +163,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e5ac3ca8-6862-4e16-b4de-19ddaf76a4da
+      - c03a0178-9851-4e9a-b374-6e3dd99cc65c
       X-Runtime:
-      - '0.017606'
+      - '0.018474'
       Date:
-      - Tue, 21 Jul 2015 08:29:26 GMT
+      - Tue, 21 Jul 2015 12:42:44 GMT
       Connection:
       - close
     body:
@@ -175,5 +175,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Unable to find
         user with specified data j.stennet@lancaster.ac.uk","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 08:29:26 GMT
+  recorded_at: Tue, 21 Jul 2015 12:42:44 GMT
 recorded_with: VCR 2.9.3

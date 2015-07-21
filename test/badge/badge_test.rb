@@ -462,4 +462,23 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
+	def test_badge_requirements
+		VCR.use_cassette('badge_requirements', :record => :all) do
+			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
+
+			badge = Badgeapi::Badge.find("book-worm")
+
+			required_count = badge.required_badges.count
+
+			badge = Badgeapi::Badge.add_badge_requirement("marathon-man", "you-trim-trailed")
+
+			assert_equal required_count + 1, badge.required_badges.count
+			assert_equal Badgeapi::Badge, badge.required_badges.first.class
+
+			badge = Badgeapi::Badge.remove_badge_requirement("marathon-man", "you-trim-trailed")
+
+			assert_equal required_count, badge.required_badges.count
+		end
+	end
+
 end
