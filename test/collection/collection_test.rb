@@ -47,6 +47,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert_equal 125, collection.total_points_available
 			assert_equal "Use your library and earn badges", collection.description
 
+			assert_equal Badgeapi::Badge, collection.badges[1].required_badges.first.class
 
 			assert_equal Badgeapi::Badge, collection.badges[0].class
 			assert_equal 4, collection.badges.length

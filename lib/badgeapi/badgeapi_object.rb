@@ -40,6 +40,7 @@ module Badgeapi
 				@object_classes ||= {
 					'collection' => Collection,
 					'badge'=> Badge,
+					'required_badge'=>Badge
 				}
 			end
 
@@ -48,9 +49,6 @@ module Badgeapi
 				attributes.each do |name, value|
 					if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
 						child = map_related_object object_classes.fetch(name.singularize), value
-						record.instance_variable_set "@#{name}", child
-					elsif name == "required_badges"
-						child = map_related_object object_classes.fetch("badge"), value
 						record.instance_variable_set "@#{name}", child
 					else
 						record.instance_variable_set "@#{name}", value
@@ -67,7 +65,14 @@ module Badgeapi
 				else
 					record = object.new
 					attributes.each do |name, value|
-						record.instance_variable_set "@#{name}", value
+						if value.class == Array && value.count > 0
+							if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
+								child = map_related_object object_classes.fetch(name.singularize), value
+								record.instance_variable_set "@#{name}", child
+							end
+						else
+							record.instance_variable_set "@#{name}", value
+						end
 					end
 					record
 				end

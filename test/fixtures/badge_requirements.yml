@@ -172,11 +172,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d755fee3-afa8-4094-9676-2b928a68428a
+      - b70dc0bf-1931-4f98-98ac-1fa2f18612f3
       X-Runtime:
-      - '0.018856'
+      - '0.014240'
       Date:
-      - Tue, 21 Jul 2015 13:58:07 GMT
+      - Tue, 21 Jul 2015 15:15:05 GMT
       Connection:
       - close
     body:
@@ -184,7 +184,7 @@ http_interactions:
       string: '{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges/marathon-man/requires
@@ -220,11 +220,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 754fd4ba-a467-409a-b6f2-bd96e527bb3c
+      - cf0a6722-4d8a-4aab-8911-adbb06040a65
       X-Runtime:
-      - '0.028767'
+      - '0.026374'
       Date:
-      - Tue, 21 Jul 2015 13:58:07 GMT
+      - Tue, 21 Jul 2015 15:15:05 GMT
       Connection:
       - close
     body:
@@ -235,7 +235,7 @@ http_interactions:
         Trim Trailed!","description":"You ran one lap of the trim trail","requirements":"Complete
         one lap of the trim trail","hint":"Have to used the trim trail?","image":"http://gamification-api.dev/uploads/badge/image/5/seed.png","collection_id":"trim-trail","created_at":"2015-07-16T09:21:22.753Z","updated_at":"2015-07-16T09:21:22.753Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/5/grey_seed.png","required_badges":[],"points":25,"id":"you-trim-trailed"}],"points":75,"id":"marathon-man"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/marathon-man/requires?required_badge%5Bid%5D=you-trim-trailed
@@ -269,11 +269,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - eae275f8-5e49-497c-a341-cca452b3b6b3
+      - 62df242f-2a0c-4623-9aac-d5aa51da88e3
       X-Runtime:
-      - '0.026985'
+      - '0.022847'
       Date:
-      - Tue, 21 Jul 2015 13:58:07 GMT
+      - Tue, 21 Jul 2015 15:15:05 GMT
       Connection:
       - close
     body:
@@ -282,5 +282,5 @@ http_interactions:
         trail that is 47 kilometers","requirements":"Complete 10 laps of the trim
         trail over any time","hint":"Keep going...","image":"http://gamification-api.dev/uploads/badge/image/6/seed.png","collection_id":"trim-trail","created_at":"2015-07-16T09:21:22.836Z","updated_at":"2015-07-16T09:21:22.836Z","level":"gold","image_greyscale":"http://gamification-api.dev/uploads/badge/image/6/grey_seed.png","required_badges":[],"points":75,"id":"marathon-man"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
 recorded_with: VCR 2.9.3

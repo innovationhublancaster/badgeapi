@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d1a483b63a6d8fdcbda2fb9ee2ac09bf"'
+      - '"50af67fb25affdcf9c35537f677823aa"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b99f26a8-f197-4192-a998-4b6153af7113
+      - ce2424e7-791c-4a75-a36e-84ed0be63c5a
       X-Runtime:
-      - '0.052154'
+      - '0.049761'
       Date:
-      - Tue, 21 Jul 2015 13:58:07 GMT
+      - Tue, 21 Jul 2015 15:15:05 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge for Destroy","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/71/badge_6727055f7ce08be5e67d.png","collection_id":"library","created_at":"2015-07-21T13:58:07.066Z","updated_at":"2015-07-21T13:58:07.066Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/71/grey_badge_6727055f7ce08be5e67d.png","required_badges":[],"points":25,"id":"create-badge-for-destroy"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/130/badge_7ba3a602502475cd3d7c.png","collection_id":"library","created_at":"2015-07-21T15:15:05.352Z","updated_at":"2015-07-21T15:15:05.352Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/130/grey_badge_7ba3a602502475cd3d7c.png","required_badges":[],"points":25,"id":"create-badge-for-destroy"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/create-badge-for-destroy
@@ -77,23 +77,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d1a483b63a6d8fdcbda2fb9ee2ac09bf"'
+      - '"50af67fb25affdcf9c35537f677823aa"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cd437bd0-0f25-4406-87b7-1239442cc8db
+      - 62929480-6c5f-486a-9161-b9b35c5ad9e2
       X-Runtime:
-      - '0.021514'
+      - '0.022398'
       Date:
-      - Tue, 21 Jul 2015 13:58:07 GMT
+      - Tue, 21 Jul 2015 15:15:05 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge for Destroy","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/71/badge_6727055f7ce08be5e67d.png","collection_id":"library","created_at":"2015-07-21T13:58:07.066Z","updated_at":"2015-07-21T13:58:07.066Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/71/grey_badge_6727055f7ce08be5e67d.png","required_badges":[],"points":25,"id":"create-badge-for-destroy"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/130/badge_7ba3a602502475cd3d7c.png","collection_id":"library","created_at":"2015-07-21T15:15:05.352Z","updated_at":"2015-07-21T15:15:05.352Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/130/grey_badge_7ba3a602502475cd3d7c.png","required_badges":[],"points":25,"id":"create-badge-for-destroy"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges/create-badge-for-destroy
@@ -125,11 +125,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 43fec2a6-92d9-4914-9ca1-bb752024ab77
+      - 60aa2702-1190-4511-b325-2942ee2b6211
       X-Runtime:
-      - '0.011079'
+      - '0.012025'
       Date:
-      - Tue, 21 Jul 2015 13:58:07 GMT
+      - Tue, 21 Jul 2015 15:15:05 GMT
       Connection:
       - close
     body:
@@ -137,5 +137,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No badge exists
         with id: create-badge-for-destroy","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
 recorded_with: VCR 2.9.3

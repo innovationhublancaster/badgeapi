@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b262e2331e911e61d35c9e8c6bf5a60d"'
+      - '"732b0a695b1d7d9367e711f2549d2ac2"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fd792a47-92f2-4e49-9843-24ca632358d5
+      - 10cb2497-36a7-485a-b426-8380554f5892
       X-Runtime:
-      - '0.045500'
+      - '0.062618'
       Date:
-      - Tue, 21 Jul 2015 13:58:12 GMT
+      - Tue, 21 Jul 2015 15:15:11 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge for update","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/75/badge_b8b8708bc296fa29f591.png","collection_id":"library","created_at":"2015-07-21T13:58:12.573Z","updated_at":"2015-07-21T13:58:12.573Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/75/grey_badge_b8b8708bc296fa29f591.png","required_badges":[],"points":25,"id":"create-badge-for-update"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/134/badge_5abcfc704ab498025c7c.png","collection_id":"library","created_at":"2015-07-21T15:15:11.658Z","updated_at":"2015-07-21T15:15:11.658Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/134/grey_badge_5abcfc704ab498025c7c.png","required_badges":[],"points":25,"id":"create-badge-for-update"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:12 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:11 GMT
 - request:
     method: patch
     uri: http://gamification-api.dev/v1/badges/create-badge-for-update
@@ -79,23 +79,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"65fe260c3a5d9901b6029b083082db9e"'
+      - '"2fa62b133c2622e5ae30a73c9ac61e75"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 610adad1-4b38-442f-852d-4fb6f1cf4639
+      - 843028fc-df92-4122-8ec6-d0563484a472
       X-Runtime:
-      - '0.031819'
+      - '0.031403'
       Date:
-      - Tue, 21 Jul 2015 13:58:12 GMT
+      - Tue, 21 Jul 2015 15:15:11 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/75/badge_b8b8708bc296fa29f591.png","collection_id":"trim-trail","created_at":"2015-07-21T13:58:12.573Z","updated_at":"2015-07-21T13:58:12.632Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/75/grey_badge_b8b8708bc296fa29f591.png","required_badges":[],"points":25,"id":"updated-badge"}'
+        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/134/badge_5abcfc704ab498025c7c.png","collection_id":"trim-trail","created_at":"2015-07-21T15:15:11.658Z","updated_at":"2015-07-21T15:15:11.714Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/134/grey_badge_5abcfc704ab498025c7c.png","required_badges":[],"points":25,"id":"updated-badge"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:12 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:11 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/create-badge-for-update
@@ -125,21 +125,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"65fe260c3a5d9901b6029b083082db9e"'
+      - '"2fa62b133c2622e5ae30a73c9ac61e75"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8a60be30-1002-4532-a7de-f8e409058665
+      - 29f8124c-2a92-49ec-902e-6e485676545d
       X-Runtime:
-      - '0.025258'
+      - '0.025098'
       Date:
-      - Tue, 21 Jul 2015 13:58:12 GMT
+      - Tue, 21 Jul 2015 15:15:11 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/75/badge_b8b8708bc296fa29f591.png","collection_id":"trim-trail","created_at":"2015-07-21T13:58:12.573Z","updated_at":"2015-07-21T13:58:12.632Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/75/grey_badge_b8b8708bc296fa29f591.png","required_badges":[],"points":25,"id":"updated-badge"}'
+        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/uploads/badge/image/134/badge_5abcfc704ab498025c7c.png","collection_id":"trim-trail","created_at":"2015-07-21T15:15:11.658Z","updated_at":"2015-07-21T15:15:11.714Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/134/grey_badge_5abcfc704ab498025c7c.png","required_badges":[],"points":25,"id":"updated-badge"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 13:58:12 GMT
+  recorded_at: Tue, 21 Jul 2015 15:15:11 GMT
 recorded_with: VCR 2.9.3
