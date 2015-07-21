@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"11b7ba9e2289064305dfe47c94559a9d"'
+      - '"44d6ffd55854ea3ab84f4609a27da37a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 743b97de-221c-4a0f-8d9b-fb4a89f76e45
+      - 649afbd4-191d-4c34-ac3b-db401e0ed926
       X-Runtime:
-      - '0.049648'
+      - '0.044098'
       Date:
-      - Tue, 21 Jul 2015 12:42:25 GMT
+      - Tue, 21 Jul 2015 13:58:07 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge Test Destroy","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/56/badge_4b7cf9a1c4f36494c305.png","collection_id":"library","created_at":"2015-07-21T12:42:25.231Z","updated_at":"2015-07-21T12:42:25.231Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/56/grey_badge_4b7cf9a1c4f36494c305.png","required_badges":[],"points":25,"id":"create-badge-test-destroy"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/74/badge_9b13a7fc8830ecc4e4fd.png","collection_id":"library","created_at":"2015-07-21T13:58:07.675Z","updated_at":"2015-07-21T13:58:07.675Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/74/grey_badge_9b13a7fc8830ecc4e4fd.png","required_badges":[],"points":25,"id":"create-badge-test-destroy"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 12:42:25 GMT
+  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges
@@ -81,11 +81,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 90805296-afe4-4a60-ae5c-c69952610d9f
+      - b55e3203-a557-4fe0-a84e-bbf7e4323526
       X-Runtime:
-      - '0.034224'
+      - '0.034220'
       Date:
-      - Tue, 21 Jul 2015 12:42:25 GMT
+      - Tue, 21 Jul 2015 13:58:07 GMT
       Connection:
       - close
     body:
@@ -93,7 +93,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":{"name":["has already
         been taken"]},"status":422}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 12:42:25 GMT
+  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/create-badge-test-destroy
@@ -123,21 +123,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"11b7ba9e2289064305dfe47c94559a9d"'
+      - '"44d6ffd55854ea3ab84f4609a27da37a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 08b6aea7-5faf-4638-b315-73808fe6f685
+      - 93e5220a-e22a-408d-9dbb-c92dd2b0131d
       X-Runtime:
-      - '0.018845'
+      - '0.018598'
       Date:
-      - Tue, 21 Jul 2015 12:42:25 GMT
+      - Tue, 21 Jul 2015 13:58:07 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge Test Destroy","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/56/badge_4b7cf9a1c4f36494c305.png","collection_id":"library","created_at":"2015-07-21T12:42:25.231Z","updated_at":"2015-07-21T12:42:25.231Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/56/grey_badge_4b7cf9a1c4f36494c305.png","required_badges":[],"points":25,"id":"create-badge-test-destroy"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/uploads/badge/image/74/badge_9b13a7fc8830ecc4e4fd.png","collection_id":"library","created_at":"2015-07-21T13:58:07.675Z","updated_at":"2015-07-21T13:58:07.675Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/74/grey_badge_9b13a7fc8830ecc4e4fd.png","required_badges":[],"points":25,"id":"create-badge-test-destroy"}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 12:42:25 GMT
+  recorded_at: Tue, 21 Jul 2015 13:58:07 GMT
 recorded_with: VCR 2.9.3
