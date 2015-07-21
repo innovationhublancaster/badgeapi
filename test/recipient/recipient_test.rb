@@ -33,6 +33,8 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert_kind_of Integer, recipient.silver_count
 			assert_kind_of Integer, recipient.gold_count
 			assert_kind_of Integer, recipient.platinum_count
+
+			assert_equal Badgeapi::Badge, recipient.badges.first.class
 		end
 	end
 
@@ -50,6 +52,8 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert_kind_of Integer, recipient.silver_count
 			assert_kind_of Integer, recipient.gold_count
 			assert_kind_of Integer, recipient.platinum_count
+
+			assert_equal Badgeapi::Badge, recipient.badges.first.class
 		end
 	end
 

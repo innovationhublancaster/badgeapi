@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e55d58b6-140a-4a27-8f9c-104cfd21f95d
+      - 17094c7a-4285-4121-bd85-532947ea852c
       X-Runtime:
-      - '0.011976'
+      - '0.012048'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Tue, 21 Jul 2015 08:10:38 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"id":"library","name":"Library","description":"Use your library and
         earn badges","created_at":"2015-07-16T09:21:22.292Z","updated_at":"2015-07-16T09:21:22.292Z","total_points_available":125}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Tue, 21 Jul 2015 08:10:38 GMT
 recorded_with: VCR 2.9.3

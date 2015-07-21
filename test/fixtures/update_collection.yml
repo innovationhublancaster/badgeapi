@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"0bdaa62853686b4c7b6856c121c26021"'
+      - '"8c15a7ccdfc90ea59491dd09d49f839a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 373bf165-61f5-42c2-a986-083c3b48420e
+      - fe0a3026-44c5-400b-a66d-c8770e4f3b0a
       X-Runtime:
-      - '0.022357'
+      - '0.021998'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Tue, 21 Jul 2015 08:10:38 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"create-collection-for-update","name":"Create Collection for
-        update","description":"This is a new collection","created_at":"2015-07-17T15:34:22.866Z","updated_at":"2015-07-17T15:34:22.866Z","total_points_available":0}'
+        update","description":"This is a new collection","created_at":"2015-07-21T08:10:38.642Z","updated_at":"2015-07-21T08:10:38.642Z","total_points_available":0}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Tue, 21 Jul 2015 08:10:38 GMT
 - request:
     method: patch
     uri: http://gamification-api.dev/v1/collections/create-collection-for-update
@@ -79,23 +79,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"79502e5c8521dfe7da27a9f3816241a1"'
+      - '"debba190cbaddc6f19823827e8fbe831"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6f66dcba-b2be-4d7c-aefd-d05b11972127
+      - 9f9d4010-ce90-479d-88b0-368588110f64
       X-Runtime:
-      - '0.021738'
+      - '0.021909'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Tue, 21 Jul 2015 08:10:38 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"updated-collection","name":"Updated Collection","description":"Updated
-        Collection","created_at":"2015-07-17T15:34:22.866Z","updated_at":"2015-07-17T15:34:22.907Z","total_points_available":0}'
+        Collection","created_at":"2015-07-21T08:10:38.642Z","updated_at":"2015-07-21T08:10:38.688Z","total_points_available":0}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Tue, 21 Jul 2015 08:10:38 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/collections/create-collection-for-update
@@ -125,23 +125,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"79502e5c8521dfe7da27a9f3816241a1"'
+      - '"debba190cbaddc6f19823827e8fbe831"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ce86a011-7505-4761-a513-e1d6511732ca
+      - dc8c6e62-897e-4e09-9f2b-879a0340319c
       X-Runtime:
-      - '0.010186'
+      - '0.010183'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Tue, 21 Jul 2015 08:10:38 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"updated-collection","name":"Updated Collection","description":"Updated
-        Collection","created_at":"2015-07-17T15:34:22.866Z","updated_at":"2015-07-17T15:34:22.907Z","total_points_available":0}'
+        Collection","created_at":"2015-07-21T08:10:38.642Z","updated_at":"2015-07-21T08:10:38.688Z","total_points_available":0}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Tue, 21 Jul 2015 08:10:38 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/collections/create-collection-for-update
@@ -171,21 +171,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"79502e5c8521dfe7da27a9f3816241a1"'
+      - '"debba190cbaddc6f19823827e8fbe831"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e04a3ba4-5ee9-4833-980d-85e4224f9449
+      - a21e779a-7a7e-4067-8042-8dde5654cad5
       X-Runtime:
-      - '0.014891'
+      - '0.015193'
       Date:
-      - Fri, 17 Jul 2015 15:34:22 GMT
+      - Tue, 21 Jul 2015 08:10:38 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"updated-collection","name":"Updated Collection","description":"Updated
-        Collection","created_at":"2015-07-17T15:34:22.866Z","updated_at":"2015-07-17T15:34:22.907Z","total_points_available":0}'
+        Collection","created_at":"2015-07-21T08:10:38.642Z","updated_at":"2015-07-21T08:10:38.688Z","total_points_available":0}'
     http_version: 
-  recorded_at: Fri, 17 Jul 2015 15:34:22 GMT
+  recorded_at: Tue, 21 Jul 2015 08:10:38 GMT
 recorded_with: VCR 2.9.3

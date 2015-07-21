@@ -3,7 +3,7 @@
 module Badgeapi
 	class Recipient < BadgeapiObject
 
-		attr_reader :total_score, :badges_total, :bronze_count, :silver_count, :gold_count, :platinum_count
+		attr_reader :total_score, :badges_total, :bronze_count, :silver_count, :gold_count, :platinum_count, :badges
 
 		class << self
 
