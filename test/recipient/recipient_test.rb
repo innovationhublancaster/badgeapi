@@ -23,7 +23,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 		VCR.use_cassette('recipient_with_badges', :record => :all) do
 			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
 
-			recipient = Badgeapi::Recipient.find(user: "t.skarbek-wazynski@lancaster.ac.uk")
+			recipient = Badgeapi::Recipient.find(recipient: "t.skarbek-wazynski@lancaster.ac.uk")
 
 			assert_equal recipient.class, Badgeapi::Recipient
 
