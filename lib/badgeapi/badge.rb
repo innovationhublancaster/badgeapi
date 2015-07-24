@@ -2,8 +2,8 @@
 module Badgeapi
 	class Badge < BadgeapiObject
 
-		attr_reader :id, :created_at, :updated_at, :collection, :image_greyscale, :points, :required_badges
-		attr_accessor :name, :description, :requirements, :requirements, :hint, :image, :recipient_id, :collection_id, :issuer_id, :issued_at, :level
+		attr_reader :id, :created_at, :updated_at, :collection, :points, :required_badges, :image
+		attr_accessor :name, :description, :requirements, :requirements, :hint, :recipient_id, :collection_id, :issuer_id, :issued_at, :level
 
 
 		class << self

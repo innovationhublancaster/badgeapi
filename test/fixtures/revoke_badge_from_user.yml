@@ -127,27 +127,68 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"787f2720a6f8e14a5a86b002174ccb60"'
+      - '"4a1f6820233eb21885a113e80c885878"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 09b3cba1-0b59-4fdb-81fe-0d492d10cdf3
+      - 22e8d3d0-3faf-4a01-aada-115436392c28
       X-Runtime:
-      - '0.041976'
+      - '0.054681'
       Date:
-      - Tue, 21 Jul 2015 15:15:11 GMT
+      - Fri, 24 Jul 2015 15:35:42 GMT
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
-        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"},{"name":"Mega
-        Book Worm","description":"You have loaned out 50 books.","requirements":"Loan
-        out 50 books","hint":"You must really like books...","image":"http://gamification-api.dev/uploads/badge/image/2/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.531Z","updated_at":"2015-07-16T09:21:22.531Z","level":"silver","image_greyscale":"http://gamification-api.dev/uploads/badge/image/2/grey_seed.png","required_badges":[{"name":"Book
-        Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}],"points":50,"id":"mega-book-worm"}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkJvb2sgV29ybSIsImRlc2NyaXB0aW9uIjoiWW91IGhhdmUg
+        bG9hbmVkIG91dCBvdmVyIDI1IGJvb2tzLiBOaWNlIGdvaW5nISIsInJlcXVp
+        cmVtZW50cyI6IkxvYW4gb3V0IDI1IGJvb2tzIiwiaGludCI6IllvdSBtdXN0
+        IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24t
+        YXBpLmRldi9iYWRnZV9pbWFnZXMvYm9vay13b3JtL2JhZGdlLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDct
+        MTZUMDk6MjE6MjIuNDQ4WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTI0VDE1
+        OjI2OjQwLjA4NloiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdl
+        cyI6W3sibmFtZSI6Ik91ciBCZXN0IEZyaWVuZCIsImRlc2NyaXB0aW9uIjoi
+        WW91IGRpZG4ndCBnZXQgYW55IGZpbmVzIGluIHRoZSBsYXN0IDEyIG1vbnRo
+        cyEiLCJyZXF1aXJlbWVudHMiOiLCozAgaW4gZmluZXMgZm9yIHRoZSBwYXN0
+        IDEyIG1vbnRocyIsImhpbnQiOiJEb24ndCBnZXQgaW4gdHJvdWJsZSBub3cu
+        Li4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi9iYWRn
+        ZV9pbWFnZXMvb3VyLWJlc3QtZnJpZW5kL2JhZGdlLnBuZyIsImNvbGxlY3Rp
+        b25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6
+        MjE6MjIuNjgwWiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIy
+        LjY4MFoiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6W10s
+        InBvaW50cyI6MjUsImlkIjoib3VyLWJlc3QtZnJpZW5kIn1dLCJwb2ludHMi
+        OjI1LCJpZCI6ImJvb2std29ybSJ9LHsibmFtZSI6Ik1lZ2EgQm9vayBXb3Jt
+        IiwiZGVzY3JpcHRpb24iOiJZb3UgaGF2ZSBsb2FuZWQgb3V0IDUwIGJvb2tz
+        LiIsInJlcXVpcmVtZW50cyI6IkxvYW4gb3V0IDUwIGJvb2tzIiwiaGludCI6
+        IllvdSBtdXN0IHJlYWxseSBsaWtlIGJvb2tzLi4uIiwiaW1hZ2UiOiJodHRw
+        Oi8vZ2FtaWZpY2F0aW9uLWFwaS5kZXYvYmFkZ2VfaW1hZ2VzL21lZ2EtYm9v
+        ay13b3JtL2JhZGdlLnBuZyIsImNvbGxlY3Rpb25faWQiOiJsaWJyYXJ5Iiwi
+        Y3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6MjE6MjIuNTMxWiIsInVwZGF0
+        ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIyLjUzMVoiLCJsZXZlbCI6InNp
+        bHZlciIsInJlcXVpcmVkX2JhZGdlcyI6W3sibmFtZSI6IkJvb2sgV29ybSIs
+        ImRlc2NyaXB0aW9uIjoiWW91IGhhdmUgbG9hbmVkIG91dCBvdmVyIDI1IGJv
+        b2tzLiBOaWNlIGdvaW5nISIsInJlcXVpcmVtZW50cyI6IkxvYW4gb3V0IDI1
+        IGJvb2tzIiwiaGludCI6IllvdSBtdXN0IGxpa2UgYm9va3MuLi4iLCJpbWFn
+        ZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi9iYWRnZV9pbWFnZXMv
+        Ym9vay13b3JtL2JhZGdlLnBuZyIsImNvbGxlY3Rpb25faWQiOiJsaWJyYXJ5
+        IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6MjE6MjIuNDQ4WiIsInVw
+        ZGF0ZWRfYXQiOiIyMDE1LTA3LTI0VDE1OjI2OjQwLjA4NloiLCJsZXZlbCI6
+        ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6W3sibmFtZSI6Ik91ciBCZXN0
+        IEZyaWVuZCIsImRlc2NyaXB0aW9uIjoiWW91IGRpZG4ndCBnZXQgYW55IGZp
+        bmVzIGluIHRoZSBsYXN0IDEyIG1vbnRocyEiLCJyZXF1aXJlbWVudHMiOiLC
+        ozAgaW4gZmluZXMgZm9yIHRoZSBwYXN0IDEyIG1vbnRocyIsImhpbnQiOiJE
+        b24ndCBnZXQgaW4gdHJvdWJsZSBub3cuLi4iLCJpbWFnZSI6Imh0dHA6Ly9n
+        YW1pZmljYXRpb24tYXBpLmRldi9iYWRnZV9pbWFnZXMvb3VyLWJlc3QtZnJp
+        ZW5kL2JhZGdlLnBuZyIsImNvbGxlY3Rpb25faWQiOiJsaWJyYXJ5IiwiY3Jl
+        YXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6MjE6MjIuNjgwWiIsInVwZGF0ZWRf
+        YXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIyLjY4MFoiLCJsZXZlbCI6ImJyb256
+        ZSIsInJlcXVpcmVkX2JhZGdlcyI6W10sInBvaW50cyI6MjUsImlkIjoib3Vy
+        LWJlc3QtZnJpZW5kIn1dLCJwb2ludHMiOjI1LCJpZCI6ImJvb2std29ybSJ9
+        XSwicG9pbnRzIjo1MCwiaWQiOiJtZWdhLWJvb2std29ybSJ9XQ==
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:11 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:42 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges/mega-book-worm/revoke
@@ -179,21 +220,39 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"aeb1dc320dbf15761c7cd0f017c85dcb"'
+      - '"40033b5885b92c8237bd447ccb7595c4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 934afce6-c9aa-4cae-8f18-21c3b5ecb417
+      - 20bf9f9a-1920-4029-a9c6-65e8e41e6828
       X-Runtime:
-      - '0.033785'
+      - '0.041400'
       Date:
-      - Tue, 21 Jul 2015 15:15:11 GMT
+      - Fri, 24 Jul 2015 15:35:42 GMT
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
-        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkJvb2sgV29ybSIsImRlc2NyaXB0aW9uIjoiWW91IGhhdmUg
+        bG9hbmVkIG91dCBvdmVyIDI1IGJvb2tzLiBOaWNlIGdvaW5nISIsInJlcXVp
+        cmVtZW50cyI6IkxvYW4gb3V0IDI1IGJvb2tzIiwiaGludCI6IllvdSBtdXN0
+        IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24t
+        YXBpLmRldi9iYWRnZV9pbWFnZXMvYm9vay13b3JtL2JhZGdlLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDct
+        MTZUMDk6MjE6MjIuNDQ4WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTI0VDE1
+        OjI2OjQwLjA4NloiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdl
+        cyI6W3sibmFtZSI6Ik91ciBCZXN0IEZyaWVuZCIsImRlc2NyaXB0aW9uIjoi
+        WW91IGRpZG4ndCBnZXQgYW55IGZpbmVzIGluIHRoZSBsYXN0IDEyIG1vbnRo
+        cyEiLCJyZXF1aXJlbWVudHMiOiLCozAgaW4gZmluZXMgZm9yIHRoZSBwYXN0
+        IDEyIG1vbnRocyIsImhpbnQiOiJEb24ndCBnZXQgaW4gdHJvdWJsZSBub3cu
+        Li4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi9iYWRn
+        ZV9pbWFnZXMvb3VyLWJlc3QtZnJpZW5kL2JhZGdlLnBuZyIsImNvbGxlY3Rp
+        b25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6
+        MjE6MjIuNjgwWiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIy
+        LjY4MFoiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6W10s
+        InBvaW50cyI6MjUsImlkIjoib3VyLWJlc3QtZnJpZW5kIn1dLCJwb2ludHMi
+        OjI1LCJpZCI6ImJvb2std29ybSJ9XQ==
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:11 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:42 GMT
 recorded_with: VCR 2.9.3

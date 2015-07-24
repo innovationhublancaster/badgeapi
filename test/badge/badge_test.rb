@@ -172,8 +172,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 	def test_create_a_new_badge
 		VCR.use_cassette('create_badge', :record => :all) do
-			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
-
 			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
 
 			badge = Badgeapi::Badge.create(
@@ -181,7 +179,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 				description: "This is a new badge",
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
-				image: @base64_image,
 				collection_id: 1,
 				level: "bronze"
 			)
@@ -200,8 +197,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 	def test_create_new_badge_failure
 		VCR.use_cassette('create_new_badge_failure', :record => :all) do
-			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
-
 			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
 
 			badge = Badgeapi::Badge.create(
@@ -209,7 +204,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 				description: "This is a new badge",
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
-				image: @base64_image,
 				collection_id: 1,
 				level: "bronze"
 			)
@@ -220,7 +214,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 					description: "This is a new badge",
 					requirements: "You need to love the Badge API",
 					hint: "Love us..",
-					image: @base64_image,
 					collection_id: 1,
 					level: "bronze"
 				)
@@ -232,8 +225,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 	def test_badge_destroy
 		VCR.use_cassette('destroy_badge', :record => :all) do
-			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
-
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			badge = Badgeapi::Badge.create(
@@ -241,7 +232,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 				description: "This is a new badge",
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
-				image: @base64_image,
 				collection_id: 1,
 				level: "bronze"
 			)
@@ -256,8 +246,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 	def test_badge_destroy_error
 		VCR.use_cassette('destroy_badge_error', :record => :all) do
-			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
-
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			badge = Badgeapi::Badge.create(
@@ -265,7 +253,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 				description: "This is a new badge",
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
-				image: @base64_image,
 				collection_id: 1,
 				level: "bronze"
 			)
@@ -279,8 +266,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 	def test_update_badge_via_update
 		VCR.use_cassette('update_badge_via_update', :record => :all) do
-			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
-
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			badge = Badgeapi::Badge.create(
@@ -288,7 +273,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 					description: "This is a new badge",
 					requirements: "You need to love the Badge API",
 					hint: "Love us..",
-					image: @base64_image,
 					collection_id: 1,
 					level: "bronze"
 			)
@@ -313,8 +297,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 	def test_update_badge_via_update_with_slug_update_and_history
 		VCR.use_cassette('update_badge_via_update_slug_history', :record => :all) do
-			@base64_image = "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0\nd2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9i\nZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo\naUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6\nbnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5\nLjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpS\nREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk\nZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg\neG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxu\nczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s\nbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9S\nZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w\nIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5p\naWQ6QzhEQTNDRjlEQjgwMTFFNEE3Q0E5REQ3NUEzNkE5NTEiIHhtcE1NOkRv\nY3VtZW50SUQ9InhtcC5kaWQ6QzhEQTNDRkFEQjgwMTFFNEE3Q0E5REQ3NUEz\nNkE5NTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0i\neG1wLmlpZDpDOERBM0NGN0RCODAxMUU0QTdDQTlERDc1QTM2QTk1MSIgc3RS\nZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOERBM0NGOERCODAxMUU0QTdDQTlE\nRDc1QTM2QTk1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8\nL3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlCcFjQAAAAGUExURZTB\nIgAAAP3eS0QAAAAOSURBVHjaYmAAAYAAAwAABgAB4EIRTgAAAABJRU5ErkJg\ngg==\n"
-
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
 			badge = Badgeapi::Badge.create(
@@ -322,7 +304,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 					description: "This is a new badge",
 					requirements: "You need to love the Badge API",
 					hint: "Love us..",
-					image: @base64_image,
 					collection_id: 1,
 					level: "bronze"
 			)
@@ -466,7 +447,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 		VCR.use_cassette('badge_requirements', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
-			badge = Badgeapi::Badge.find("book-worm")
+			badge = Badgeapi::Badge.find("marathon-man")
 
 			required_count = badge.required_badges.count
 

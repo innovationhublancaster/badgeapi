@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0b9bf9a1-b830-4328-b541-c7511a168eae
+      - 332c8b3f-7a4f-49d6-8ef4-9d70f85b4150
       X-Runtime:
-      - '0.010881'
+      - '0.011742'
       Date:
-      - Tue, 21 Jul 2015 15:14:59 GMT
+      - Fri, 24 Jul 2015 15:36:02 GMT
       Connection:
       - close
     body:
@@ -43,7 +43,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No collection exists
         with id: 27","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:14:59 GMT
+  recorded_at: Fri, 24 Jul 2015 15:36:02 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/collections/27
@@ -75,11 +75,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - fc03d4a1-f105-4b07-80f3-15257f6fae2a
+      - e8fb8c3d-f83e-479a-a601-0c44b605af39
       X-Runtime:
-      - '0.010171'
+      - '0.012918'
       Date:
-      - Tue, 21 Jul 2015 15:14:59 GMT
+      - Fri, 24 Jul 2015 15:36:02 GMT
       Connection:
       - close
     body:
@@ -87,5 +87,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No collection exists
         with id: 27","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:14:59 GMT
+  recorded_at: Fri, 24 Jul 2015 15:36:02 GMT
 recorded_with: VCR 2.9.3

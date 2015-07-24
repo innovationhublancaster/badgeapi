@@ -31,25 +31,50 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"3514db33f344216321fef093b35aabe2"'
+      - '"b30afa6eeb5dfc8115052385ff480a7a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3b528e39-75ef-417d-b64d-12deb52a60f8
+      - ea1175ab-9f12-4eaa-9e5c-0eceb20fe1ef
       X-Runtime:
-      - '0.960857'
+      - '1.141162'
       Date:
-      - Tue, 21 Jul 2015 15:15:10 GMT
+      - Fri, 24 Jul 2015 15:35:41 GMT
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
-        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"},{"name":"Night
-        Owl","description":"You loaned a book out between Midnight and 5 o''clock","requirements":"Loan
-        out a book between 00:00 - 5:00","hint":"It must be late...","image":"http://gamification-api.dev/uploads/badge/image/3/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.605Z","updated_at":"2015-07-16T09:21:22.605Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/3/grey_seed.png","required_badges":[],"points":25,"id":"night-owl"}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkJvb2sgV29ybSIsImRlc2NyaXB0aW9uIjoiWW91IGhhdmUg
+        bG9hbmVkIG91dCBvdmVyIDI1IGJvb2tzLiBOaWNlIGdvaW5nISIsInJlcXVp
+        cmVtZW50cyI6IkxvYW4gb3V0IDI1IGJvb2tzIiwiaGludCI6IllvdSBtdXN0
+        IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24t
+        YXBpLmRldi9iYWRnZV9pbWFnZXMvYm9vay13b3JtL2JhZGdlLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDct
+        MTZUMDk6MjE6MjIuNDQ4WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTI0VDE1
+        OjI2OjQwLjA4NloiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdl
+        cyI6W3sibmFtZSI6Ik91ciBCZXN0IEZyaWVuZCIsImRlc2NyaXB0aW9uIjoi
+        WW91IGRpZG4ndCBnZXQgYW55IGZpbmVzIGluIHRoZSBsYXN0IDEyIG1vbnRo
+        cyEiLCJyZXF1aXJlbWVudHMiOiLCozAgaW4gZmluZXMgZm9yIHRoZSBwYXN0
+        IDEyIG1vbnRocyIsImhpbnQiOiJEb24ndCBnZXQgaW4gdHJvdWJsZSBub3cu
+        Li4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi9iYWRn
+        ZV9pbWFnZXMvb3VyLWJlc3QtZnJpZW5kL2JhZGdlLnBuZyIsImNvbGxlY3Rp
+        b25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6
+        MjE6MjIuNjgwWiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIy
+        LjY4MFoiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6W10s
+        InBvaW50cyI6MjUsImlkIjoib3VyLWJlc3QtZnJpZW5kIn1dLCJwb2ludHMi
+        OjI1LCJpZCI6ImJvb2std29ybSJ9LHsibmFtZSI6Ik5pZ2h0IE93bCIsImRl
+        c2NyaXB0aW9uIjoiWW91IGxvYW5lZCBhIGJvb2sgb3V0IGJldHdlZW4gTWlk
+        bmlnaHQgYW5kIDUgbydjbG9jayIsInJlcXVpcmVtZW50cyI6IkxvYW4gb3V0
+        IGEgYm9vayBiZXR3ZWVuIDAwOjAwIC0gNTowMCIsImhpbnQiOiJJdCBtdXN0
+        IGJlIGxhdGUuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBp
+        LmRldi9iYWRnZV9pbWFnZXMvbmlnaHQtb3dsL2JhZGdlLnBuZyIsImNvbGxl
+        Y3Rpb25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZU
+        MDk6MjE6MjIuNjA1WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIx
+        OjIyLjYwNVoiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6
+        W10sInBvaW50cyI6MjUsImlkIjoibmlnaHQtb3dsIn1d
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:10 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:41 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges/3/revoke
@@ -81,21 +106,39 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"aeb1dc320dbf15761c7cd0f017c85dcb"'
+      - '"40033b5885b92c8237bd447ccb7595c4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 82c70230-c5aa-4a37-8d99-f5b5070b2a52
+      - 6dbf90e7-4051-4b6a-aa78-e135452a2e35
       X-Runtime:
-      - '0.959923'
+      - '1.117759'
       Date:
-      - Tue, 21 Jul 2015 15:15:11 GMT
+      - Fri, 24 Jul 2015 15:35:42 GMT
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
-        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkJvb2sgV29ybSIsImRlc2NyaXB0aW9uIjoiWW91IGhhdmUg
+        bG9hbmVkIG91dCBvdmVyIDI1IGJvb2tzLiBOaWNlIGdvaW5nISIsInJlcXVp
+        cmVtZW50cyI6IkxvYW4gb3V0IDI1IGJvb2tzIiwiaGludCI6IllvdSBtdXN0
+        IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24t
+        YXBpLmRldi9iYWRnZV9pbWFnZXMvYm9vay13b3JtL2JhZGdlLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDct
+        MTZUMDk6MjE6MjIuNDQ4WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTI0VDE1
+        OjI2OjQwLjA4NloiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdl
+        cyI6W3sibmFtZSI6Ik91ciBCZXN0IEZyaWVuZCIsImRlc2NyaXB0aW9uIjoi
+        WW91IGRpZG4ndCBnZXQgYW55IGZpbmVzIGluIHRoZSBsYXN0IDEyIG1vbnRo
+        cyEiLCJyZXF1aXJlbWVudHMiOiLCozAgaW4gZmluZXMgZm9yIHRoZSBwYXN0
+        IDEyIG1vbnRocyIsImhpbnQiOiJEb24ndCBnZXQgaW4gdHJvdWJsZSBub3cu
+        Li4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi9iYWRn
+        ZV9pbWFnZXMvb3VyLWJlc3QtZnJpZW5kL2JhZGdlLnBuZyIsImNvbGxlY3Rp
+        b25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6
+        MjE6MjIuNjgwWiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIy
+        LjY4MFoiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6W10s
+        InBvaW50cyI6MjUsImlkIjoib3VyLWJlc3QtZnJpZW5kIn1dLCJwb2ludHMi
+        OjI1LCJpZCI6ImJvb2std29ybSJ9XQ==
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:11 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:42 GMT
 recorded_with: VCR 2.9.3

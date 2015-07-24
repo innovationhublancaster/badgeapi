@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 219ad3f5-700a-47a2-899a-a3e1b3950ae9
+      - c75284af-c69d-48f1-bcb5-db9f02e7cfa6
       X-Runtime:
-      - '0.010426'
+      - '0.012985'
       Date:
-      - Tue, 21 Jul 2015 15:15:06 GMT
+      - Fri, 24 Jul 2015 15:35:37 GMT
       Connection:
       - close
     body:
@@ -44,7 +44,7 @@ http_interactions:
         parameter: t.skarbek-wazynski, must be university email address or university
         card number.","status":422}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:06 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:37 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=t.skarbek-wazynsky@lancaster.ac.uk
@@ -76,11 +76,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 5ac8993a-46dc-4286-82fb-8d16c8a5d4cb
+      - 8afbd5f2-ad1d-42c3-a867-78725991bf28
       X-Runtime:
-      - '0.020146'
+      - '0.018903'
       Date:
-      - Tue, 21 Jul 2015 15:15:06 GMT
+      - Fri, 24 Jul 2015 15:35:37 GMT
       Connection:
       - close
     body:
@@ -88,7 +88,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Unable to find
         user with specified data t.skarbek-wazynsky@lancaster.ac.uk","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:06 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:37 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=081897144451
@@ -120,11 +120,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 68ed8be0-df4c-412d-9d0c-3be7f7a7b74d
+      - 0a404f1e-389d-4878-aa54-78971dfd8a93
       X-Runtime:
-      - '1.301490'
+      - '1.045053'
       Date:
-      - Tue, 21 Jul 2015 15:15:07 GMT
+      - Fri, 24 Jul 2015 15:35:38 GMT
       Connection:
       - close
     body:
@@ -132,5 +132,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Unable to find
         user with specified data 081897144451","status":404}}'
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:07 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:38 GMT
 recorded_with: VCR 2.9.3

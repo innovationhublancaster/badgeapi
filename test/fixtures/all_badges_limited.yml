@@ -29,21 +29,39 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"aeb1dc320dbf15761c7cd0f017c85dcb"'
+      - '"40033b5885b92c8237bd447ccb7595c4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d6048a6c-10d2-4379-9bc7-2195af0240bb
+      - 8ef0ff48-53dd-4d2e-b9c5-b40e1f4abab2
       X-Runtime:
-      - '0.016601'
+      - '0.016348'
       Date:
-      - Tue, 21 Jul 2015 15:15:05 GMT
+      - Fri, 24 Jul 2015 15:35:35 GMT
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
-        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/uploads/badge/image/1/seed.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-16T09:21:22.448Z","level":"bronze","image_greyscale":"http://gamification-api.dev/uploads/badge/image/1/grey_seed.png","required_badges":[],"points":25,"id":"book-worm"}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkJvb2sgV29ybSIsImRlc2NyaXB0aW9uIjoiWW91IGhhdmUg
+        bG9hbmVkIG91dCBvdmVyIDI1IGJvb2tzLiBOaWNlIGdvaW5nISIsInJlcXVp
+        cmVtZW50cyI6IkxvYW4gb3V0IDI1IGJvb2tzIiwiaGludCI6IllvdSBtdXN0
+        IGxpa2UgYm9va3MuLi4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24t
+        YXBpLmRldi9iYWRnZV9pbWFnZXMvYm9vay13b3JtL2JhZGdlLnBuZyIsImNv
+        bGxlY3Rpb25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDct
+        MTZUMDk6MjE6MjIuNDQ4WiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTI0VDE1
+        OjI2OjQwLjA4NloiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdl
+        cyI6W3sibmFtZSI6Ik91ciBCZXN0IEZyaWVuZCIsImRlc2NyaXB0aW9uIjoi
+        WW91IGRpZG4ndCBnZXQgYW55IGZpbmVzIGluIHRoZSBsYXN0IDEyIG1vbnRo
+        cyEiLCJyZXF1aXJlbWVudHMiOiLCozAgaW4gZmluZXMgZm9yIHRoZSBwYXN0
+        IDEyIG1vbnRocyIsImhpbnQiOiJEb24ndCBnZXQgaW4gdHJvdWJsZSBub3cu
+        Li4iLCJpbWFnZSI6Imh0dHA6Ly9nYW1pZmljYXRpb24tYXBpLmRldi9iYWRn
+        ZV9pbWFnZXMvb3VyLWJlc3QtZnJpZW5kL2JhZGdlLnBuZyIsImNvbGxlY3Rp
+        b25faWQiOiJsaWJyYXJ5IiwiY3JlYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6
+        MjE6MjIuNjgwWiIsInVwZGF0ZWRfYXQiOiIyMDE1LTA3LTE2VDA5OjIxOjIy
+        LjY4MFoiLCJsZXZlbCI6ImJyb256ZSIsInJlcXVpcmVkX2JhZGdlcyI6W10s
+        InBvaW50cyI6MjUsImlkIjoib3VyLWJlc3QtZnJpZW5kIn1dLCJwb2ludHMi
+        OjI1LCJpZCI6ImJvb2std29ybSJ9XQ==
     http_version: 
-  recorded_at: Tue, 21 Jul 2015 15:15:05 GMT
+  recorded_at: Fri, 24 Jul 2015 15:35:35 GMT
 recorded_with: VCR 2.9.3
