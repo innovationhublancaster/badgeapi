@@ -38,6 +38,7 @@ module Badgeapi
 
 			def object_classes
 				@object_classes ||= {
+					'recipient' => Recipient,
 					'collection' => Collection,
 					'badge'=> Badge,
 					'required_badge'=>Badge
@@ -45,7 +46,12 @@ module Badgeapi
 			end
 
 			def map_json_to_object attributes
-				record = new
+				if attributes['object'] != nil
+					record = object_classes.fetch(attributes['object'].singularize).new
+				else
+					record = new
+				end
+
 				attributes.each do |name, value|
 					if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
 						child = map_related_object object_classes.fetch(name.singularize), value
@@ -115,6 +121,7 @@ module Badgeapi
 			params.delete("image_greyscale")
 			params.delete("points")
 			params.delete("total_points_available")
+			params.delete("object")
 
 			self.class.request "patch", "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
 		end

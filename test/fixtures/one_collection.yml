@@ -29,21 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"118b5de871deecdfe4b0c185ea352fe8"'
+      - '"d05b4276abb9a3f9dd501ca7dfa46707"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cd3d061a-cd8e-4ad5-a01c-35155a67c190
+      - 35590a9f-c75c-43df-86f5-5fe462078a0a
       X-Runtime:
-      - '0.014760'
+      - '0.013523'
       Date:
-      - Fri, 24 Jul 2015 15:36:02 GMT
+      - Mon, 27 Jul 2015 16:14:32 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"library","name":"Library","description":"Use your library and
-        earn badges","created_at":"2015-07-16T09:21:22.292Z","updated_at":"2015-07-16T09:21:22.292Z","total_points_available":125}'
+        earn badges","created_at":"2015-07-16T09:21:22.292Z","updated_at":"2015-07-16T09:21:22.292Z","total_points_available":125,"object":"collection"}'
     http_version: 
-  recorded_at: Fri, 24 Jul 2015 15:36:02 GMT
+  recorded_at: Mon, 27 Jul 2015 16:14:32 GMT
 recorded_with: VCR 2.9.3

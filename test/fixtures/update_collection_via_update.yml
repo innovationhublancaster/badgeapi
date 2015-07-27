@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"046251c7a41a0f60c1a856ff6d304b82"'
+      - '"8ac963214e44f4b1ef1ea90bee6283cc"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7beddd9e-1bd6-4a29-915f-af1082d54edd
+      - 36190150-1218-4ab4-bc77-e905c30dff06
       X-Runtime:
-      - '0.044171'
+      - '0.055150'
       Date:
-      - Fri, 24 Jul 2015 15:36:03 GMT
+      - Mon, 27 Jul 2015 16:14:32 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"create-collection-for-update","name":"Create Collection for
-        update","description":"This is a new collection","created_at":"2015-07-24T15:36:03.204Z","updated_at":"2015-07-24T15:36:03.204Z","total_points_available":0}'
+        update","description":"This is a new collection","created_at":"2015-07-27T16:14:32.793Z","updated_at":"2015-07-27T16:14:32.793Z","total_points_available":0,"object":"collection"}'
     http_version: 
-  recorded_at: Fri, 24 Jul 2015 15:36:03 GMT
+  recorded_at: Mon, 27 Jul 2015 16:14:32 GMT
 - request:
     method: patch
     uri: http://gamification-api.dev/v1/collections/create-collection-for-update
@@ -79,23 +79,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"547568c88a7973f612c250bde5555d97"'
+      - '"6f071d7e9375bf3c1fc0cd75c175bf94"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2903f93d-06f8-44f8-8fb6-339b153d7bda
+      - 36801bae-605c-4630-915d-e0840e15c62b
       X-Runtime:
-      - '0.023612'
+      - '0.049887'
       Date:
-      - Fri, 24 Jul 2015 15:36:03 GMT
+      - Mon, 27 Jul 2015 16:14:32 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"updated-badge","name":"Updated Badge","description":"Updated
-        Description","created_at":"2015-07-24T15:36:03.204Z","updated_at":"2015-07-24T15:36:03.269Z","total_points_available":0}'
+        Description","created_at":"2015-07-27T16:14:32.793Z","updated_at":"2015-07-27T16:14:32.860Z","total_points_available":0,"object":"collection"}'
     http_version: 
-  recorded_at: Fri, 24 Jul 2015 15:36:03 GMT
+  recorded_at: Mon, 27 Jul 2015 16:14:32 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/collections/create-collection-for-update
@@ -125,21 +125,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"547568c88a7973f612c250bde5555d97"'
+      - '"6f071d7e9375bf3c1fc0cd75c175bf94"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b0ae9cc3-cc13-4f9e-a9cb-f88cbd9814e8
+      - aa615c95-b0e0-46ce-a6b6-ce3e30df1015
       X-Runtime:
-      - '0.018561'
+      - '0.042754'
       Date:
-      - Fri, 24 Jul 2015 15:36:03 GMT
+      - Mon, 27 Jul 2015 16:14:32 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"updated-badge","name":"Updated Badge","description":"Updated
-        Description","created_at":"2015-07-24T15:36:03.204Z","updated_at":"2015-07-24T15:36:03.269Z","total_points_available":0}'
+        Description","created_at":"2015-07-27T16:14:32.793Z","updated_at":"2015-07-27T16:14:32.860Z","total_points_available":0,"object":"collection"}'
     http_version: 
-  recorded_at: Fri, 24 Jul 2015 15:36:03 GMT
+  recorded_at: Mon, 27 Jul 2015 16:14:32 GMT
 recorded_with: VCR 2.9.3

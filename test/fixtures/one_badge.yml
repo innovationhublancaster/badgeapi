@@ -29,39 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"351520548f54943b5795ee367e48a4ea"'
+      - '"1fe9b447ffd56706d0aa3ea69331dbe9"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2751b2cf-5b4e-4aff-819e-e56e58c69eae
+      - df3ac39c-cf31-433d-9517-1adb00649926
       X-Runtime:
-      - '0.029130'
+      - '0.020691'
       Date:
-      - Fri, 24 Jul 2015 15:35:38 GMT
+      - Mon, 27 Jul 2015 16:12:09 GMT
       Connection:
       - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJuYW1lIjoiQm9vayBXb3JtIiwiZGVzY3JpcHRpb24iOiJZb3UgaGF2ZSBs
-        b2FuZWQgb3V0IG92ZXIgMjUgYm9va3MuIE5pY2UgZ29pbmchIiwicmVxdWly
-        ZW1lbnRzIjoiTG9hbiBvdXQgMjUgYm9va3MiLCJoaW50IjoiWW91IG11c3Qg
-        bGlrZSBib29rcy4uLiIsImltYWdlIjoiaHR0cDovL2dhbWlmaWNhdGlvbi1h
-        cGkuZGV2L2JhZGdlX2ltYWdlcy9ib29rLXdvcm0vYmFkZ2UucG5nIiwiY29s
-        bGVjdGlvbl9pZCI6ImxpYnJhcnkiLCJjcmVhdGVkX2F0IjoiMjAxNS0wNy0x
-        NlQwOToyMToyMi40NDhaIiwidXBkYXRlZF9hdCI6IjIwMTUtMDctMjRUMTU6
-        MjY6NDAuMDg2WiIsImxldmVsIjoiYnJvbnplIiwicmVxdWlyZWRfYmFkZ2Vz
-        IjpbeyJuYW1lIjoiT3VyIEJlc3QgRnJpZW5kIiwiZGVzY3JpcHRpb24iOiJZ
-        b3UgZGlkbid0IGdldCBhbnkgZmluZXMgaW4gdGhlIGxhc3QgMTIgbW9udGhz
-        ISIsInJlcXVpcmVtZW50cyI6IsKjMCBpbiBmaW5lcyBmb3IgdGhlIHBhc3Qg
-        MTIgbW9udGhzIiwiaGludCI6IkRvbid0IGdldCBpbiB0cm91YmxlIG5vdy4u
-        LiIsImltYWdlIjoiaHR0cDovL2dhbWlmaWNhdGlvbi1hcGkuZGV2L2JhZGdl
-        X2ltYWdlcy9vdXItYmVzdC1mcmllbmQvYmFkZ2UucG5nIiwiY29sbGVjdGlv
-        bl9pZCI6ImxpYnJhcnkiLCJjcmVhdGVkX2F0IjoiMjAxNS0wNy0xNlQwOToy
-        MToyMi42ODBaIiwidXBkYXRlZF9hdCI6IjIwMTUtMDctMTZUMDk6MjE6MjIu
-        NjgwWiIsImxldmVsIjoiYnJvbnplIiwicmVxdWlyZWRfYmFkZ2VzIjpbXSwi
-        cG9pbnRzIjoyNSwiaWQiOiJvdXItYmVzdC1mcmllbmQifV0sInBvaW50cyI6
-        MjUsImlkIjoiYm9vay13b3JtIn0=
+      encoding: UTF-8
+      string: '{"name":"Book Worm","description":"You have loaned out over 25 books.
+        Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-07-16T09:21:22.448Z","updated_at":"2015-07-24T15:26:40.086Z","level":"bronze","auto_issue":false,"required_badges":[],"points":25,"object":"badge","id":"book-worm"}'
     http_version: 
-  recorded_at: Fri, 24 Jul 2015 15:35:38 GMT
+  recorded_at: Mon, 27 Jul 2015 16:12:09 GMT
 recorded_with: VCR 2.9.3

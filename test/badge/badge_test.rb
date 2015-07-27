@@ -35,6 +35,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_equal "library", badge.collection_id
 			assert_equal "bronze", badge.level
 			assert_equal 25, badge.points
+			assert_equal false, badge.auto_issue
+			assert_equal "badge", badge.object
 		end
 	end
 
@@ -180,7 +182,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 				requirements: "You need to love the Badge API",
 				hint: "Love us..",
 				collection_id: 1,
-				level: "bronze"
+				level: "silver",
+				auto_issue: true
 			)
 
 			assert_equal Badgeapi::Badge, badge.class
@@ -190,7 +193,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_equal "Love us..", badge.hint
 			#assert_equal "http://example.org/badge.png", badge.image
 			assert_equal "library", badge.collection_id
-
+			assert_equal true, badge.auto_issue
 			Badgeapi::Badge.destroy(badge.id)
 		end
 	end
@@ -334,26 +337,25 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
-
 	def test_should_issue_badge_with_email
 		VCR.use_cassette('issue_badge_to_user', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
-			result = Badgeapi::Badge.issue(
+			recipient = Badgeapi::Badge.issue(
 				"mega-book-worm",
 				recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 
-			assert_equal 2, result.length
-			assert result.kind_of?(Array)
-			assert result.first.kind_of?(Badgeapi::Badge)
+			assert_equal 2, recipient.badges.length
+			assert recipient.kind_of?(Badgeapi::Recipient)
+			assert recipient.badges.first.kind_of?(Badgeapi::Badge)
 
-			result = Badgeapi::Badge.revoke(
+			recipient = Badgeapi::Badge.revoke(
 					"mega-book-worm",
 					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 
-			assert_equal 1, result.length
+			assert_equal 1, recipient.badges.length
 		end
 	end
 
@@ -361,21 +363,21 @@ class BadgeapiBadgeTest < MiniTest::Test
 		VCR.use_cassette('revoke_badge_from_user', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
-			result = Badgeapi::Badge.issue(
+			recipient = Badgeapi::Badge.issue(
 					"mega-book-worm",
 					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 
-			assert_equal 2, result.length
+			assert_equal 2, recipient.badges.length
 
-			result = Badgeapi::Badge.revoke(
+			recipient = Badgeapi::Badge.revoke(
 					"mega-book-worm",
 					recipient: "t.skarbek-wazynski@lancaster.ac.uk"
 			)
 
-			assert_equal 1, result.length
-			assert result.kind_of?(Array)
-			assert result.first.kind_of?(Badgeapi::Badge)
+			assert_equal 1, recipient.badges.length
+			assert recipient.kind_of?(Badgeapi::Recipient)
+			assert recipient.badges.first.kind_of?(Badgeapi::Badge)
 		end
 	end
 
@@ -383,24 +385,22 @@ class BadgeapiBadgeTest < MiniTest::Test
 		VCR.use_cassette('issue_badge_to_user_with_library_card', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
 
-			result = Badgeapi::Badge.issue(
+			recipient = Badgeapi::Badge.issue(
 					3,
 					recipient: "0043181"
 			)
 
 
-			assert_equal 2, result.length
-			assert result.kind_of?(Array)
-			assert result.first.kind_of?(Badgeapi::Badge)
+			assert_equal 2, recipient.badges.length
+			assert recipient.kind_of?(Badgeapi::Recipient)
+			assert recipient.badges.first.kind_of?(Badgeapi::Badge)
 
-			result = Badgeapi::Badge.revoke(
+			recipient = Badgeapi::Badge.revoke(
 					3,
 					recipient: "0043181"
 			)
 
-			assert_equal 1, result.length
-			assert result.kind_of?(Array)
-			assert result.first.kind_of?(Badgeapi::Badge)
+			assert_equal 1, recipient.badges.length
 		end
 	end
 
