@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d48df614-9ef8-421d-8cad-fa84406445f1
+      - 3c3e45fe-726c-4753-8666-30b15b67c054
       X-Runtime:
-      - '0.028246'
+      - '0.028015'
       Date:
-      - Mon, 27 Jul 2015 16:12:12 GMT
+      - Thu, 27 Aug 2015 08:29:23 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Cannot revoke badge:
         Night Owl. The user has not previously been issued this badge.","status":400}}'
     http_version: 
-  recorded_at: Mon, 27 Jul 2015 16:12:12 GMT
+  recorded_at: Thu, 27 Aug 2015 08:29:23 GMT
 recorded_with: VCR 2.9.3

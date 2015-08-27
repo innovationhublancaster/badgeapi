@@ -66,7 +66,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 			begin
 				Badgeapi::Recipient.find(user: "dfsgsdgg")
 			rescue Badgeapi::InvalidRequestError => e
-				assert_equal(422, e.http_status)
+				assert_equal(404, e.http_status)
 				refute_empty e.message
 				assert_equal(true, e.json_body.kind_of?(Hash))
 			end

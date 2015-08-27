@@ -37,6 +37,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_equal 25, badge.points
 			assert_equal false, badge.auto_issue
 			assert_equal "badge", badge.object
+			assert_equal "live", badge.status
 		end
 	end
 
@@ -243,7 +244,8 @@ class BadgeapiBadgeTest < MiniTest::Test
 
 			assert_equal Badgeapi::Badge, destroyed_badge.class
 
-			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Badge.find(destroyed_badge.id) }
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Badge.destroy(badge.id) }
+
 		end
 	end
 

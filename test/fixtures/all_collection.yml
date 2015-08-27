@@ -29,22 +29,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"3883f8ebc2b6dec3d56daddf53d1983c"'
+      - '"5330f8187e707a244011085d5273c574"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e3205ae1-f4a7-4543-a799-7054e2e1feff
+      - 8f75736c-eabd-4404-adb1-cdf9f46372ee
       X-Runtime:
-      - '0.012756'
+      - '0.014691'
       Date:
-      - Mon, 27 Jul 2015 16:14:32 GMT
+      - Thu, 27 Aug 2015 08:26:07 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '[{"id":"library","name":"Library","description":"Use your library and
-        earn badges","created_at":"2015-07-16T09:21:22.292Z","updated_at":"2015-07-16T09:21:22.292Z","total_points_available":125,"object":"collection"},{"id":"trim-trail","name":"Trim
-        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-07-16T09:21:22.318Z","updated_at":"2015-07-16T09:21:22.318Z","total_points_available":100,"object":"collection"}]'
+        earn badges","created_at":"2015-08-27T08:25:23.303Z","updated_at":"2015-08-27T08:25:23.303Z","total_points_available":125,"object":"collection"},{"id":"trim-trail","name":"Trim
+        Trail","description":"Get fit and health plus earn some badges","created_at":"2015-08-27T08:25:23.330Z","updated_at":"2015-08-27T08:25:23.330Z","total_points_available":100,"object":"collection"}]'
     http_version: 
-  recorded_at: Mon, 27 Jul 2015 16:14:32 GMT
+  recorded_at: Thu, 27 Aug 2015 08:26:07 GMT
 recorded_with: VCR 2.9.3
