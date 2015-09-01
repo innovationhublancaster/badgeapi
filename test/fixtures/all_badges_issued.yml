@@ -368,11 +368,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4cb44c28-f7ea-4946-bf18-010dbf4cde5a
+      - d98507c9-0ed5-4012-90a6-ee7d54404ae2
       X-Runtime:
-      - '0.042294'
+      - '0.033503'
       Date:
-      - Thu, 27 Aug 2015 08:29:21 GMT
+      - Thu, 27 Aug 2015 15:29:35 GMT
       Connection:
       - close
     body:
@@ -380,7 +380,7 @@ http_interactions:
       string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-08-27T08:25:23.382Z","updated_at":"2015-08-27T08:25:23.382Z","level":"bronze","auto_issue":false,"status":"live","required_badges":[],"points":25,"object":"badge","id":"book-worm"}]'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:21 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:35 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=0043181
@@ -414,11 +414,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5e3f408-b2ec-4b8e-bc67-7995d861272d
+      - 409d3c8b-6be3-43f0-b099-0ec4319c0417
       X-Runtime:
-      - '2.533484'
+      - '1.025117'
       Date:
-      - Thu, 27 Aug 2015 08:29:23 GMT
+      - Thu, 27 Aug 2015 15:29:36 GMT
       Connection:
       - close
     body:
@@ -426,5 +426,5 @@ http_interactions:
       string: '[{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-08-27T08:25:23.382Z","updated_at":"2015-08-27T08:25:23.382Z","level":"bronze","auto_issue":false,"status":"live","required_badges":[],"points":25,"object":"badge","id":"book-worm"}]'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:23 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:36 GMT
 recorded_with: VCR 2.9.3

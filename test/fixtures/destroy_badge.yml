@@ -167,23 +167,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"305437b6575c492a53888b9322327bb4"'
+      - '"100f0e767229e2f405252253301cd3ef"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0296b0a9-2557-443c-8969-6960060cb8de
+      - 9c0e369c-5320-40cc-abaf-d1c34b802976
       X-Runtime:
-      - '0.083702'
+      - '0.083439'
       Date:
-      - Thu, 27 Aug 2015 08:29:17 GMT
+      - Thu, 27 Aug 2015 15:29:33 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge for Destroy","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-for-destroy/badge.png","collection_id":"library","created_at":"2015-08-27T08:29:17.273Z","updated_at":"2015-08-27T08:29:17.273Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-destroy"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-for-destroy/badge.png","collection_id":"library","created_at":"2015-08-27T15:29:33.165Z","updated_at":"2015-08-27T15:29:33.165Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-destroy"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:17 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/create-badge-for-destroy
@@ -213,23 +213,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"305437b6575c492a53888b9322327bb4"'
+      - '"100f0e767229e2f405252253301cd3ef"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1f1c0823-600e-4e87-b334-2f8ea405ad4c
+      - 0101ab83-f5b2-46f7-b770-62d1ba0e96fc
       X-Runtime:
-      - '0.029745'
+      - '0.030168'
       Date:
-      - Thu, 27 Aug 2015 08:29:17 GMT
+      - Thu, 27 Aug 2015 15:29:33 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge for Destroy","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-for-destroy/badge.png","collection_id":"library","created_at":"2015-08-27T08:29:17.273Z","updated_at":"2015-08-27T08:29:17.273Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-destroy"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-for-destroy/badge.png","collection_id":"library","created_at":"2015-08-27T15:29:33.165Z","updated_at":"2015-08-27T15:29:33.165Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-destroy"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:17 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/create-badge-for-destroy
@@ -261,11 +261,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 43f4cf6d-1722-42f6-b56b-c779ea79a86d
+      - 50278930-ace7-4acc-9518-2230562b1ff0
       X-Runtime:
-      - '0.012420'
+      - '0.012977'
       Date:
-      - Thu, 27 Aug 2015 08:29:17 GMT
+      - Thu, 27 Aug 2015 15:29:33 GMT
       Connection:
       - close
     body:
@@ -273,5 +273,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No badge exists
         with id: create-badge-for-destroy","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:17 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
 recorded_with: VCR 2.9.3

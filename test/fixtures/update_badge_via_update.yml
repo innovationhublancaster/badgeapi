@@ -1,6 +1,52 @@
 ---
 http_interactions:
 - request:
+    method: delete
+    uri: http://gamification-api.dev/v1/badges/create-badge-for-update
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3d8e0d4db89dd17805b0b4905aabada8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b1f9af97-4fcc-4185-a20c-0a4c1cef442f
+      X-Runtime:
+      - '0.035131'
+      Date:
+      - Thu, 27 Aug 2015 15:27:17 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
+        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/badge_images/updated-badge/badge.png","collection_id":"trim-trail","created_at":"2015-08-27T15:27:17.457Z","updated_at":"2015-08-27T15:27:17.553Z","level":"bronze","auto_issue":false,"status":"live","required_badges":[],"points":25,"object":"badge","id":"updated-badge"}'
+    http_version: 
+  recorded_at: Thu, 27 Aug 2015 15:27:17 GMT
+- request:
     method: post
     uri: http://gamification-api.dev/v1/badges
     body:
@@ -31,29 +77,29 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1f71ca8cf5e1b18e5b047198e65c95ad"'
+      - '"5ce3c5229e0fc0180919be1c3f56222e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a7c1fecd-e969-4e1f-8bcf-04163882ba03
+      - f92e7606-f61b-456e-a30e-1064fafa7a61
       X-Runtime:
-      - '0.083907'
+      - '0.084950'
       Date:
-      - Thu, 27 Aug 2015 08:29:29 GMT
+      - Thu, 27 Aug 2015 15:29:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge for update","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-for-update/badge.png","collection_id":"library","created_at":"2015-08-27T08:29:29.713Z","updated_at":"2015-08-27T08:29:29.713Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-update"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-for-update/badge.png","collection_id":"library","created_at":"2015-08-27T15:29:39.394Z","updated_at":"2015-08-27T15:29:39.394Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-update"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:29 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:39 GMT
 - request:
     method: patch
     uri: http://gamification-api.dev/v1/badges/create-badge-for-update
     body:
       encoding: UTF-8
-      string: badge%5Bcollection_id%5D=trim-trail&badge%5Bdescription%5D=Updated+Description&badge%5Bhint%5D=Updated+Hint&badge%5Bname%5D=Updated+Badge&badge%5Brequirements%5D=Updated+Requirements
+      string: badge%5Bcollection_id%5D=trim-trail&badge%5Bdescription%5D=Updated+Description&badge%5Bhint%5D=Updated+Hint&badge%5Bname%5D=Updated+Badge&badge%5Bobject%5D=monkey&badge%5Brequirements%5D=Updated+Requirements&badge%5Bstatus%5D=live
     headers:
       User-Agent:
       - Faraday v0.9.1
@@ -67,8 +113,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 422
+      message: Unprocessable Entity
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -78,68 +124,20 @@ http_interactions:
       - nosniff
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - '"d44f6e0bcab447aab9c174b2b6783c02"'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - e5a28233-c493-447d-9453-cacf8855dcef
+      - e9b8284f-85ff-4c7d-a3a3-c8e69cfd2cf6
       X-Runtime:
-      - '0.099988'
+      - '0.014822'
       Date:
-      - Thu, 27 Aug 2015 08:29:29 GMT
+      - Thu, 27 Aug 2015 15:29:39 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/badge_images/updated-badge/badge.png","collection_id":"trim-trail","created_at":"2015-08-27T08:29:29.713Z","updated_at":"2015-08-27T08:29:29.830Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"updated-badge"}'
+      string: '{"error":{"type":"invalid_request_error","message":"Found unpermitted
+        parameters: object","status":422}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:29 GMT
-- request:
-    method: delete
-    uri: http://gamification-api.dev/v1/badges/create-badge-for-update
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.1
-      Authorization:
-      - Token token="c9cde524238644fa93393159e5e9ad87"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"d44f6e0bcab447aab9c174b2b6783c02"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a9d5b8f5-1c8c-4458-8c51-809c09fc6654
-      X-Runtime:
-      - '0.044711'
-      Date:
-      - Thu, 27 Aug 2015 08:29:29 GMT
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"name":"Updated Badge","description":"Updated Description","requirements":"Updated
-        Requirements","hint":"Updated Hint","image":"http://gamification-api.dev/badge_images/updated-badge/badge.png","collection_id":"trim-trail","created_at":"2015-08-27T08:29:29.713Z","updated_at":"2015-08-27T08:29:29.830Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"updated-badge"}'
-    http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:29 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:39 GMT
 recorded_with: VCR 2.9.3

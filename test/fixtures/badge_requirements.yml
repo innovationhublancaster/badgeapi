@@ -236,11 +236,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dec0bceb-0317-491b-95c7-6f66c716cb5b
+      - 1b70f703-abdb-4940-9481-c7fc1ce1233f
       X-Runtime:
-      - '0.019703'
+      - '0.014908'
       Date:
-      - Thu, 27 Aug 2015 08:29:17 GMT
+      - Thu, 27 Aug 2015 15:29:33 GMT
       Connection:
       - close
     body:
@@ -249,7 +249,7 @@ http_interactions:
         trail that is 47 kilometers","requirements":"Complete 10 laps of the trim
         trail over any time","hint":"Keep going...","image":"http://gamification-api.dev/badge_images/marathon-man/badge.png","collection_id":"trim-trail","created_at":"2015-08-27T08:25:23.678Z","updated_at":"2015-08-27T08:25:23.678Z","level":"gold","auto_issue":false,"status":"live","required_badges":[],"points":75,"object":"badge","id":"marathon-man"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:17 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges/marathon-man/requires
@@ -285,11 +285,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 500e995c-6af4-4651-b602-61bb8f325032
+      - e66988ae-55dc-4b18-86f5-e5e1b873e24d
       X-Runtime:
-      - '0.035051'
+      - '0.026170'
       Date:
-      - Thu, 27 Aug 2015 08:29:17 GMT
+      - Thu, 27 Aug 2015 15:29:33 GMT
       Connection:
       - close
     body:
@@ -300,7 +300,7 @@ http_interactions:
         Trim Trailed!","description":"You ran one lap of the trim trail","requirements":"Complete
         one lap of the trim trail","hint":"Have to used the trim trail?","image":"http://gamification-api.dev/badge_images/you-trim-trailed/badge.png","collection_id":"trim-trail","created_at":"2015-08-27T08:25:23.621Z","updated_at":"2015-08-27T08:25:23.621Z","level":"bronze","auto_issue":false,"status":"live","required_badges":[],"points":25,"object":"badge","id":"you-trim-trailed"}],"points":75,"object":"badge","id":"marathon-man"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:17 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/marathon-man/requires?required_badge%5Bid%5D=you-trim-trailed
@@ -334,11 +334,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - de3d56e1-45ce-4727-bc93-3d1a56f2576c
+      - b63d67d0-c6b6-4e49-8e4f-a0d9b99a939c
       X-Runtime:
-      - '0.027329'
+      - '0.022927'
       Date:
-      - Thu, 27 Aug 2015 08:29:17 GMT
+      - Thu, 27 Aug 2015 15:29:33 GMT
       Connection:
       - close
     body:
@@ -347,5 +347,5 @@ http_interactions:
         trail that is 47 kilometers","requirements":"Complete 10 laps of the trim
         trail over any time","hint":"Keep going...","image":"http://gamification-api.dev/badge_images/marathon-man/badge.png","collection_id":"trim-trail","created_at":"2015-08-27T08:25:23.678Z","updated_at":"2015-08-27T08:25:23.678Z","level":"gold","auto_issue":false,"status":"live","required_badges":[],"points":75,"object":"badge","id":"marathon-man"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:17 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
 recorded_with: VCR 2.9.3

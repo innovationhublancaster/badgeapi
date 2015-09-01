@@ -287,7 +287,9 @@ class BadgeapiBadgeTest < MiniTest::Test
 					description: "Updated Description",
 					requirements: "Updated Requirements",
 					hint: "Updated Hint",
-					collection_id: "trim-trail"
+					collection_id: "trim-trail",
+					status: "live",
+					object: "monkey"
 			)
 
 			assert_equal "Updated Badge", updated_badge.name
@@ -295,6 +297,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			assert_equal "Updated Requirements", updated_badge.requirements
 			assert_equal "Updated Hint", updated_badge.hint
 			assert_equal "trim-trail", updated_badge.collection_id
+			assert_equal "live", updated_badge.status
 
 			Badgeapi::Badge.destroy(badge.id)
 		end

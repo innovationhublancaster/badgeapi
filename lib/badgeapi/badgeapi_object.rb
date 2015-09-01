@@ -118,11 +118,9 @@ module Badgeapi
 			params.delete("id")
 			params.delete("created_at")
 			params.delete("updated_at")
-			params.delete("image_greyscale")
 			params.delete("points")
 			params.delete("total_points_available")
 			params.delete("object")
-			params.delete("status")
 
 			self.class.request "patch", "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}", self.class.member_name => params
 		end

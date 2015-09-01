@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 36e62bbf-45ce-4cf1-80bb-70d3274368f3
+      - 6ca64d61-2875-44ae-8781-1eb5b3d46e93
       X-Runtime:
-      - '0.014863'
+      - '0.017003'
       Date:
-      - Thu, 27 Aug 2015 08:29:20 GMT
+      - Thu, 27 Aug 2015 15:29:35 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"name":"Book Worm","description":"You have loaned out over 25 books.
         Nice going!","requirements":"Loan out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-08-27T08:25:23.382Z","updated_at":"2015-08-27T08:25:23.382Z","level":"bronze","auto_issue":false,"status":"live","required_badges":[],"points":25,"object":"badge","id":"book-worm"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:20 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:35 GMT
 recorded_with: VCR 2.9.3

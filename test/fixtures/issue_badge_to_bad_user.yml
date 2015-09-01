@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 71772f23-29b2-4336-b019-067ba5398c0e
+      - ede9ce6c-a3fd-42a2-b754-a0f5b99a2b34
       X-Runtime:
-      - '0.023388'
+      - '0.023800'
       Date:
-      - Thu, 27 Aug 2015 08:29:23 GMT
+      - Thu, 27 Aug 2015 15:29:37 GMT
       Connection:
       - close
     body:
@@ -46,5 +46,5 @@ http_interactions:
         user with specified data t.skarbek-wazynski. Recipient data must be a university
         email address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:29:23 GMT
+  recorded_at: Thu, 27 Aug 2015 15:29:37 GMT
 recorded_with: VCR 2.9.3
