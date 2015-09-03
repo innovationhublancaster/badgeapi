@@ -29,7 +29,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 			assert_equal "library", collection.id
 			assert_equal "Library", collection.name
 			assert_equal 125, collection.total_points_available
-
+			assert_equal 4, collection.badge_count
 			assert_equal "Use your library and earn badges", collection.description
 		end
 	end

@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0644fba1-da49-4b46-8e43-6ebb673bef57
+      - f5eadd51-1671-4c29-add5-0509508fd460
       X-Runtime:
-      - '0.025993'
+      - '0.023088'
       Date:
-      - Thu, 27 Aug 2015 08:26:12 GMT
+      - Thu, 03 Sep 2015 10:56:09 GMT
       Connection:
       - close
     body:
@@ -44,7 +44,7 @@ http_interactions:
         user with specified data dfsgsdgg. Recipient data must be a university email
         address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:12 GMT
+  recorded_at: Thu, 03 Sep 2015 10:56:09 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/recipients?user=dfsgsdgg
@@ -76,11 +76,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e070b3b1-7c4d-475d-849b-ca311a51b963
+      - 76d57c2a-2efa-4a2f-80fd-bd9a98808b37
       X-Runtime:
-      - '0.017327'
+      - '0.015357'
       Date:
-      - Thu, 27 Aug 2015 08:26:12 GMT
+      - Thu, 03 Sep 2015 10:56:09 GMT
       Connection:
       - close
     body:
@@ -89,7 +89,7 @@ http_interactions:
         user with specified data dfsgsdgg. Recipient data must be a university email
         address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:12 GMT
+  recorded_at: Thu, 03 Sep 2015 10:56:09 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/recipients?user=j.stennet@lancaster.ac.uk
@@ -121,11 +121,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - a46c1631-a403-462c-b019-d4aa737904ac
+      - 4a861db8-1465-4398-8dae-b6383618f6f5
       X-Runtime:
-      - '0.021530'
+      - '0.017613'
       Date:
-      - Thu, 27 Aug 2015 08:26:12 GMT
+      - Thu, 03 Sep 2015 10:56:09 GMT
       Connection:
       - close
     body:
@@ -134,7 +134,7 @@ http_interactions:
         user with specified data j.stennet@lancaster.ac.uk. Recipient data must be
         a university email address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:12 GMT
+  recorded_at: Thu, 03 Sep 2015 10:56:09 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/recipients?user=j.stennet@lancaster.ac.uk
@@ -166,11 +166,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - eaf1cab9-128d-4f4f-a845-f4bd3e0685f0
+      - 13e3d08b-605a-4bae-8250-4f5397724585
       X-Runtime:
-      - '0.025430'
+      - '0.015878'
       Date:
-      - Thu, 27 Aug 2015 08:26:12 GMT
+      - Thu, 03 Sep 2015 10:56:09 GMT
       Connection:
       - close
     body:
@@ -179,5 +179,5 @@ http_interactions:
         user with specified data j.stennet@lancaster.ac.uk. Recipient data must be
         a university email address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:12 GMT
+  recorded_at: Thu, 03 Sep 2015 10:56:09 GMT
 recorded_with: VCR 2.9.3

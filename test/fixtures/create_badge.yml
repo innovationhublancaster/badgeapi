@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"4d85705793f265cdb23dea8e9801e1c7"'
+      - '"a77f2514d4666598c45a619d9b6dd8ab"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 40d29f67-5879-4f79-980f-3e8b92c1d25e
+      - 5fa77d10-8b12-469f-a165-be1285ae5b8b
       X-Runtime:
-      - '0.081690'
+      - '0.077204'
       Date:
-      - Thu, 27 Aug 2015 15:29:33 GMT
+      - Thu, 03 Sep 2015 10:55:56 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-test/badge.png","collection_id":"library","created_at":"2015-08-27T15:29:33.732Z","updated_at":"2015-08-27T15:29:33.732Z","level":"silver","auto_issue":true,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge-test"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-test/badge.png","collection_id":"library","created_at":"2015-09-03T10:55:56.132Z","updated_at":"2015-09-03T10:55:56.132Z","level":"silver","auto_issue":true,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge-test"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:56 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/badges/create-badge-test
@@ -77,21 +77,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"4d85705793f265cdb23dea8e9801e1c7"'
+      - '"a77f2514d4666598c45a619d9b6dd8ab"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3beb5517-76cc-4b63-9558-817bdbe03fef
+      - 6e5cbd8d-4119-4b8f-bdb9-0854797176cd
       X-Runtime:
-      - '0.031755'
+      - '0.026501'
       Date:
-      - Thu, 27 Aug 2015 15:29:33 GMT
+      - Thu, 03 Sep 2015 10:55:56 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"name":"Create Badge Test","description":"This is a new badge","requirements":"You
-        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-test/badge.png","collection_id":"library","created_at":"2015-08-27T15:29:33.732Z","updated_at":"2015-08-27T15:29:33.732Z","level":"silver","auto_issue":true,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge-test"}'
+        need to love the Badge API","hint":"Love us..","image":"http://gamification-api.dev/badge_images/create-badge-test/badge.png","collection_id":"library","created_at":"2015-09-03T10:55:56.132Z","updated_at":"2015-09-03T10:55:56.132Z","level":"silver","auto_issue":true,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge-test"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:33 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:56 GMT
 recorded_with: VCR 2.9.3

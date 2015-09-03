@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"5b86b1fd3f6b404435444022e44ec45c"'
+      - '"fc74c7a17abcdc3e486c80504e235141"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 51a1d8e9-768b-421e-9a0e-e6a5c50fc3e4
+      - 5357dbe5-94b3-4a44-82e0-e906ee583dcf
       X-Runtime:
-      - '0.031916'
+      - '0.026766'
       Date:
-      - Thu, 27 Aug 2015 08:26:06 GMT
+      - Thu, 03 Sep 2015 10:59:40 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"create-collection-for-destroy","name":"Create Collection for
-        Destroy","description":"This is a new badge","created_at":"2015-08-27T08:26:06.782Z","updated_at":"2015-08-27T08:26:06.782Z","total_points_available":0,"object":"collection"}'
+        Destroy","description":"This is a new badge","created_at":"2015-09-03T10:59:40.840Z","updated_at":"2015-09-03T10:59:40.840Z","total_points_available":0,"badge_count":0,"object":"collection"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:06 GMT
+  recorded_at: Thu, 03 Sep 2015 10:59:40 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/collections/create-collection-for-destroy
@@ -77,23 +77,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"5b86b1fd3f6b404435444022e44ec45c"'
+      - '"fc74c7a17abcdc3e486c80504e235141"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7345eeb-018c-4c55-9b03-e9c14427d9b3
+      - 667a66ad-223d-4640-9f05-1073ed5487cd
       X-Runtime:
-      - '0.017150'
+      - '0.018918'
       Date:
-      - Thu, 27 Aug 2015 08:26:06 GMT
+      - Thu, 03 Sep 2015 10:59:40 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"create-collection-for-destroy","name":"Create Collection for
-        Destroy","description":"This is a new badge","created_at":"2015-08-27T08:26:06.782Z","updated_at":"2015-08-27T08:26:06.782Z","total_points_available":0,"object":"collection"}'
+        Destroy","description":"This is a new badge","created_at":"2015-09-03T10:59:40.840Z","updated_at":"2015-09-03T10:59:40.840Z","total_points_available":0,"badge_count":0,"object":"collection"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:06 GMT
+  recorded_at: Thu, 03 Sep 2015 10:59:40 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/collections/create-collection-for-destroy
@@ -125,11 +125,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 38975f75-d016-47cd-8908-9fe6c1f4cc67
+      - 44523245-fdbf-4173-835c-04c6b360f7ea
       X-Runtime:
-      - '0.013062'
+      - '0.009577'
       Date:
-      - Thu, 27 Aug 2015 08:26:06 GMT
+      - Thu, 03 Sep 2015 10:59:40 GMT
       Connection:
       - close
     body:
@@ -137,7 +137,7 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No collection exists
         with id: create-collection-for-destroy","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:06 GMT
+  recorded_at: Thu, 03 Sep 2015 10:59:40 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/collections/create-collection-for-destroy
@@ -169,11 +169,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - a9ad8542-8d59-4023-93ae-bfed96d7f1c4
+      - 975ce324-8f23-4f59-b84b-26370cf852a3
       X-Runtime:
-      - '0.011365'
+      - '0.009605'
       Date:
-      - Thu, 27 Aug 2015 08:26:06 GMT
+      - Thu, 03 Sep 2015 10:59:40 GMT
       Connection:
       - close
     body:
@@ -181,5 +181,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"No collection exists
         with id: create-collection-for-destroy","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:06 GMT
+  recorded_at: Thu, 03 Sep 2015 10:59:40 GMT
 recorded_with: VCR 2.9.3

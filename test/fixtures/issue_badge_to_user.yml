@@ -127,26 +127,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"9ea2ae9416b43b188a99a9c1408d33b7"'
+      - '"6b3a403d534c0bf8bd5bd2f898e210a9"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 72cc74ab-71a8-44a5-8d14-887da8e5c2b3
+      - 4c5128aa-aeb8-4792-a9c0-51517a23b08a
       X-Runtime:
-      - '0.049061'
+      - '0.043567'
       Date:
-      - Thu, 27 Aug 2015 15:29:37 GMT
+      - Thu, 03 Sep 2015 10:55:58 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"total_score":75,"badges_total":2,"bronze_count":1,"silver_count":1,"gold_count":0,"platinum_count":0,"object":"recipient","badges":[{"name":"Book
         Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-08-27T08:25:23.382Z","updated_at":"2015-08-27T08:25:23.382Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-08-27T08:25:23.742Z","id":"book-worm"},{"name":"Mega
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-09-03T10:51:07.831Z","updated_at":"2015-09-03T10:51:07.831Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-09-03T10:51:08.232Z","id":"book-worm"},{"name":"Mega
         Book Worm","description":"You have loaned out 50 books.","requirements":"Loan
-        out 50 books","hint":"You must really like books...","image":"http://gamification-api.dev/badge_images/mega-book-worm/badge.png","collection_id":"library","created_at":"2015-08-27T08:25:23.439Z","updated_at":"2015-08-27T08:25:23.439Z","level":"silver","auto_issue":false,"status":"live","points":50,"object":"badge","issued_at":"2015-08-27T15:29:37.103Z","id":"mega-book-worm"}]}'
+        out 50 books","hint":"You must really like books...","image":"http://gamification-api.dev/badge_images/mega-book-worm/badge.png","collection_id":"library","created_at":"2015-09-03T10:51:07.899Z","updated_at":"2015-09-03T10:51:07.899Z","level":"silver","auto_issue":false,"status":"live","points":50,"object":"badge","issued_at":"2015-09-03T10:55:58.892Z","id":"mega-book-worm"}]}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:37 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:58 GMT
 - request:
     method: post
     uri: http://gamification-api.dev/v1/badges/mega-book-worm/revoke
@@ -178,22 +178,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1b5d0d9c9332cb7a7e4ca8d1ff009247"'
+      - '"b580cf4171303fd650475e570ec9458a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e549dec7-2294-45b6-ac30-1062a1e260f6
+      - 0746c586-2c87-4415-a416-e6fc0f16b14c
       X-Runtime:
-      - '0.042109'
+      - '0.032023'
       Date:
-      - Thu, 27 Aug 2015 15:29:37 GMT
+      - Thu, 03 Sep 2015 10:55:58 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"total_score":25,"badges_total":1,"bronze_count":1,"silver_count":0,"gold_count":0,"platinum_count":0,"object":"recipient","badges":[{"name":"Book
         Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
-        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-08-27T08:25:23.382Z","updated_at":"2015-08-27T08:25:23.382Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-08-27T08:25:23.742Z","id":"book-worm"}]}'
+        out 25 books","hint":"You must like books...","image":"http://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-09-03T10:51:07.831Z","updated_at":"2015-09-03T10:51:07.831Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-09-03T10:51:08.232Z","id":"book-worm"}]}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:37 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:58 GMT
 recorded_with: VCR 2.9.3

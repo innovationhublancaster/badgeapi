@@ -31,23 +31,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d42ad68980100785f33052d204514e54"'
+      - '"7f75ddf0d4b061fac6d57841515fa03b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0bd6b0b0-33de-48bc-8a23-a33277ee4be8
+      - 711ffd60-712b-4dc6-a46b-f6b65466fa25
       X-Runtime:
-      - '0.024325'
+      - '0.025871'
       Date:
-      - Thu, 27 Aug 2015 08:26:07 GMT
+      - Thu, 03 Sep 2015 10:59:41 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"create-collection-test","name":"Create Collection Test","description":"This
-        is a new collection","created_at":"2015-08-27T08:26:07.162Z","updated_at":"2015-08-27T08:26:07.162Z","total_points_available":0,"object":"collection"}'
+        is a new collection","created_at":"2015-09-03T10:59:41.200Z","updated_at":"2015-09-03T10:59:41.200Z","total_points_available":0,"badge_count":0,"object":"collection"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:07 GMT
+  recorded_at: Thu, 03 Sep 2015 10:59:41 GMT
 - request:
     method: delete
     uri: http://gamification-api.dev/v1/collections/create-collection-test
@@ -77,21 +77,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"d42ad68980100785f33052d204514e54"'
+      - '"7f75ddf0d4b061fac6d57841515fa03b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 39c74741-6fee-4f64-9289-6cc29aae76ef
+      - 9dc5194c-1ee6-4347-b44d-622318b06b4c
       X-Runtime:
-      - '0.017018'
+      - '0.019878'
       Date:
-      - Thu, 27 Aug 2015 08:26:07 GMT
+      - Thu, 03 Sep 2015 10:59:41 GMT
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"id":"create-collection-test","name":"Create Collection Test","description":"This
-        is a new collection","created_at":"2015-08-27T08:26:07.162Z","updated_at":"2015-08-27T08:26:07.162Z","total_points_available":0,"object":"collection"}'
+        is a new collection","created_at":"2015-09-03T10:59:41.200Z","updated_at":"2015-09-03T10:59:41.200Z","total_points_available":0,"badge_count":0,"object":"collection"}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 08:26:07 GMT
+  recorded_at: Thu, 03 Sep 2015 10:59:41 GMT
 recorded_with: VCR 2.9.3

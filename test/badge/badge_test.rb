@@ -195,6 +195,7 @@ class BadgeapiBadgeTest < MiniTest::Test
 			#assert_equal "http://example.org/badge.png", badge.image
 			assert_equal "library", badge.collection_id
 			assert_equal true, badge.auto_issue
+
 			Badgeapi::Badge.destroy(badge.id)
 		end
 	end
@@ -268,7 +269,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 		end
 	end
 
-
 	def test_update_badge_via_update
 		VCR.use_cassette('update_badge_via_update', :record => :all) do
 			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
@@ -289,7 +289,6 @@ class BadgeapiBadgeTest < MiniTest::Test
 					hint: "Updated Hint",
 					collection_id: "trim-trail",
 					status: "live",
-					object: "monkey"
 			)
 
 			assert_equal "Updated Badge", updated_badge.name

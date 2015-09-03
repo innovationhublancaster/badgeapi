@@ -31,11 +31,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 2a67b7c1-a1f6-4791-8087-22d3c396fe31
+      - db1f2728-a172-467b-8339-16cb17a2ec11
       X-Runtime:
-      - '0.019286'
+      - '0.015889'
       Date:
-      - Thu, 27 Aug 2015 15:29:34 GMT
+      - Thu, 03 Sep 2015 10:55:56 GMT
       Connection:
       - close
     body:
@@ -44,7 +44,7 @@ http_interactions:
         user with specified data t.skarbek-wazynski. Recipient data must be a university
         email address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:34 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:56 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=t.skarbek-wazynsky@lancaster.ac.uk
@@ -76,11 +76,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - b2a83b4a-c459-4507-a4fa-6d88c0540628
+      - 74d8df1b-c7aa-43f6-b7d5-812ab3bc175d
       X-Runtime:
-      - '0.020369'
+      - '0.018328'
       Date:
-      - Thu, 27 Aug 2015 15:29:34 GMT
+      - Thu, 03 Sep 2015 10:55:56 GMT
       Connection:
       - close
     body:
@@ -89,7 +89,7 @@ http_interactions:
         user with specified data t.skarbek-wazynsky@lancaster.ac.uk. Recipient data
         must be a university email address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:34 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:56 GMT
 - request:
     method: get
     uri: http://gamification-api.dev/v1/badges?user=081897144451
@@ -121,11 +121,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f2eed4e5-57f2-4d16-a87b-7b2bf95f1698
+      - 11d59226-2cfe-4384-9e34-d9c2e29b9b57
       X-Runtime:
-      - '1.280246'
+      - '0.981996'
       Date:
-      - Thu, 27 Aug 2015 15:29:35 GMT
+      - Thu, 03 Sep 2015 10:55:57 GMT
       Connection:
       - close
     body:
@@ -134,5 +134,5 @@ http_interactions:
         user with specified data 081897144451. Recipient data must be a university
         email address, university card number or username.","status":404}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:35 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:57 GMT
 recorded_with: VCR 2.9.3

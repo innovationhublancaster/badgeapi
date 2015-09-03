@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 889d3d61-574e-4f24-baaa-c11eeb010198
+      - 63802396-3073-4c44-bb6a-ecf896f805a3
       X-Runtime:
-      - '0.031155'
+      - '0.029672'
       Date:
-      - Thu, 27 Aug 2015 15:29:36 GMT
+      - Thu, 03 Sep 2015 10:55:58 GMT
       Connection:
       - close
     body:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"error":{"type":"invalid_request_error","message":"Cannot issue badge:
         Book Worm. The user has already been issued this badge","status":400}}'
     http_version: 
-  recorded_at: Thu, 27 Aug 2015 15:29:36 GMT
+  recorded_at: Thu, 03 Sep 2015 10:55:58 GMT
 recorded_with: VCR 2.9.3
