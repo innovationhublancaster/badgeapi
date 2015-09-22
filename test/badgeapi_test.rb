@@ -4,7 +4,7 @@ require './test/test_helper'
 class BadgeapiTest < MiniTest::Test
 
 	def test_api_url
-		assert_equal Badgeapi.api_url, 'http://gamification-api.dev/v1'
+		assert_equal Badgeapi.api_url, 'https://gamification-api.dev/v1'
 	end
 
 	def test_api_key
@@ -12,11 +12,9 @@ class BadgeapiTest < MiniTest::Test
 		assert_equal Badgeapi.api_key, 'foo'
 	end
 
-	def test_bad_api_key
-		VCR.use_cassette('bad_api_key') do
-			Badgeapi.api_key= 'foo'
-			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Badge.all }
-		end
+	def test_ssl_ca_cert
+		Badgeapi.ssl_ca_cert = 'foo'
+		assert_equal Badgeapi.ssl_ca_cert, 'foo'
 	end
 
 end

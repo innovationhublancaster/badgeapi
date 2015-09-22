@@ -15,7 +15,11 @@ module Badgeapi
 			end
 
 			def request method, url, params={}
-				connection = Faraday.new()
+				#connection = Faraday.new(:ssl => {:verify => false})
+				connection = Faraday.new(:ssl => {
+					:ca_file => Badgeapi.ssl_ca_cert
+				})
+
 				connection.token_auth(Badgeapi.api_key)
 				from_response connection.send(method, url, params)
 			end

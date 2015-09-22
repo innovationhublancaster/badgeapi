@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
 	spec.version 			= Badgeapi::VERSION
 	spec.authors 			= ["Tom Skarbek Wazynski"]
 	spec.email 				= ["wazynski@gmail.com"]
-	spec.summary 			= %q{Allows you to connect to Lancaster University Badge API to manipulate badges, issue badges and display badges.}
-	spec.description 			= %q{Allows you to connect to Lancaster University Badge API to manipulate badges, issue badges and display badges.}
+	spec.summary 			= %q{A basic API wrapper for Lancaster University's Badge API.}
+	spec.description 			= %q{Allows you to connect to Lancaster University's Badge API to manipulate badges, issue badges and display badges.}
 	spec.homepage			= "http://innovationhub.lancaster.ac.uk"
 	spec.license 			= "MIT"
 
@@ -18,14 +18,14 @@ Gem::Specification.new do |spec|
 	spec.test_files 		= spec.files.grep(%r{^(test|spec|features)/})
 	spec.require_paths 		= ["lib"]
 
-	spec.add_development_dependency "minitest"
-	spec.add_development_dependency "minitest-focus"
-	spec.add_development_dependency "vcr"
-	spec.add_development_dependency "webmock"
+	spec.add_development_dependency "minitest", "~> 5.5"
+	spec.add_development_dependency "minitest-focus", "~> 1.1"
+	spec.add_development_dependency "vcr", "~> 2.9"
+	spec.add_development_dependency "webmock", "~> 1.20"
 
-	spec.add_dependency "activesupport"
-	spec.add_dependency "faraday"
-	spec.add_dependency "json"
+	spec.add_dependency "activesupport", "~> 4.2"
+	spec.add_dependency "faraday", "~> 0.9"
+	spec.add_dependency "json", "~> 1.8"
 
 	spec.add_development_dependency "bundler", "~> 1.7"
 	spec.add_development_dependency "rake", "~> 10.0"
