@@ -23,7 +23,8 @@ Gem::Specification.new do |spec|
 	spec.add_development_dependency "vcr", "~> 2.9"
 	spec.add_development_dependency "webmock", "~> 1.20"
 
-	spec.add_dependency "activesupport", "~> 4.1"
+	# So it works with rails 4 and 3
+	spec.add_dependency "activesupport", "> 3.2"
 	spec.add_dependency "faraday", "~> 0.9"
 	spec.add_dependency "json", "~> 1.8"
 

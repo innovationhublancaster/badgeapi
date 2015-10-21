@@ -15,14 +15,7 @@ require_relative "badgeapi/errors/invalid_request_error"
 
 module Badgeapi
 
-	if ENV['RAILS_ENV'] == "production"
-		@api_base = 'https://badgeapi.lancaster.ac.uk/v1'
-	else
-		puts "DEVELOPMENT"
-		@api_base = 'https://gamification-api.dev/v1'
-	end
-
-
+	@api_base = 'https://badgeapi.lancaster.ac.uk/v1'
 
 	class << self
 		attr_accessor :api_key, :api_base, :ssl_ca_cert
@@ -39,6 +32,5 @@ module Badgeapi
 	def self.ssl_ca_cert
 		@ssl_ca_cert
 	end
-
 
 end
