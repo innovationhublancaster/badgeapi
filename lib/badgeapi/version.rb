@@ -1,3 +1,3 @@
 module Badgeapi
-  VERSION = "0.3.10"
+  VERSION = "1.0.0"
 end
