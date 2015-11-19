@@ -12,3 +12,4 @@ doc/*
 log/*
 pkg/*
 .idea/*
+.editorconfig

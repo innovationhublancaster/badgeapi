@@ -1,5 +1,4 @@
 module Badgeapi
-	class InvalidRequestError < BadgeapiError
-
-	end
+  class InvalidRequestError < BadgeapiError
+  end
 end

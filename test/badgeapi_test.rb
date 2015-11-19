@@ -4,7 +4,7 @@ require './test/test_helper'
 class BadgeapiTest < MiniTest::Test
 
 	def test_api_url
-		assert_equal Badgeapi.api_url, 'https://gamification-api.dev/v1'
+		assert_equal Badgeapi.api_url, 'https://badgeapi.lancaster.ac.uk/v1'
 	end
 
 	def test_api_key
