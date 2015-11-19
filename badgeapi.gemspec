@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.version 		 = Badgeapi::VERSION
   spec.authors 		 = ["Tom Skarbek Wazynski"]
   spec.email = ["wazynski@gmail.com"]
-  spec.summary = "A basic API wrapper for Lancaster University's Badge API"
-  spec.description = "Allows you to connect to Lancaster University's Badge API
-  to manipulate badges, issue badges and display badges."
-  spec.homepage		 = "http://innovationhub.lancaster.ac.uk"
+  spec.summary = "Ruby bindings for the Lancaster University Badge API platform"
+  spec.description = "The badgeapi gem provides Ruby bindings for the Lancaster University Badge API
+  platform. It allows for quicker and easier access, insertion and consumption of data from the API."
+  spec.homepage		 = "https://github.com/innovationhublancaster/badgeapi"
   spec.license 		 = "MIT"
 
   spec.files = `git ls-files -z`.split("\x0")
