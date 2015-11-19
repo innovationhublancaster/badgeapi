@@ -1,4 +1,4 @@
-# Lancaster University Badge API Gem
+# Lancaster University Badge API Gem [![Gem Version](https://badge.fury.io/rb/badgeapi.svg)](https://badge.fury.io/rb/badgeapi)
 
 The <strong>badgeapi</strong> gem provides Ruby bindings for the [Lancaster University Badge API](http://innovationhub.lancaster.ac.uk/projects/gamification) platform. It allows for quicker and easier access, insertion and consumption of data from the API.
 
