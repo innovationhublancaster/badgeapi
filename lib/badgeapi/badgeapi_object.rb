@@ -44,41 +44,58 @@ module Badgeapi
       end
 
       def map_json_to_object attributes
-        if !attributes['object'].nil?
-          record = object_classes.fetch(attributes['object'].singularize).new
-        else
+        if attributes['object'].nil?
           record = new
+        else
+          record = object_classes.fetch(attributes['object'].singularize).new
         end
 
+        map_instant_variables_to_record attributes, record
+        record
+      end
+
+      def map_instant_variables_to_record attributes, record
         attributes.each do |name, value|
-          if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
+          if attribute_a_badge_object? name
             child = map_related_object object_classes.fetch(name.singularize), value
             record.instance_variable_set "@#{name}", child
           else
             record.instance_variable_set "@#{name}", value
           end
         end
-        record
       end
 
       def map_related_object object, attributes
         if attributes.class == Array
           attributes.map do |subattributes|
+            # Recursion: loop through until every object is mapped
             map_related_object object, subattributes
           end
         else
           record = object.new
-          attributes.each do |name, value|
-            if value.class == Array && value.count > 0
-              if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
-                child = map_related_object object_classes.fetch(name.singularize), value
-                record.instance_variable_set "@#{name}", child
-              end
-            else
-              record.instance_variable_set "@#{name}", value
-            end
-          end
+          map_instant_variables_to_child_records attributes, record
           record
+        end
+      end
+
+      def map_instant_variables_to_child_records attributes, record
+        attributes.each do |name, value|
+          if value.class == Array && value.count > 0
+            if attribute_a_badge_object? name
+              child = map_related_object object_classes.fetch(name.singularize), value
+              record.instance_variable_set "@#{name}", child
+            end
+          else
+            record.instance_variable_set "@#{name}", value
+          end
+        end
+      end
+
+      def attribute_a_badge_object? name
+        if object_classes.has_key?(name) || object_classes.has_key?(name.singularize)
+          true
+        else
+          false
         end
       end
 
@@ -108,7 +125,7 @@ module Badgeapi
       "#<#{self.class}:0x#{object_id.to_s(16)}#{id_as_string}> JSON: " + to_json
     end
 
-    def save
+    def remove_read_only_params
       # Remove params that cannot be saved as they are not permitted through strong_params on api
       params = JSON.parse(to_json)
 
@@ -119,6 +136,11 @@ module Badgeapi
       params.delete("total_points_available")
       params.delete("badge_count")
       params.delete("object")
+    end
+
+    def save
+      # Remove params that cannot be saved as they are not permitted through strong_params on api
+      params = remove_read_only_params
 
       self.class.request "patch", "#{Badgeapi.api_url}/#{self.class.collection_path}/#{id}",
                          self.class.member_name => params

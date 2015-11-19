@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Blevel%5D=bronze&badge%5Bname%5D=Create+Badge+for+Destroy&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b2aeeaa59bd4de417cfc69f0055fa2c8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 51c94fc7-9d16-4f94-bd1a-710b244955d4
+      X-Runtime:
+      - '4.987678'
+      Date:
+      - Thu, 19 Nov 2015 15:40:46 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge for Destroy","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/create-badge-for-destroy/badge.png","collection_id":"library","created_at":"2015-11-19T15:40:41.495Z","updated_at":"2015-11-19T15:40:41.495Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-destroy"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:40:46 GMT
+- request:
+    method: delete
+    uri: https://gamification-api.dev/v1/badges/create-badge-for-destroy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b2aeeaa59bd4de417cfc69f0055fa2c8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 437419d7-1d60-44eb-822b-23372d426a57
+      X-Runtime:
+      - '0.027295'
+      Date:
+      - Thu, 19 Nov 2015 15:40:46 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge for Destroy","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/create-badge-for-destroy/badge.png","collection_id":"library","created_at":"2015-11-19T15:40:41.495Z","updated_at":"2015-11-19T15:40:41.495Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"create-badge-for-destroy"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:40:46 GMT
+- request:
+    method: delete
+    uri: https://gamification-api.dev/v1/badges/create-badge-for-destroy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 20bc9e88-7cec-40c6-9214-c369c3cbc99a
+      X-Runtime:
+      - '0.010723'
+      Date:
+      - Thu, 19 Nov 2015 15:40:46 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No badge exists
+        with id: create-badge-for-destroy","status":404}}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:40:46 GMT
+recorded_with: VCR 2.9.3

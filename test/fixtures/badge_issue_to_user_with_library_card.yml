@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges/3/issue
+    body:
+      encoding: UTF-8
+      string: recipient=0043181
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"7fa307a20aa3c3c1124cf44839fead7b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c350884b-04d0-4519-b84d-eb9045d12e41
+      X-Runtime:
+      - '1.499314'
+      Date:
+      - Thu, 19 Nov 2015 15:41:31 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"total_score":50,"badges_total":2,"bronze_count":2,"silver_count":0,"gold_count":0,"platinum_count":0,"object":"recipient","badges":[{"name":"Book
+        Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"https://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-11-18T11:39:58.956Z","updated_at":"2015-11-18T11:39:58.956Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-11-18T11:40:26.379Z","id":"book-worm"},{"name":"Night
+        Owl","description":"You loaned a book out between Midnight and 5 o''clock","requirements":"Loan
+        out a book between 00:00 - 5:00","hint":"It must be late...","image":"https://gamification-api.dev/badge_images/night-owl/badge.png","collection_id":"library","created_at":"2015-11-18T11:40:10.176Z","updated_at":"2015-11-18T11:40:10.176Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-11-19T15:41:31.641Z","id":"night-owl"}]}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:31 GMT
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges/3/revoke
+    body:
+      encoding: UTF-8
+      string: recipient=0043181
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"365681d5132a5e92b7946178e30b2356"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 852d39f4-d688-4f9f-a269-374626e4f905
+      X-Runtime:
+      - '1.506485'
+      Date:
+      - Thu, 19 Nov 2015 15:41:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"total_score":25,"badges_total":1,"bronze_count":1,"silver_count":0,"gold_count":0,"platinum_count":0,"object":"recipient","badges":[{"name":"Book
+        Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"https://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-11-18T11:39:58.956Z","updated_at":"2015-11-18T11:39:58.956Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-11-18T11:40:26.379Z","id":"book-worm"}]}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:33 GMT
+recorded_with: VCR 2.9.3

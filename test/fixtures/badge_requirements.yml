@@ -1,0 +1,396 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gamification-api.dev/v1/badges/marathon-man
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"0fac1fb012ef81ead6788b7c45bad3f7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e96ab2c8-7817-4d53-843f-868d57df7768
+      X-Runtime:
+      - '0.010140'
+      Date:
+      - Thu, 19 Nov 2015 15:31:06 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Marathon Man","description":"You have run 10 laps of the trips
+        trail that is 47 kilometers","requirements":"Complete 10 laps of the trim
+        trail over any time","hint":"Keep going...","image":"https://gamification-api.dev/badge_images/marathon-man/badge.png","collection_id":"trim-trail","created_at":"2015-11-18T11:40:20.303Z","updated_at":"2015-11-18T11:40:20.303Z","level":"gold","auto_issue":false,"status":"live","required_badges":[],"points":75,"object":"badge","id":"marathon-man"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:31:06 GMT
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges/marathon-man/requires
+    body:
+      encoding: UTF-8
+      string: required_badge%5Bid%5D=you-trim-trailed
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 52129633-1b5a-46ee-9ea8-2bdbcb8e32e3
+      X-Runtime:
+      - '0.009989'
+      Date:
+      - Thu, 19 Nov 2015 15:31:06 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":{"type":"invalid_request_error","message":"No badge exists
+        with id: you-trim-trailed","status":404}}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:31:06 GMT
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Blevel%5D=silver&badge%5Bname%5D=Create+Badge&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"832626c4208c709a5021b4d6073d56af"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 87c73c71-1d44-47be-a217-2387726025f1
+      X-Runtime:
+      - '8.377910'
+      Date:
+      - Thu, 19 Nov 2015 15:41:00 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/create-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:40:52.393Z","updated_at":"2015-11-19T15:40:52.393Z","level":"silver","auto_issue":false,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:00 GMT
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges
+    body:
+      encoding: UTF-8
+      string: badge%5Bcollection_id%5D=1&badge%5Bdescription%5D=This+is+a+new+badge&badge%5Bhint%5D=Love+us..&badge%5Blevel%5D=bronze&badge%5Bname%5D=Required+Badge&badge%5Brequirements%5D=You+need+to+love+the+Badge+API
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"389dd2b408111b119674762feb3a9f22"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5ba2fea9-deab-47e6-bccd-42e4876ad0fd
+      X-Runtime:
+      - '7.800611'
+      Date:
+      - Thu, 19 Nov 2015 15:41:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Required Badge","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/required-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:41:00.844Z","updated_at":"2015-11-19T15:41:00.844Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"required-badge"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:08 GMT
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges/create-badge/requires
+    body:
+      encoding: UTF-8
+      string: required_badge%5Bid%5D=required-badge
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d9fb2e750d6784649d62736ef151dc37"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36f1bfe3-88a2-41d1-8a0d-3218bc9461eb
+      X-Runtime:
+      - '0.038161'
+      Date:
+      - Thu, 19 Nov 2015 15:41:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/create-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:40:52.393Z","updated_at":"2015-11-19T15:40:52.393Z","level":"silver","auto_issue":false,"status":"draft","required_badges":[{"name":"Required
+        Badge","description":"This is a new badge","requirements":"You need to love
+        the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/required-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:41:00.844Z","updated_at":"2015-11-19T15:41:00.844Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"required-badge"}],"points":50,"object":"badge","id":"create-badge"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:08 GMT
+- request:
+    method: delete
+    uri: https://gamification-api.dev/v1/badges/create-badge/requires?required_badge%5Bid%5D=required-badge
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"832626c4208c709a5021b4d6073d56af"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3bd1bae7-556e-40b5-aebc-d6d7b0685cc6
+      X-Runtime:
+      - '0.023086'
+      Date:
+      - Thu, 19 Nov 2015 15:41:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/create-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:40:52.393Z","updated_at":"2015-11-19T15:40:52.393Z","level":"silver","auto_issue":false,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:08 GMT
+- request:
+    method: delete
+    uri: https://gamification-api.dev/v1/badges/create-badge
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"832626c4208c709a5021b4d6073d56af"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 27dec649-4334-443f-9a9a-0dcab3d706c1
+      X-Runtime:
+      - '0.033813'
+      Date:
+      - Thu, 19 Nov 2015 15:41:08 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Create Badge","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/create-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:40:52.393Z","updated_at":"2015-11-19T15:40:52.393Z","level":"silver","auto_issue":false,"status":"draft","required_badges":[],"points":50,"object":"badge","id":"create-badge"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:08 GMT
+- request:
+    method: delete
+    uri: https://gamification-api.dev/v1/badges/required-badge
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"389dd2b408111b119674762feb3a9f22"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0b6ab9ed-ea1a-445b-9606-5c6ede7498a7
+      X-Runtime:
+      - '0.039236'
+      Date:
+      - Thu, 19 Nov 2015 15:41:09 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"name":"Required Badge","description":"This is a new badge","requirements":"You
+        need to love the Badge API","hint":"Love us..","image":"https://gamification-api.dev/badge_images/required-badge/badge.png","collection_id":"library","created_at":"2015-11-19T15:41:00.844Z","updated_at":"2015-11-19T15:41:00.844Z","level":"bronze","auto_issue":false,"status":"draft","required_badges":[],"points":25,"object":"badge","id":"required-badge"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:09 GMT
+recorded_with: VCR 2.9.3

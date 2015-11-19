@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges/mega-book-worm/issue
+    body:
+      encoding: UTF-8
+      string: recipient=t.skarbek-wazynski%40lancaster.ac.uk
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"900ff07f719871ac8e35eaf466528bec"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f4ffd0dc-4558-42fd-a586-2677d237b4b1
+      X-Runtime:
+      - '0.073706'
+      Date:
+      - Thu, 19 Nov 2015 15:41:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"total_score":75,"badges_total":2,"bronze_count":1,"silver_count":1,"gold_count":0,"platinum_count":0,"object":"recipient","badges":[{"name":"Book
+        Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"https://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-11-18T11:39:58.956Z","updated_at":"2015-11-18T11:39:58.956Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-11-18T11:40:26.379Z","id":"book-worm"},{"name":"Mega
+        Book Worm","description":"You have loaned out 50 books.","requirements":"Loan
+        out 50 books","hint":"You must really like books...","image":"https://gamification-api.dev/badge_images/mega-book-worm/badge.png","collection_id":"library","created_at":"2015-11-18T11:40:05.068Z","updated_at":"2015-11-18T11:40:05.068Z","level":"silver","auto_issue":false,"status":"live","points":50,"object":"badge","issued_at":"2015-11-19T15:41:29.880Z","id":"mega-book-worm"}]}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:29 GMT
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/badges/mega-book-worm/revoke
+    body:
+      encoding: UTF-8
+      string: recipient=t.skarbek-wazynski%40lancaster.ac.uk
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"365681d5132a5e92b7946178e30b2356"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a26b801a-c182-4c18-bff1-d52aeda487e3
+      X-Runtime:
+      - '0.056401'
+      Date:
+      - Thu, 19 Nov 2015 15:41:30 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"total_score":25,"badges_total":1,"bronze_count":1,"silver_count":0,"gold_count":0,"platinum_count":0,"object":"recipient","badges":[{"name":"Book
+        Worm","description":"You have loaned out over 25 books. Nice going!","requirements":"Loan
+        out 25 books","hint":"You must like books...","image":"https://gamification-api.dev/badge_images/book-worm/badge.png","collection_id":"library","created_at":"2015-11-18T11:39:58.956Z","updated_at":"2015-11-18T11:39:58.956Z","level":"bronze","auto_issue":false,"status":"live","points":25,"object":"badge","issued_at":"2015-11-18T11:40:26.379Z","id":"book-worm"}]}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 15:41:30 GMT
+recorded_with: VCR 2.9.3
