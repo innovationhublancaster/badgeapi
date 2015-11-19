@@ -1,3 +1,4 @@
+# Console
 require "bundler/gem_tasks"
 
 desc "Open an pry/irb session preloaded with badgeapi"
@@ -13,3 +14,15 @@ task :console do
 
   exec "#{irb} -I lib -r badgeapi.rb"
 end
+
+# Tests
+require 'rake/testtask'
+
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList['test/*_test.rb'] + FileList['test/*/*_test.rb']
+  t.verbose = true
+end
+
+desc "Run tests"
+task default: :test
