@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://gamification-api.dev/v1/collections
+    body:
+      encoding: UTF-8
+      string: collection%5Bdescription%5D=This+is+a+new+collection&collection%5Bname%5D=Create+Collection+Test
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"94419b3b1ecc7ed7a20a01f3df68e688"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 239632a5-5a77-4547-85f0-a73221de61b7
+      X-Runtime:
+      - '0.022556'
+      Date:
+      - Thu, 19 Nov 2015 14:33:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":"create-collection-test","name":"Create Collection Test","description":"This
+        is a new collection","created_at":"2015-11-19T14:33:33.223Z","updated_at":"2015-11-19T14:33:33.223Z","total_points_available":0,"badge_count":0,"object":"collection"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 14:33:33 GMT
+- request:
+    method: delete
+    uri: https://gamification-api.dev/v1/collections/create-collection-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Token token="c9cde524238644fa93393159e5e9ad87"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"94419b3b1ecc7ed7a20a01f3df68e688"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6eac98e4-7d0b-4161-a3b1-65ebd9078f8a
+      X-Runtime:
+      - '0.013809'
+      Date:
+      - Thu, 19 Nov 2015 14:33:33 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":"create-collection-test","name":"Create Collection Test","description":"This
+        is a new collection","created_at":"2015-11-19T14:33:33.223Z","updated_at":"2015-11-19T14:33:33.223Z","total_points_available":0,"badge_count":0,"object":"collection"}'
+    http_version: 
+  recorded_at: Thu, 19 Nov 2015 14:33:33 GMT
+recorded_with: VCR 2.9.3

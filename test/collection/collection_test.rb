@@ -3,6 +3,10 @@ require './test/test_helper'
 
 class BadgeapiCollectionTest < MiniTest::Test
 
+	Badgeapi.api_base = 'https://gamification-api.dev/v1'
+	Badgeapi.ssl_ca_cert='/Users/tomskarbek/.tunnelss/ca/cert.pem'
+	Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
+
 	def self.test_order
 		:alpha
 	end
@@ -20,105 +24,85 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_it_returns_back_a_single_collection
-		VCR.use_cassette('one_collection', :record => :all) do
-			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
-
+		VCR.use_cassette('collection_one') do
 			collection = Badgeapi::Collection.find(1)
 			assert_equal Badgeapi::Collection, collection.class
 
-			assert_equal "library", collection.id
-			assert_equal "Library", collection.name
-			assert_equal 125, collection.total_points_available
-			assert_equal 4, collection.badge_count
-			assert_equal "Use your library and earn badges", collection.description
+			assert_kind_of String, collection.id
+			assert_kind_of String, collection.name
+			assert_kind_of Integer, collection.total_points_available
+			assert_kind_of Integer, collection.badge_count
+			assert_kind_of String, collection.description
 		end
 	end
 
 	def test_it_returns_back_a_single_collection_expanded
-		VCR.use_cassette('one_collection_expanded', :record => :all) do
-			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
-
+		VCR.use_cassette('collection_one_expanded') do
 			collection = Badgeapi::Collection.find(1, expand: "badges")
 
 			assert_equal Badgeapi::Collection, collection.class
 
-			assert_equal "library", collection.id
-			assert_equal "Library", collection.name
-			assert_equal 125, collection.total_points_available
-			assert_equal "Use your library and earn badges", collection.description
+			assert_kind_of String, collection.id
+			assert_kind_of String, collection.name
+			assert_kind_of Integer, collection.total_points_available
+			assert_kind_of String, collection.description
 
-			assert_equal Badgeapi::Badge, collection.badges[1].required_badges.first.class
+			assert_kind_of Array, collection.badges
+			assert_kind_of Integer, collection.badges.length
 
-			assert_equal Badgeapi::Badge, collection.badges[0].class
-			assert_equal 4, collection.badges.length
-			assert_equal "Book Worm", collection.badges[0].name
-			assert_equal "bronze", collection.badges.first.level
-			assert_equal 25, collection.badges.first.points
+			if collection.badges.length > 0
+				assert_kind_of String, collection.badges.first.name
+				assert_kind_of String, collection.badges.first.level
+				assert_kind_of Integer, collection.badges.first.points
+			end
 		end
 	end
 
 	def test_it_returns_back_all_collections
-		VCR.use_cassette('all_collection', :record => :all) do
-			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
-
+		VCR.use_cassette('collection_all') do
 			result = Badgeapi::Collection.all
 
-			# Make sure we got all the badges
-			assert_equal 2, result.length
-
-			# Make sure that the JSON was parsed
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Collection)
 		end
 	end
 
 	def test_it_returns_back_all_collections_expanded
-		VCR.use_cassette('all_collection_expanded', :record => :all) do
-			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
-
+		VCR.use_cassette('collection_all_expanded') do
 			result = Badgeapi::Collection.all(expand: "badges")
 
-			# Make sure we got all the badges
-			assert_equal 2, result.length
-
-			# Make sure that the JSON was parsed
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Collection)
 			assert result.first.badges.first.kind_of?(Badgeapi::Badge)
-			assert_equal "Book Worm", result.first.badges.first.name
-			assert_equal "bronze", result.first.badges.first.level
-			assert_equal 25, result.first.badges.first.points
 
-
-			result.first.badges.each do |badge|
-				assert_equal Badgeapi::Badge, badge.class
+			if result.first.badges.length > 0
+				assert_kind_of String, result.first.badges.first.name
+				assert_kind_of String, result.first.badges.first.level
+				assert_kind_of Integer, result.first.badges.first.points
+				result.first.badges.each do |badge|
+					assert_equal Badgeapi::Badge, badge.class
+				end
 			end
 		end
 	end
 
 	def test_all_limit
-		VCR.use_cassette('all_collection_limit', :record => :all) do
-			Badgeapi.api_key = "c9cde524238644fa93393159e5e9ad87"
-
+		VCR.use_cassette('collection_all_limit') do
 			result = Badgeapi::Collection.all(limit: 1)
 
-			# Make sure we got all the badges
 			assert_equal 1, result.length
 
-			# Make sure that the JSON was parsed
 			assert result.kind_of?(Array)
 			assert result.first.kind_of?(Badgeapi::Collection)
 		end
 	end
 
 	def test_collections_raise_errors
-		VCR.use_cassette('collection_error', :record => :all) do
-			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
-
-			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Collection.find(27) }
+		VCR.use_cassette('collection_error') do
+			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Collection.find("2df3") }
 
 			begin
-				Badgeapi::Collection.find(27)
+				Badgeapi::Collection.find("dgsgdsg")
 			rescue Badgeapi::InvalidRequestError => e
 				assert_equal(404, e.http_status)
 				refute_empty e.message
@@ -128,10 +112,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_create_a_new_collection
-		VCR.use_cassette('create_collection', :record => :all) do
-
-			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
-
+		VCR.use_cassette('collection_create') do
 			collection = Badgeapi::Collection.create(
 				name: "Create Collection Test",
 				description: "This is a new collection"
@@ -146,10 +127,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_create_new_collection_failure
-		VCR.use_cassette('create_new_collection_failure', :record => :all) do
-
-			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
-
+		VCR.use_cassette('collection_create_new_failure') do
 			collection = Badgeapi::Collection.create(
 				name: "Create Collection Test Destroy",
 				description: "This is a new badge"
@@ -178,10 +156,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_collection_destroy
-		VCR.use_cassette('destroy_collection', :record => :all) do
-
-			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
-
+		VCR.use_cassette('collection_destroy') do
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for Destroy",
 					description: "This is a new badge",
@@ -204,16 +179,13 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_collection_destroy_error
-		VCR.use_cassette('destroy_collection_error', :record => :all) do
-
-			Badgeapi.api_key = 'c9cde524238644fa93393159e5e9ad87'
-
+		VCR.use_cassette('collection_destroy_error') do
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for Destroy",
 					description: "This is a new badge"
 			)
 
-			destroyed_collection = Badgeapi::Collection.destroy(collection.id)
+			Badgeapi::Collection.destroy(collection.id)
 
 			assert_raises(Badgeapi::InvalidRequestError) { Badgeapi::Collection.destroy(collection.id) }
 
@@ -228,10 +200,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_update_collection
-		VCR.use_cassette('update_collection', :record => :all) do
-
-			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
-
+		VCR.use_cassette('collection_update') do
 			collection = Badgeapi::Collection.create(
 					name: "Create Collection for update",
 					description: "This is a new collection",
@@ -252,10 +221,7 @@ class BadgeapiCollectionTest < MiniTest::Test
 	end
 
 	def test_update_collection_via_update
-		VCR.use_cassette('update_collection_via_update', :record => :all) do
-
-			Badgeapi.api_key= 'c9cde524238644fa93393159e5e9ad87'
-
+		VCR.use_cassette('collection_update_via_update') do
 			collection = Badgeapi::Collection.create(
 				name: "Create Collection for update",
 				description: "This is a new collection",
